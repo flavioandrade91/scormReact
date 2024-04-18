@@ -1,0 +1,48 @@
+.container{
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #6F2282;
+    width: 100%;
+    height: 500px;
+}
+
+.box{
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100px;
+}
+
+.formalaranja{
+    grid-column: 3 / 4 ;  
+}
+
+.formalaranja img{
+    object-fit: contain;
+}
+
+.boxcinza{
+    grid-column: 3 /4;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(188, 194, 194, 0.925);
+}
+
+.formaroxo{
+    grid-column: 12/13;
+}
+
+.formalinhas{
+    grid-column: 1/2;
+    display: flex;
+    border: 1px solid yellowgreen;
+  
+}
+
+.formalinhas img{
+   object-fit: contain;
+}
+
+.boxicon{
+    grid-column: 3 / 4;  
+}

@@ -10,10 +10,13 @@ class Learner extends React.Component {
   }
 
   render() {
-    return (<div>
-      <p>Hi, {this.props.name}!</p>
-      <p>{this.lmsCheck()}</p>
-  </div>);
+    return (
+    // <>
+    //   <p>Hi, {this.props.name}!</p>
+    //   <p>{this.lmsCheck()}</p>
+    // </>
+    <p>Hi, {this.props.name}!</p>
+  );
   };
 };
 
