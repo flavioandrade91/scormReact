@@ -1,18 +1,14 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('Fonts/static/RobotoCondensed-Thin.ttf');
-  src: url('Fonts/static/RobotoCondensed-Bold.ttf');
-  src: url('Fonts/static/RobotoCondensed-Light.ttf');
-  src: url('Fonts/static/RobotoCondensed-Regular.ttf');
-  src: url('Fonts/static/RobotoCondensed-ExtraLight.ttf');
-  src: url('Fonts/static/RobotoCondensed-Thin.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-}
-.App{
+.App {
+  font-family: "Roboto", sans-serif;
   display: grid;
   width: auto;
   height: auto;
-  grid-template-columns: repeat(12, 1fr); 
-  font-family: 'Roboto', sans-serif;
-
+  grid-template-columns: repeat(12, 1fr);
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
