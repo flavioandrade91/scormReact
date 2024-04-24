@@ -4,6 +4,7 @@ import Learner from './components/Learner';
 import Scorm from './scorm/Scorm';
 import { Header } from './components/header/Header';
 import { Main } from './components/main/Main';
+import { Podcast } from './components/podcast/Podcast';
 
 class App extends Component {
 
@@ -31,6 +32,7 @@ class App extends Component {
             <div class="App">
                 <Header />
                 <Main/>
+                <Podcast/>
             </div>
         );
     }

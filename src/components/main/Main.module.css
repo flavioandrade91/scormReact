@@ -1,48 +1,494 @@
-.container{
-    grid-column: 1 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: #6F2282;
-    width: 100%;
-    height: 500px;
-}
-
-.box{
-    grid-column: 2 / 3;
-    width: 100%;
-    height: 100px;
-}
-
-.formalaranja{
-    grid-column: 3 / 4 ;  
-}
-
-.formalaranja img{
-    object-fit: contain;
-}
-
-.boxcinza{
-    grid-column: 3 /4;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(188, 194, 194, 0.925);
-}
-
-.formaroxo{
-    grid-column: 12/13;
-}
-
-.formalinhas{
-    grid-column: 1/2;
-    display: flex;
-    border: 1px solid yellowgreen;
+@media (min-width: 1200px) {
+ .container{
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 6rem auto;
+        background-color: #6F2282;
+        width: 100%;
+        height: auto;
+    }    
+    .box{
+        grid-column: 1 / 3;
+        grid-row: 1/ 4;
+        background-color: #6F2282;
+    }
+    .boxfig{   
+        display: grid;
+        grid-template-columns: repeat(3, 6rem);
+        grid-template-rows: 6rem 6rem 25rem;
   
-}
+    }
+    .formalaranja{  
+        grid-column: 2 / 3;
+    }
+    .formalaranja img{
+        /* background-color: rgb(198, 246, 230); */
+        /* object-fit: contain;
+        overflow: hidden; */
+    }
+    .boxcinza{  
+        grid-column:  3 / 4;   
+        overflow: hidden;
+        background-color: rgba(188, 194, 194, 0.925);
+    }
+    .boxicon{ 
+        grid-column: 3/4;
+        grid-row: 2;  
+        display: flex;   
+        align-items: center;
+        justify-content: center;     
+        overflow: hidden;      
+        background-color: #FCBA5A;
+    }
+    .boxicon img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .formalinhas{
+        grid-column: 1/2;
+        grid-row: 2/4;  
+        overflow: hidden;
+    }
+    .formaroxo{
+        grid-column: 12/13;
+        max-width: 100%;
+        justify-self: end;
+        overflow: hidden;
+    }
+    .introducao{
+        grid-column: 4 / 10;
+        grid-row: 2;
+    }
+    .apresentacao h1{
+        text-transform: uppercase;
+        color: #FCBA5A;
+    }
+    .apresentacao p{
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: #eee;
+        text-align: left;
+        text-indent: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contexto h1{
+        text-transform: uppercase;
+        font-style: bold;
+        color: #FCBA5A;
+        margin-top: 2rem;
+    }
+    .contexto p{
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: #eee;
+        text-align: left;
+        text-indent: 2rem;       
+        margin-bottom: 2rem;
+    }
+    .traco{
+        grid: 4 /10;
+        height: 0.2rem;
+        width: auto;
+        background-color: #00000077;
 
-.formalinhas img{
-   object-fit: contain;
+    }
 }
+ @media (max-width: 1200px) and (min-width:992px){
+    .container{
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 6rem auto;
+        background-color: #6F2282;
+        width: 100%;
+        height: auto;
+    }    
+    .box{
+        grid-column: 1 / 3;
+        grid-row: 1/ 4;
+        background-color: #6F2282;
+    }
+    .boxfig{   
+        display: grid;
+        grid-template-columns: repeat(3, 4rem);
+        grid-template-rows: 4rem 4rem 25rem;
+  
+    }
+    .formalaranja{  
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        grid-column: 2 / 3;
+    }
+    .formalaranja img{
+        /* background-color: rgb(198, 246, 230); */
+        /* object-fit: contain;
+        overflow: hidden; */
+    }
+    .boxcinza{  
+        grid-column:  3 / 4;
+        width: 100%;
+        height: auto;   
+        overflow: hidden;
+        background-color: rgba(188, 194, 194, 0.925);
+    }
+    .boxicon{ 
+        grid-column: 3/4;
+        grid-row: 2;  
+        display: flex;   
+        align-items: center;
+        justify-content: center;     
+        width: 100%;
+        height: auto;
+        overflow: hidden;     
+        background-color: #FCBA5A;
+    }
+    .boxicon img{
+        width: 60%;
+        height: auto;
+        overflow: hidden; ;
+    }
+    .formalinhas{
+        grid-column: 1/2;
+        grid-row: 2/4;  
+        width: 100%;
+        height: auto;
+        overflow: hidden; 
+        margin-top: 3px;
+        
+    }
+    .formaroxo{
+        grid-column: 12/13;
+        max-width: 100%;
+        justify-self: end;
+        overflow: hidden;
+    }
+    .introducao{
+        grid-column: 4 / 11;
+        grid-row: 2;
+    }
+    .apresentacao h1{
+        text-transform: uppercase;
+        color: #FCBA5A;
+    }
+    .apresentacao p{
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: #eee;
+        text-align: left;
+        text-indent: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contexto h1{
+        text-transform: uppercase;
+        font-style: bold;
+        color: #FCBA5A;
+        margin-top: 2rem;
+    }
+    .contexto p{
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: #eee;
+        text-align: left;
+        text-indent: 2rem;       
+        margin-bottom: 2rem;
+    }
+    .traco{
+        grid: 4 /10;
+        height: 0.2rem;
+        width: auto;
+        background-color: #00000077;
 
-.boxicon{
-    grid-column: 3 / 4;  
-}
+    }
+  }
+ @media (max-width: 992px) and (min-width:768px){
+    .container{
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 6rem auto;
+        background-color: #6F2282;
+        width: 100%;
+        height: auto;
+    }    
+    .box{
+        grid-column: 1 / 3;
+        grid-row: 1/ 4;
+        background-color: #6F2282;
+    }
+    .boxfig{   
+        display: grid;
+        grid-template-columns: repeat(3, 4rem);
+        grid-template-rows: 4rem 4rem 25rem;
+  
+    }
+    .formalaranja{  
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        grid-column: 2 / 3;
+    }
+    .formalaranja img{
+        /* background-color: rgb(198, 246, 230); */
+        /* object-fit: contain;
+        overflow: hidden; */
+    }
+    .boxcinza{  
+        grid-column:  3 / 4;
+        width: 100%;
+        height: auto;   
+        overflow: hidden;
+        background-color: rgba(188, 194, 194, 0.925);
+    }
+    .boxicon{ 
+        grid-column: 3/4;
+        grid-row: 2;  
+        display: flex;   
+        align-items: center;
+        justify-content: center;     
+        width: 100%;
+        height: auto;
+        overflow: hidden;     
+        background-color: #FCBA5A;
+    }
+    .boxicon img{
+        width: 60%;
+        height: auto;
+        overflow: hidden; ;
+    }
+    .formalinhas{
+        grid-column: 1/2;
+        grid-row: 2/4;  
+        width: 100%;
+        height: auto;
+        overflow: hidden; 
+        margin-top: 3px;
+        
+    }
+    .formaroxo{
+        grid-column: 12/13;
+        max-width: 100%;
+        justify-self: end;
+        overflow: hidden;
+    }
+    .introducao{
+        grid-column: 5 / 12;
+        grid-row: 2;
+    }
+    .apresentacao h1{
+        text-transform: uppercase;
+        color: #FCBA5A;
+    }
+    .apresentacao p{
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: #eee;
+        text-align: left;
+        text-indent: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contexto h1{
+        text-transform: uppercase;
+        font-style: bold;
+        color: #FCBA5A;
+        margin-top: 2rem;
+    }
+    .contexto p{
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: #eee;
+        text-align: left;
+        text-indent: 2rem;       
+        margin-bottom: 2rem;
+    }
+    .traco{
+        grid: 4 /10;
+        height: 0.2rem;
+        width: auto;
+        background-color: #00000077;
+
+    }
+  }
+ @media (max-width: 768px) and (min-width: 576px){
+    .container{
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 6rem auto;
+        background-color: #6F2282;
+        width: 100%;
+        height: auto;
+    }    
+    .box{
+        grid-column: 1 / 3;
+        grid-row: 1/ 4;
+        background-color: #6F2282;
+    }
+    .boxfig{   
+        display: grid;
+        grid-template-columns: repeat(3, 3rem);
+        grid-template-rows:3rem 3rem 15rem;
+  
+    }
+    .formalaranja{  
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        grid-column: 2 / 3;
+    }
+    .formalaranja img{       
+        object-fit: contain;
+        object-position: -10px -10px;
+    }
+    .boxcinza{  
+        grid-column:  3 / 4;
+        width: 100%;
+        height: auto;   
+        overflow: hidden;
+        background-color: rgba(188, 194, 194, 0.925);
+    }
+    .boxicon{ 
+        grid-column: 3/4;
+        grid-row: 2;  
+        display: flex;   
+        align-items: center;
+        justify-content: center;     
+        width: 100%;
+        height: auto;
+        overflow: hidden;     
+        background-color: #FCBA5A;
+    }
+    .boxicon img{
+        width: 60%;
+        height: auto;
+        overflow: hidden; ;
+    }
+    .formalinhas{
+        grid-column: 1/2;
+        grid-row: 2/4;  
+        width: 100%;
+        height: auto;
+        overflow: hidden; 
+        margin-top: 3px;
+        
+    }
+    .formaroxo{
+        grid-column: 12/13;
+        max-width: 100%;
+        justify-self: end;
+        overflow: hidden;
+    }
+    .introducao{
+        grid-column: 5 / 12;
+        grid-row: 2;
+    }
+    .apresentacao{
+        margin-top: -20px;
+    }
+    .apresentacao h1{
+        text-transform: uppercase;
+        color: #FCBA5A;
+    }
+    .apresentacao p{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #eee;
+        text-align: left;
+        text-indent: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contexto h1{
+        text-transform: uppercase;
+        font-style: bold;
+        color: #FCBA5A;
+        margin-top: 2rem;
+    }
+    .contexto p{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #eee;
+        text-align: left;
+        text-indent: 2rem;       
+        margin-bottom: 2rem;
+    }
+    .traco{
+        grid: 4 /10;
+        height: 0.2rem;
+        width: auto;
+        background-color: #00000077;
+
+    }
+  }
+ @media (max-width: 576px) and (min-width: 320px){
+    .container{
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 6rem auto;
+        background-color: #6F2282;
+        width: 100%;
+        height: auto;
+    }    
+    .box{
+       display: none;
+    }
+   
+    .formaroxo{
+        grid-column: 12/13;
+        max-width: 100%;
+        justify-self: end;
+        overflow: hidden;
+    }
+
+    .introducao{
+        grid-column: 2 / 12;
+        grid-row: auto;
+        margin-top: 2rem;
+    }
+    .apresentacao{
+      margin-top: -100px;
+    }
+    .apresentacao h1{
+        text-transform: uppercase;
+        text-align: center;
+        color: #FCBA5A;
+    }
+    .apresentacao p{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #eee;
+        text-align: center;
+        word-spacing:0px;
+        /* text-indent: 2rem; */
+        margin-bottom: 2rem;
+    }
+    .contexto h1{
+        text-transform: uppercase;
+        font-style: bold;
+        text-align: center;
+        color: #FCBA5A;
+        margin-top: 2rem;
+    }
+    .contexto p{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #eee;
+        text-align: center;
+        text-indent: 2rem;       
+        margin-bottom: 2rem;
+    }
+    .traco{
+        grid: 4 /10;
+        height: 0.2rem;
+        width: auto;
+        background-color: #00000077;
+
+    }
+  }
+
+
+
+
+
+
