@@ -1,8 +1,8 @@
 import React from "react";
 import styles from './Header.module.css';
-import bordabrancaesq from '../../assets/formaBrancaBaixoEsq.png'
-import formalinha from '../../assets/formaLinhasBranco.png'
-import bordalaranjaCimaDir from '../../assets/formaLaranjaCimaDir.png'
+import bordabrancaesq from '../../assets/BorderDownLefBottom.svg'
+import formalinha from '../../assets/ArrowArtWhiteTop.svg'
+import bordalaranjaCimaDir from '../../assets/BorderRigOrange.svg'
 
 
 export function Header() {
