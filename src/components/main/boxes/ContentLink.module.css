@@ -1,0 +1,15 @@
+.Contentlink {
+    grid-column: 1 /13;
+    height: 500px;
+
+    border: 2px solid black;
+    background-image: url('../../../assets/imgbanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.baloon {
+    display: flex;
+    justify-content: center;
+}

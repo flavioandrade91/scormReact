@@ -6,6 +6,7 @@ import { Header } from './components/header/Header';
 import { Main } from './components/main/Main';
 import { Podcast } from './components/podcast/Podcast';
 import { GrayBox } from './components/main/boxes/GrayBox';
+import { ContentLink } from './components/main/boxes/ContentLink';
 
 class App extends Component {
 
@@ -35,6 +36,7 @@ class App extends Component {
                 <Main/>
                 <Podcast/>
                 <GrayBox/>
+                <ContentLink />
             </div>
         );
     }
