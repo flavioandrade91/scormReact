@@ -22,13 +22,11 @@
   
     }
     .formalaranja{  
-        grid-column: 2 / 3;
+        grid-column: 2 / 3;        
+        object-fit: cover;
+        overflow: hidden;
     }
-    .formalaranja img{
-        /* background-color: rgb(198, 246, 230); */
-        /* object-fit: contain;
-        overflow: hidden; */
-    }
+  
     .boxcinza{  
         grid-column:  3 / 4;   
         overflow: hidden;
