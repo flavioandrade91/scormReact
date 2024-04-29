@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import music from '../../assets/audio/vozes.mp3'
 import styles from '../multimidia/AudioPlayer.module.css'
-import iconplay from '../../assets/buttonPlay.png'
+import iconplay from '../../assets/iconPlay.svg'
 import iconpause from '../../assets/buttonPause.png'
 import iconVol from '../../assets/iconVolS.svg'
 

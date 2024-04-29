@@ -5,6 +5,7 @@ import Scorm from './scorm/Scorm';
 import { Header } from './components/header/Header';
 import { Main } from './components/main/Main';
 import { Podcast } from './components/podcast/Podcast';
+import { GrayBox } from './components/main/boxes/GrayBox';
 
 class App extends Component {
 
@@ -33,6 +34,7 @@ class App extends Component {
                 <Header />
                 <Main/>
                 <Podcast/>
+                <GrayBox/>
             </div>
         );
     }
