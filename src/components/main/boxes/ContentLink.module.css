@@ -1,15 +1,73 @@
 .Contentlink {
+    font-family: 'Roboto Condensed', sans-serif;
     grid-column: 1 /13;
     height: 500px;
-
-    border: 2px solid black;
-    background-image: url('../../../assets/imgbanner.png');
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:3rem 23.4rem 3rem;
+    
+    /* border: 2px solid black; */
+    
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),url('../../../assets/imgbanner.png') ;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.sectionHstoria{
+    grid-column: 1 /13;
+    grid-row: 2 /3;    
+    justify-self: center;
+    align-self: center;
 
+    h1{
+        color: #eee;
+        font-size: 4rem;
+        font-weight: 300;
+    }
 }
 
-.baloon {
-    display: flex;
+
+.baloonGray {
+    grid-column: 1 / 13;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.baloonPurple {
+    grid-column: 1 / 13;
+    justify-self: center;
+    grid-row: 3;
+ 
+}
+
+.boxPurple{
+    font-family: 'Roboto Condensed', sans-serif;
+    grid-column: 1 / 13;
+    height: 12rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     justify-content: center;
+    align-content: center;
+    background-color: #6F2282;
+}
+
+.introHistoria{
+    grid-column: 3 /11;
+    color: #eee;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannerHats{
+   grid-column: 1 /13;
+   height: 40rem;
+   background-image: url('../../../assets/hatsImage.svg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-color: #6F2282;
 }
