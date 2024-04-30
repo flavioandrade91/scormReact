@@ -25,13 +25,14 @@ export function ContentLink() {
                     <div className={styles.introHistoria}>
                         <p>Antes de inicarmos o estudo sobre os fundamentos da produção
                             de moda, vamos compreender um pouco sobre seu contexto histórico
-                            e como essa evolução contribuiu para que ela alçancasse cada 
+                            e como essa evolução contribuiu para que ela alçancasse cada
                             vez mais espaço.
                         </p>
                     </div>
                 </div>
                 <div className={styles.bannerHats}>
-                    {/* <img src={hatsImage} alt="" srcset="" /> */}
+                    <img src={hatsImage} alt="" srcset="" />
+                    <p>Figura 1 – Revista de Moda da Década de 20. <a href="https://blogdamaricalegari.com.br/2016/11/20/fatos-e-fotos-da-moda-de-1920-a-1930/">Fonte: Blog da Mari Calegari.</a></p>
                 </div>
             </section>
 

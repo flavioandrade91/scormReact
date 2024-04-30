@@ -7,6 +7,7 @@ import { Main } from './components/main/Main';
 import { Podcast } from './components/podcast/Podcast';
 import { GrayBox } from './components/main/boxes/GrayBox';
 import { ContentLink } from './components/main/boxes/ContentLink';
+import { Sanfona } from './components/main/sanfona/Sanfona';
 
 class App extends Component {
 
@@ -33,10 +34,11 @@ class App extends Component {
         return (
             <div class="App">
                 <Header />
-                <Main/>
-                <Podcast/>
-                <GrayBox/>
+                <Main />
+                <Podcast />
+                <GrayBox />
                 <ContentLink />
+                <Sanfona />
             </div>
         );
     }

@@ -46,7 +46,7 @@
 .boxPurple{
     font-family: 'Roboto Condensed', sans-serif;
     grid-column: 1 / 13;
-    height: 12rem;
+    height: 15rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-content: center;
@@ -65,9 +65,29 @@
 
 .bannerHats{
    grid-column: 1 /13;
-   height: 40rem;
-   background-image: url('../../../assets/hatsImage.svg');
-   background-repeat: no-repeat;
-   background-size: contain;
+   display: flex;
+   flex-direction: column;
+   height: 11rem;
+   object-fit: contain;
    background-color: #6F2282;
+}
+
+.bannerHats img{
+    width: 100%;    
+}
+
+.bannerHats p{
+    flex: 1;
+    align-self: flex-end;
+    margin-right: 17rem;
+    margin-top: 10px;
+    color: #555;
+    font-size:1rem ;
+}
+
+.bannerHats p a:active{
+    color: #555;
+}
+.bannerHats p a:visited{
+    color: #555;
 }
