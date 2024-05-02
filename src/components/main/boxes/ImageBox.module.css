@@ -1,0 +1,13 @@
+.containerBoxImage{
+   grid-column: 1 /13;
+   height: 40rem;
+   background-image: url('../../../assets/hatsImage.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.fonte{
+    grid-column: 2 / 11;
+    justify-self: flex-end;
+
+}

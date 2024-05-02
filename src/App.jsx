@@ -6,8 +6,10 @@ import { Header } from './components/header/Header';
 import { Main } from './components/main/Main';
 import { Podcast } from './components/podcast/Podcast';
 import { GrayBox } from './components/main/boxes/GrayBox';
-import { ContentLink } from './components/main/boxes/ContentLink';
+import { SectionBox } from './components/main/boxes/SectionBox';
 import { Sanfona } from './components/main/sanfona/Sanfona';
+import { PurpleBox } from './components/main/boxes/PurpleBox';
+import {ImageBox} from './components/main/boxes/ImageBox';
 
 class App extends Component {
 
@@ -37,7 +39,9 @@ class App extends Component {
                 <Main />
                 <Podcast />
                 <GrayBox />
-                <ContentLink />
+                <SectionBox />
+                <PurpleBox />
+                <ImageBox/>
                 <Sanfona />
             </div>
         );

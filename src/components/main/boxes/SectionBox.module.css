@@ -1,7 +1,7 @@
-.Contentlink {
-    font-family: 'Roboto Condensed', sans-serif;
+.SectionBox {
     grid-column: 1 /13;
-    height: 500px;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: auto;
     
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -16,7 +16,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.sectionHstoria{
+
+.titleImageBox{
     grid-column: 1 /13;
     grid-row: 2 /3;    
     justify-self: center;
@@ -29,7 +30,6 @@
     }
 }
 
-
 .baloonGray {
     grid-column: 1 / 13;
     grid-row: 1;
@@ -38,42 +38,20 @@
 
 .baloonPurple {
     grid-column: 1 / 13;
-    justify-self: center;
     grid-row: 3;
- 
+    justify-self: center;
 }
 
-.boxPurple{
-    font-family: 'Roboto Condensed', sans-serif;
-    grid-column: 1 / 13;
-    height: 15rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    justify-content: center;
-    align-content: center;
-    background-color: #6F2282;
-}
 
-.introHistoria{
-    grid-column: 3 /11;
-    color: #eee;
-    font-weight: 400;
-    font-size: 1.2rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.bannerHats{
+/* .bannerHats{
    grid-column: 1 /13;
+   justify-items: center;
+   align-items: center;
    display: flex;
    flex-direction: column;
    height: 11rem;
    object-fit: contain;
    background-color: #6F2282;
-}
-
-.bannerHats img{
-    width: 100%;    
 }
 
 .bannerHats p{
@@ -90,4 +68,4 @@
 }
 .bannerHats p a:visited{
     color: #555;
-}
+} */
