@@ -1,6 +1,6 @@
 .sanfonaContent{
     grid-column: 1 / 13;
-    height: 30vh;
+    height: auto;
     background-color: aquamarine;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -8,7 +8,6 @@
 }
 
 .boxSanfona{
-    /* display: none; */
     grid-column: 4/10;
     height: 6rem;
     background-color:#eee;
