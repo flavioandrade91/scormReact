@@ -10,6 +10,7 @@ import { SectionBox } from './components/main/boxes/SectionBox';
 import { Sanfona } from './components/main/sanfona/Sanfona';
 import { PurpleBox } from './components/main/boxes/PurpleBox';
 import {ImageBox} from './components/main/boxes/ImageBox';
+import VideoPlayer from './components/multimidia/VideoPlayer';
 
 class App extends Component {
 
@@ -42,7 +43,8 @@ class App extends Component {
                 <SectionBox />
                 <PurpleBox />
                 <ImageBox/>
-                <Sanfona />
+                <Sanfona />                
+                <VideoPlayer url="https://youtu.be/lNORW8z-ftw" />
             </div>
         );
     }

@@ -1,10 +1,10 @@
 .sanfonaContent{
     grid-column: 1 / 13;
     height: auto;
-    background-color: aquamarine;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-content: flex-start;
+    padding: 2rem;
 }
 
 .boxSanfona{

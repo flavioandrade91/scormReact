@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Sanfona.module.css';
 import seta from '../../../assets/SetaCima.svg';
 
 export function Sanfona() {
     const [modal, setModal] = useState(false);
+    const [icon, setIcon] = useState({seta});
 
     const toggleModal = () => {
         setModal(!modal);
+        setIcon
     };
 
     const BoxSanfona = () => (
