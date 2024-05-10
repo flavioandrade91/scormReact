@@ -19,13 +19,6 @@
     /* border: 2px solid black; */
    
 }
-.containerflag h1{
-    grid-column: 1 / 6;
-    grid-row: 2;
-    color: #eee;
-    font-size: 2rem;
-    font-weight: 400;
-}
 
 .introTxt{
     grid-column: 1 /6;
@@ -34,6 +27,14 @@
     color: white;
     text-indent: 40px;
     font-weight: 350;
+}
+
+.containerflag h1{
+    grid-column: 1 / 6;
+    grid-row: 2;
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .boxflag{

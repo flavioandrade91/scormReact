@@ -11,6 +11,7 @@ import { Sanfona } from './components/main/sanfona/Sanfona';
 import { PurpleBox } from './components/main/boxes/PurpleBox';
 import {ImageBox} from './components/main/boxes/ImageBox';
 import VideoPlayer from './components/multimidia/VideoPlayer';
+import { Questionario } from './components/questionario/Questionario';
 
 class App extends Component {
 
@@ -45,6 +46,7 @@ class App extends Component {
                 <ImageBox/>
                 <Sanfona />                
                 <VideoPlayer url="https://youtu.be/lNORW8z-ftw" />
+                <Questionario/>
             </div>
         );
     }
