@@ -1,0 +1,43 @@
+.sanfonaContent{
+    grid-column: 1 / 13;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-content: flex-start;
+    padding: 2rem;
+}
+
+.boxSanfona{
+    grid-column: 4/10;
+    height: 6rem;
+    background-color:#eee;
+}
+
+.title{
+    margin-left: 10px;
+}
+
+.colapse{
+    background: none;
+    border: none;
+}
+
+.headerSanfona{
+    grid-column: 4 /10;
+    font-family:'Roboto', sans-serif;
+    font-weight: 600;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    background-color:  #6F2282;
+}
+
+.bodySanfona{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 6rem;
+    padding: 0 1.8rem 0 1.8rem;
+}

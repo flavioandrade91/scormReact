@@ -1,0 +1,20 @@
+.boxPurple{
+    grid-column: 1 / 13;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-content: center;
+    background-color: #6F2282;
+}
+
+.introHistoria{
+    grid-column: 2 / 12;
+    color: #eee;
+    text-align: center;
+
+}
+.introHistoria p{
+    font-size: 1.5rem;
+}

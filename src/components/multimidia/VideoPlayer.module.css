@@ -1,0 +1,80 @@
+.videoComponent {
+    font-family: 'Roboto', sans-serif;
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 9rem 30rem 3rem;
+    justify-content: center;
+    background-color: #FCBA5A;
+    border-top-left-radius: 100px;
+}
+
+.formaLinha {
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.playerContent {
+    flex: 2 1 100%;
+    grid-column: 4 / 10;
+    grid-row: 2 / 4;
+}
+
+.playerHeader {
+    grid-column: 4 / 10;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 2rem 0;
+}
+
+.playerHeader img {
+    height: 4rem;
+}
+
+.playerTitle {
+    flex: 1;
+    border-top: 3px solid #eee;
+    padding: 1rem 1rem;
+    color: #6F2282;
+    font-weight: 500;   
+}
+
+.playerTitle span{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.playerTitle p{
+    padding-top: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: .90rem;
+}
+
+.playerVideo {
+    grid-column: 4 / 8;
+    grid-row: 2;
+    height: 30rem;
+    flex: 1 100%;
+}
+
+.playerContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.videoFooter{
+    flex: 1 100%;
+    align-content: start;
+    font-size: .75rem;
+}
+
+.videoFooter p{
+    text-align: end;
+}

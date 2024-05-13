@@ -6,6 +6,12 @@ import { Header } from './components/header/Header';
 import { Main } from './components/main/Main';
 import { Podcast } from './components/podcast/Podcast';
 import { GrayBox } from './components/main/boxes/GrayBox';
+import { SectionBox } from './components/main/boxes/SectionBox';
+import { Sanfona } from './components/main/sanfona/Sanfona';
+import { PurpleBox } from './components/main/boxes/PurpleBox';
+import {ImageBox} from './components/main/boxes/ImageBox';
+import VideoPlayer from './components/multimidia/VideoPlayer';
+import { Questionario } from './components/questionario/Questionario';
 
 class App extends Component {
 
@@ -32,9 +38,15 @@ class App extends Component {
         return (
             <div class="App">
                 <Header />
-                <Main/>
-                <Podcast/>
-                <GrayBox/>
+                <Main />
+                <Podcast />
+                <GrayBox />
+                <SectionBox />
+                <PurpleBox />
+                <ImageBox/>
+                <Sanfona />                
+                <VideoPlayer url="https://youtu.be/lNORW8z-ftw" />
+                <Questionario/>
             </div>
         );
     }
