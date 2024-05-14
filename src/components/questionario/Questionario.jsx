@@ -24,7 +24,8 @@ export function Questionario() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [showModal, setShowModal] = useState(false);
-    const [modalMessage, setModalMessage] = useState('');
+    const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
+    const [showFeedback, setShowFeedback] = useState(false);
 
     const handleRadioChange = (index) => {
         setSelectedAnswer(index);
@@ -32,21 +33,23 @@ export function Questionario() {
 
     const handleSubmit = () => {
         const isCorrect = questions[currentQuestion].answerOptions[selectedAnswer].isCorrect;
-        setModalMessage(isCorrect ? 'Correto' : 'Errado');
+        setIsCorrectAnswer(isCorrect);
         setShowModal(true);
         setTimeout(() => {
             setShowModal(false);
+            setShowFeedback(true);
             const nextQuestion = currentQuestion + 1;
             if (isCorrect && nextQuestion < questions.length) {
-                setCurrentQuestion(nextQuestion);
-                setSelectedAnswer(null);
-            } else if (nextQuestion >= questions.length) {
-                setModalMessage('Você completou o quiz!');
-                setShowModal(true);
                 setTimeout(() => {
-                    setShowModal(false);
+                    setCurrentQuestion(nextQuestion);
+                    setSelectedAnswer(null);
+                    setShowFeedback(false);
+                }, 2000);
+            } else if (nextQuestion >= questions.length) {
+                setTimeout(() => {
                     setCurrentQuestion(0);
                     setSelectedAnswer(null);
+                    setShowFeedback(false);
                 }, 2000);
             }
         }, 2000); // Modal some após 2 segundos
@@ -54,92 +57,81 @@ export function Questionario() {
 
     return (
         <section className={styles.questionarioContent}>
-
-            <section className={styles.headerContent}>
-
-                <div className={styles.headerTitle}>
-                    <div className={styles.title}>
-                        <span>exercício de fixação</span>
-                    </div>
-                    <div className={styles.subtitle}>
-                        <span>alternativa correta</span>
-                    </div>
+        <section className={styles.headerContent}>
+            <div className={styles.headerTitle}>
+                <div className={styles.title}>
+                    <span>exercício de fixação</span>
                 </div>
-
-                <div className={styles.flagBox}>
-                    <div className={styles.flag}>
-                        <img src={flag} alt="" />
-                    </div>
+                <div className={styles.subtitle}>
+                    <span>alternativa correta</span>
                 </div>
-
-            </section>
-
-            <div className={styles.questionario}>
-
-                <span className={styles.question}>
-                    <p> <span>1)</span> Estudamos os tipos de projetos de produção de moda:
-                        projetos de imagem, de exposição de produtos e eventos
-                        de moda, cada um possuindo suas variações e aplicações.
-                    </p>
-
-                    <p>De acordo com o conteúdo estudado, associe cada uma das
-                        imagens com o tipo de projeto de produção de moda correto:
-                    </p>
-                </span>
-
-                <div className={styles.boxImages}>
-                    <div className={styles.images}>
-                        <img src={ImgO1Quest} alt="" srcset="" />
-                        <span>1</span>
-                    </div>
-                    <div className={styles.images}>
-                        <img src={ImgO2Quest} alt="" srcset="" />
-                        <span>2</span>
-                    </div>
-                    <div className={styles.images}>
-                        <img src={ImgO3Quest} alt="" srcset="" />
-                        <span>3</span>
-                    </div>
-                </div>
-
-                {/* inicio */}
-
-                <div className={styles.quiz_container}>
-                    <div className={styles.question_section}>
-                        <div className={styles.question_count}>
-                            {/* <span>Questão {currentQuestion + 1}</span>/{questions.length} */}
-                        </div>
-                        <div className={styles.question_text}>{questions[currentQuestion].questionText}</div>
-                    </div>
-                    
-                    <form className={styles.answer_section} onSubmit={(e) => e.preventDefault()}>
-
-                        {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                        
-                        <label key={index} className={styles.radio_label}>
-                                <input
-                                    type="radio"
-                                    name="answer"
-                                    value={index}
-                                    checked={selectedAnswer === index}
-                                    onChange={() => handleRadioChange(index)}
-                                />
-                                {answerOption.answerText}
-                            </label>
-                        ))}
-                        
-                        <button onClick={handleSubmit} className={styles.submit_button} disabled={selectedAnswer === null}>
-                        VERIFICAR RESPOSTA
-                        </button>
-                    </form>
-
-                    {showModal && <div className={styles.modal}>{modalMessage}</div>}
-                
-                </div>
-
             </div>
-
-        </section >
+            <div className={styles.flagBox}>
+                <div className={styles.flag}>
+                    <img src={flag} alt="" />
+                </div>
+            </div>
+        </section>
+        <div className={styles.questionario}>
+            <span className={styles.question}>
+                <p><span>1)</span> Estudamos os tipos de projetos de produção de moda:
+                    projetos de imagem, de exposição de produtos e eventos
+                    de moda, cada um possuindo suas variações e aplicações.
+                </p>
+                <p>De acordo com o conteúdo estudado, associe cada uma das
+                    imagens com o tipo de projeto de produção de moda correto:
+                </p>
+            </span>
+            <div className={styles.boxImages}>
+                <div className={styles.images}>
+                    <img src={ImgO1Quest} alt="" />
+                    <span>1</span>
+                </div>
+                <div className={styles.images}>
+                    <img src={ImgO2Quest} alt="" />
+                    <span>2</span>
+                </div>
+                <div className={styles.images}>
+                    <img src={ImgO3Quest} alt="" />
+                    <span>3</span>
+                </div>
+            </div>
+            <div className={styles.quiz_container}>
+                <div className={styles.question_section}>
+                    <div className={styles.question_count}>
+                        {/* <span>Questão {currentQuestion + 1}</span>/{questions.length} */}
+                    </div>
+                    <div className={styles.question_text}>{questions[currentQuestion].questionText}</div>
+                </div>
+                <form className={styles.answer_section} onSubmit={(e) => e.preventDefault()}>
+                    {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                        <label
+                            key={index}
+                            className={`${styles.radio_label} ${showFeedback ? (answerOption.isCorrect ? styles.correct : (selectedAnswer === index ? styles.wrong : '')) : ''}`}
+                        >
+                            <input
+                                type="radio"
+                                name="answer"
+                                value={index}
+                                checked={selectedAnswer === index}
+                                onChange={() => handleRadioChange(index)}
+                                disabled={showFeedback}
+                            />
+                            {answerOption.answerText}
+                        </label>
+                    ))}
+                    <button onClick={handleSubmit} className={styles.submit_button} disabled={selectedAnswer === null}>
+                        VERIFICAR RESPOSTA
+                    </button>
+                </form>
+                {showModal && (
+                    <div className={styles.modal}>
+                        <img src={isCorrectAnswer ? OK : NO} alt={isCorrectAnswer ? "Correto" : "Errado"} />
+                    </div>
+                )}
+            </div>
+        </div>
+    </section>
     );
 }
 

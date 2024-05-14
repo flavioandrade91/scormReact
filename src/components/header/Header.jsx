@@ -1,8 +1,6 @@
 import React from "react";
 import styles from './Header.module.css';
-import bordabrancaesq from '../../assets/BorderDownLefBottom.svg'
-import formalinha from '../../assets/ArrowArtWhiteTop.svg'
-import bordalaranjaCimaDir from '../../assets/BorderRigOrange.svg'
+import images from '../main/boxes/LibraryImgs'
 
 
 export function Header() {
@@ -10,14 +8,14 @@ export function Header() {
         <>
             <header className={styles.header}>
                 <div className={styles.box01}>
-                    <img className={styles.img_linha} src={formalinha} alt="" />
-                    <img className={styles.borda_laranja} src={bordalaranjaCimaDir} alt="" />
+                    <img className={styles.img_linha} src={images.formalinha} alt="" />
+                    <img className={styles.borda_laranja} src={images.bordalaranjaCimaDir} alt="" />
                 </div>
                 <div className={styles.box_title}>
                     <span className={styles.title}>Fundamentos da Produção de Moda</span>
                 </div>
                 <div className={styles.box02}>
-                    <img className={styles.borda_branca} src={bordabrancaesq} alt="" />
+                    <img className={styles.borda_branca} src={images.bordabrancaesq} alt="" />
                 </div>
             </header>
         </>
