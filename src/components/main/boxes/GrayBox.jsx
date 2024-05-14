@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './GrayBox.module.css';
 import flag from '../../../assets/IconFlag.svg';
-import introducao from '../../main/boxes/LibraryText'
 
-export function GrayBox({ introducao }) {
+export function GrayBox({ texto }) {
     return (
         <section className={styles.boxContainer}>
             <div className={styles.containerflag}>
@@ -16,7 +15,7 @@ export function GrayBox({ introducao }) {
                 </div>
                 <h1>INTRODUÇÃO</h1>
                 <div className={styles.introTxt}>
-                    <p>{introducao.introducao}</p>
+                    <p>{texto}</p>
                 </div>
             </div>
         </section>

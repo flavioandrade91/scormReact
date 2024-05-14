@@ -4,7 +4,7 @@ import iconMicrofone from '../../assets/iconMicrofone.svg'
 import logoSenai from '../../assets/iconeSenaiPlay.png'
 import {AudioPlayer} from "../multimidia/AudioPlayer";
 
-export function Podcast() {
+export function Podcast({title, descricao}) {
         return (
             <>
                 <section className={styles.podcast}>
@@ -13,15 +13,11 @@ export function Podcast() {
 
                             <div className={styles.box01}>
                                 <img src={iconMicrofone} alt="" srcset="" />
-                                <p className={styles.textoBox01}>podcast  /  Apresentação da unidade curricular</p>
+                                <p className={styles.textoBox01}>{title}</p>
                             </div>
                             <div className={styles.box02}>
                                 <img src={logoSenai} alt="" srcset="" />
-                                <p className={styles.textoBox02}>
-                                    Curso Técnico: <strong>Técnico em Produção de Moda</strong><br />
-                                    Unidade Curricular: <strong>01</strong><br />
-                                    Módulo: <strong>Fundamentos da Produção de Moda</strong></p><br />
-                            </div>
+                                <p className={styles.textoBox02}>{descricao}</p></div>
                             
                             <div className={styles.box03}>
                                 <AudioPlayer/>

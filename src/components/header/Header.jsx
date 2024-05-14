@@ -2,8 +2,7 @@ import React from "react";
 import styles from './Header.module.css';
 import images from '../main/boxes/LibraryImgs'
 
-
-export function Header() {
+export function Header({title}) {
     return (
         <>
             <header className={styles.header}>
@@ -12,7 +11,7 @@ export function Header() {
                     <img className={styles.borda_laranja} src={images.bordalaranjaCimaDir} alt="" />
                 </div>
                 <div className={styles.box_title}>
-                    <span className={styles.title}>Fundamentos da Produção de Moda</span>
+                    <span className={styles.title}>{title}</span>
                 </div>
                 <div className={styles.box02}>
                     <img className={styles.borda_branca} src={images.bordabrancaesq} alt="" />

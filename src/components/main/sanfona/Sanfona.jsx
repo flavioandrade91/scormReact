@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Sanfona.module.css';
-import seta from '../../../assets/SetaCima.svg';
 
-export function Sanfona() {
+export function Sanfona({title, text, iconImage}) {
+
     const [modal, setModal] = useState(false);
-    const [icon, setIcon] = useState({seta});
+    const [icon, setIcon] = useState({iconImage});
 
     const toggleModal = () => {
         setModal(!modal);
-        setIcon
+        setIcon(!icon);
     };
 
     const BoxSanfona = () => (
         <div className={styles.boxSanfona}>
             <div className={styles.bodySanfona}>
                 <div className={styles.sanfonaItem}>
-                    <p>
-                        Ênfase na individualidade e na expressão pessoal na moda, que foi um precursor para
-                        o desenvolvimento da produção de moda como a conhecemos hoje.
-                    </p>
+                    <p>{text}</p>
                 </div>
             </div>
         </div>
@@ -28,9 +25,9 @@ export function Sanfona() {
         <>
             <div className={styles.sanfonaContent}>
                 <div className={styles.headerSanfona}>
-                    <span className={styles.title}>Anos 20 e 30</span>
+                    <span className={styles.title}>{title}</span>
                     <button className={styles.colapse} onClick={toggleModal}>
-                        <img src={seta} alt="Expandir ou colapsar" />
+                        <img src={iconImage} alt="Expandir ou colapsar" />
                     </button>
                 </div>
                 {modal && <BoxSanfona />}

@@ -12,8 +12,8 @@ import { PurpleBox } from './components/main/boxes/PurpleBox';
 import {ImageBox} from './components/main/boxes/ImageBox';
 import VideoPlayer from './components/multimidia/VideoPlayer';
 import { Questionario } from './components/questionario/Questionario';
-import { apresentacao, contexto, introducao } from './components/main/boxes/LibraryText';
-
+import { apresentacao, contexto, introducao, title, sessoes, sanfona, fontes, videos, podcast } from './components/main/boxes/LibraryText';
+import images from './components/main/boxes/LibraryImgs'
 
 class App extends Component {
 
@@ -39,15 +39,43 @@ class App extends Component {
     render() {
         return (
             <div class="App">
-                <Header />
+                <Header title={title.titulo01} />
                 <Main />
-                <Podcast />
-                <GrayBox texto={introducao.texto1}/>
-                <SectionBox />
-                <PurpleBox />
-                <ImageBox/>
-                <Sanfona />                
-                <VideoPlayer url="https://youtu.be/lNORW8z-ftw" />
+                <Podcast 
+                    title={podcast.podcast01.title}
+                    descricao={podcast.podcast01.descricao.title }
+                />
+                
+                <GrayBox 
+                texto={introducao.texto1}
+                />
+                
+                <SectionBox 
+                sessao={sessoes.sassao01}
+                />
+                
+                <PurpleBox 
+                texto={sessoes.texto}
+                />
+                
+                <ImageBox 
+                link={fontes.link} 
+                fonte={fontes.text}
+                />
+                
+                <Sanfona 
+                title={sanfona.title} 
+                text={sanfona.text} 
+                iconImage={images.seta}
+                />                
+                
+                <VideoPlayer 
+                title={videos.video01.title}  
+                descricao={videos.video01.descricao} 
+                url="https://youtu.be/lNORW8z-ftw" 
+                fonte={videos.video01.fonte}
+                />
+                
                 <Questionario/>
                 <SectionBox />
             </div>

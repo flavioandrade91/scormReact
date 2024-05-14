@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Main.module.css";
 import imagens from "../main/boxes/LibraryImgs";
-import { apresentacao, contexto } from "../main/boxes/LibraryText";
+import { introducao, apresentacao, contexto } from "../main/boxes/LibraryText";
 
 export function Main() {
     return (

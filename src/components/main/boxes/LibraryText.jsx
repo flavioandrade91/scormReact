@@ -1,12 +1,25 @@
+export const title ={
+        titulo01: `Fundamentos da Produção de Moda`
+}
+
+export const sessoes = {
+        sassao01: `História`,
+        texto: `Antes de inicarmos o estudo sobre os fundamentos da produção
+        de moda, vamos compreender um pouco sobre seu contexto histórico
+        e como essa evolução contribuiu para que ela alçancasse cada
+        vez mais espaço.`
+}
+
 export const apresentacao = {
     titulo: `APRESENTAÇÃO`,
+
     parag01: `A moda transcende a simples função de vestimenta, tornando-se uma
     linguagem visual, uma expressão artística e uma indústria em constante
     transformação. Dentro desse mercado a produção de moda desempenha um
     papel fundamental e vem conquistando cada vez mais espaço.`,
 
     parag02: `Dentro dos projetos de exposição de produto, projetos de imagem e eventos
-        de moda, a produção de moda é responsável pela estética e a narrativa visual.
+                 de moda, a produção de moda é responsável pela estética e a narrativa visual.
                  Contribui para contar a história da marca e auxiliar na construção de sua
                  identidade destacando as características mais importantes e relevantes.`,
 
@@ -32,7 +45,6 @@ export const contexto = {
             aplicabilidade e novas tecnologias.`,
 }
 
-
 export const introducao = {
     texto1: `O produtor de moda pode atuar de diversas formas,
             no desenvolvimento de figurinos para novelas,
@@ -47,3 +59,40 @@ export const introducao = {
 
     texto2: `Texto 2`
 };
+
+export const sanfona = {
+        title: `Anos 20 e 30`,
+        text:`Ênfase na individualidade e na expressão
+        pessoal na moda, que foi um precursor para
+        o desenvolvimento da produção de moda como
+        a conhecemos hoje.`
+}
+
+export const fontes ={
+        link: `https://blogdamaricalegari.com.br/2016/11/20/fatos-e-fotos-da-moda-de-1920-a-1930/`,
+        text: `Figura 1 – Revista de Moda da Década de 20. Fonte: da Mari Calegari.`
+}
+
+export const videos = {
+     video01: {
+        title: `Vídeo / História da Produção de Moda`,
+        descricao: `Assista ao vídeo e conheça mais sobre a História da Produção de Moda.`,
+        url: ``,
+        fonte:`Vídeo 1 - História da Produção de Moda. Fonte: SENAI Play 11/03/2024.`
+    },       
+}
+
+export const podcast = {        
+        podcast01:{
+        title: `podcast  /  Apresentação da unidade curricular`,
+        descricao: {
+                title: ` Curso Técnico:`,
+                subtitle: `Técnico em Produção de Moda`,
+                unidade: {
+                          title: `Unidade Curricular: 01`,
+                          num: `01` 
+                        },                        
+                modulo: `Módulo: Fundamentos da Produção de Moda`
+                },
+        }        
+}
