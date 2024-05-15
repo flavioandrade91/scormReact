@@ -7,7 +7,10 @@ export const sessoes = {
         texto: `Antes de inicarmos o estudo sobre os fundamentos da produção
         de moda, vamos compreender um pouco sobre seu contexto histórico
         e como essa evolução contribuiu para que ela alçancasse cada
-        vez mais espaço.`
+        vez mais espaço.`,
+        sassao02: `Projetos de Imagens`,
+        texto: `Através dos projetos de imagens, sejam eles físicos ou digitais,
+                as marcas se apresentam para seus consumidores e se conectam com eles.`
 }
 
 export const apresentacao = {
@@ -60,6 +63,13 @@ export const introducao = {
     texto2: `Texto 2`
 };
 
+export const editorial= {
+        titulo:`Editorial`,
+        texto: `Função de contar histórias, apresentar conceitos e 
+                temas através de imagens. Encontrados em em revistas,
+                websites e mídias sociais.`         
+}
+
 export const sanfona = {
         title: `Anos 20 e 30`,
         text:`Ênfase na individualidade e na expressão
@@ -69,8 +79,12 @@ export const sanfona = {
 }
 
 export const fontes ={
-        link: `https://blogdamaricalegari.com.br/2016/11/20/fatos-e-fotos-da-moda-de-1920-a-1930/`,
-        text: `Figura 1 – Revista de Moda da Década de 20. Fonte: da Mari Calegari.`
+        link01: `https://blogdamaricalegari.com.br/2016/11/20/fatos-e-fotos-da-moda-de-1920-a-1930/`,
+        text01: `Figura 1 – Revista de Moda da Década de 20. Fonte: da Mari Calegari.`,
+        link02: `https://blog.modayacamim.com.br/2018/06/07/5-editoriais-de-moda-pra-voce-se-inspirar-no-inverno/`,
+        text02: `Figura 2 – Editorial de Moda. Fonte: Yacamim.`,
+        link03: `https://marcaspelomundo.com.br/anunciantes/brasilidade-e-tema-da-campanha-de-carnaval-2023-da-studio-z/`,
+        text03: `Figura 3 – Campanha Publicitária de Moda. Fonte: Marcas pelo Mundo.`
 }
 
 export const videos = {
@@ -79,20 +93,20 @@ export const videos = {
         descricao: `Assista ao vídeo e conheça mais sobre a História da Produção de Moda.`,
         url: ``,
         fonte:`Vídeo 1 - História da Produção de Moda. Fonte: SENAI Play 11/03/2024.`
-    },       
+    },
+    video02:{
+        title: `Vídeo /  Projetos de Imagem`,
+        descricao: `Assista ao vídeo para se aprofundar no mundo dos projetos de imagem na produção de moda.`,
+        url: ``,
+        fonte:`Vídeo 2 - Projetos de Imagem. Fonte: SENAI Play (YouTube), 11/03/2024.`
+    }       
 }
 
 export const podcast = {        
         podcast01:{
-        title: `podcast  /  Apresentação da unidade curricular`,
-        descricao: {
-                title: ` Curso Técnico:`,
-                subtitle: `Técnico em Produção de Moda`,
-                unidade: {
-                          title: `Unidade Curricular: 01`,
-                          num: `01` 
-                        },                        
-                modulo: `Módulo: Fundamentos da Produção de Moda`
-                },
+        title:   `podcast  /  Apresentação da unidade curricular`,                
+        curso:   `Técnico em Produção de Moda`,
+        unidade: `01`,                                            
+        modulo:  `Módulo: Fundamentos da Produção de Moda`
         }        
 }

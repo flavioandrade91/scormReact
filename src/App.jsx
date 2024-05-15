@@ -43,7 +43,9 @@ class App extends Component {
                 <Main />
                 <Podcast 
                     title={podcast.podcast01.title}
-                    descricao={podcast.podcast01.descricao.title }
+                    curso={podcast.podcast01.curso}
+                    unidadde={podcast.podcast01.unidade}
+                    descricao={podcast.podcast01.modulo }
                 />
                 
                 <GrayBox 
@@ -77,7 +79,9 @@ class App extends Component {
                 />
                 
                 <Questionario/>
-                <SectionBox />
+                <SectionBox 
+                    sessao={sessoes.sassao02}
+                />
             </div>
         );
     }

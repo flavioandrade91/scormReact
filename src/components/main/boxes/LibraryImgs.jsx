@@ -13,6 +13,7 @@ import flag from '../../../assets/IconFlag.svg'
 import seta from '../../../assets/SetaCima.svg'
 import formaLinha from '../../../assets/ArrowArtLef.svg'
 import iconVideo from '../../../assets/iconVideo.svg'
+import indigenaFuture from '../../../assets/indigenaFuture.svg' 
 
 const images = {
     bordabrancaesq,
@@ -29,7 +30,8 @@ const images = {
     flag,
     seta,
     formaLinha,
-    iconVideo
+    iconVideo,
+    indigenaFuture
 }
 
 export default images;
