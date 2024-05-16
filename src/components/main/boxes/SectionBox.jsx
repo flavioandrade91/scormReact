@@ -1,14 +1,12 @@
 import React from "react";
 import styles from './SectionBox.module.css'
-import images from '../boxes/LibraryImgs'
 
-
-export function SectionBox({sessao}) {
+export function SectionBox({sessao, imgTop, imgBottom}) {
     return (
         <>
             <section className={styles.SectionBox}>
                 <div className={styles.baloonGray}>
-                    <img src={images.baloonGray} alt="" srcset="" />
+                    <img src={imgTop} alt="" srcset="" />
                 </div>
 
                 <div className={styles.titleImageBox}>
@@ -16,7 +14,7 @@ export function SectionBox({sessao}) {
                 </div>
 
                 <div className={styles.baloonPurple}>
-                    <img src={images.baloonPurple} alt="" srcset="" />
+                    <img src={imgBottom} alt="" srcset="" />
                 </div>
             </section>
 

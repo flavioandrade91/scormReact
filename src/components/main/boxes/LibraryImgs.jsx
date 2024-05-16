@@ -13,7 +13,9 @@ import flag from '../../../assets/IconFlag.svg'
 import seta from '../../../assets/SetaCima.svg'
 import formaLinha from '../../../assets/ArrowArtLef.svg'
 import iconVideo from '../../../assets/iconVideo.svg'
-import indigenaFuture from '../../../assets/indigenaFuture.svg' 
+import indigenaFuture from '../../../assets/indigenaFuture.svg'
+import baloonWhiteBottom from '../../../assets/baloonWhiteBottom.svg'
+import baloonOrangeTop from '../../../assets/baloonOrangeTop.svg' 
 
 const images = {
     bordabrancaesq,
@@ -31,7 +33,9 @@ const images = {
     seta,
     formaLinha,
     iconVideo,
-    indigenaFuture
+    indigenaFuture,
+    baloonWhiteBottom,
+    baloonOrangeTop
 }
 
 export default images;

@@ -1,13 +1,19 @@
-.containerBoxImage{
-   grid-column: 1 /13;
-   height: 40rem;
-   background-image: url('../../../assets/hatsImage.svg');
-   background-repeat: no-repeat;
-   background-size: cover;
+.containerBoxImage {
+    grid-column: 1 / 13;
+    display: flex;
+    flex-direction: column;
+}
+.containerBoxImage img{
+    width: 100%;
+    overflow: hidden;
 }
 
-.fonte{
-    grid-column: 2 / 11;
-    justify-self: flex-end;
+.footer{
+    display: flex;
+    justify-content: end;
+}
 
+.fonte {
+    height: 30px;
+    margin-right: 10%;
 }

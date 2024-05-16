@@ -1,6 +1,6 @@
 .sanfonaContent{
     grid-column: 1 / 13;
-    height: auto;
+    height:84.62rem ;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-content: flex-start;

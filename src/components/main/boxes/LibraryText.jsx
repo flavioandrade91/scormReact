@@ -63,11 +63,25 @@ export const introducao = {
     texto2: `Texto 2`
 };
 
-export const editorial= {
-        titulo:`Editorial`,
-        texto: `Função de contar histórias, apresentar conceitos e 
+export const whiteBoard= {
+        textTitle01: `Através dos projetos de imagens, sejam eles físicos ou digitais,
+                        as marcas se apresentam para seus consumidores e se conectam com eles.`,
+        title01:`Editorial`,
+        parag01: `Função de contar histórias, apresentar conceitos e 
                 temas através de imagens. Encontrados em em revistas,
-                websites e mídias sociais.`         
+                websites e mídias sociais.`,
+        title02:`Catálogo e lookbook`,
+        parag02:`Utilizado como ferramenta direta de vendas e o lookbook orientado 
+                 para a expressão estilística da marca.`,
+                 
+        title03:`Fotos e-commerce`,
+        parag03:`Relação direta com a experiência do usuário, influenciando 
+                 diretamente as decisões de compra dos consumidores.`,
+
+        title03:`Campanha publicitária`,
+        parag03:`Responsáveis por transmitir a identidade da marca através
+                 de histórias contadas.`
+
 }
 
 export const sanfona = {

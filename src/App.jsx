@@ -5,15 +5,16 @@ import Scorm from './scorm/Scorm';
 import { Header } from './components/header/Header';
 import { Main } from './components/main/Main';
 import { Podcast } from './components/podcast/Podcast';
-import { GrayBox, texto} from './components/main/boxes/GrayBox';
+import { GrayBox, texto } from './components/main/boxes/GrayBox';
 import { SectionBox } from './components/main/boxes/SectionBox';
 import { Sanfona } from './components/main/sanfona/Sanfona';
 import { PurpleBox } from './components/main/boxes/PurpleBox';
-import {ImageBox} from './components/main/boxes/ImageBox';
+import { ImageBox } from './components/main/boxes/ImageBox';
 import VideoPlayer from './components/multimidia/VideoPlayer';
 import { Questionario } from './components/questionario/Questionario';
-import { apresentacao, contexto, introducao, title, sessoes, sanfona, fontes, videos, podcast } from './components/main/boxes/LibraryText';
+import { apresentacao, contexto, introducao, title, sessoes, sanfona, fontes, videos, podcast, whiteBoard } from './components/main/boxes/LibraryText';
 import images from './components/main/boxes/LibraryImgs'
+import { WhiteBox } from './components/main/boxes/WhiteBox';
 
 class App extends Component {
 
@@ -41,47 +42,78 @@ class App extends Component {
             <div class="App">
                 <Header title={title.titulo01} />
                 <Main />
-                <Podcast 
+                <Podcast
                     title={podcast.podcast01.title}
                     curso={podcast.podcast01.curso}
                     unidadde={podcast.podcast01.unidade}
-                    descricao={podcast.podcast01.modulo }
+                    descricao={podcast.podcast01.modulo}
                 />
-                
-                <GrayBox 
-                texto={introducao.texto1}
+
+                <GrayBox
+                    texto={introducao.texto1}
                 />
-                
-                <SectionBox 
-                sessao={sessoes.sassao01}
+
+                <SectionBox
+                    sessao={sessoes.sassao01}
+                    imgTop={images.baloonGray}
+                    imgBottom={images.baloonPurple}
                 />
-                
-                <PurpleBox 
-                texto={sessoes.texto}
+
+                <PurpleBox
+                    texto={sessoes.texto}
                 />
-                
-                <ImageBox 
-                link={fontes.link} 
-                fonte={fontes.text}
+
+                <ImageBox
+                    imagem={images.hatsImage}
+                    link={fontes.link01}
+                    fonte={fontes.text01}
                 />
-                
-                <Sanfona 
-                title={sanfona.title} 
-                text={sanfona.text} 
-                iconImage={images.seta}
-                />                
-                
-                <VideoPlayer 
-                title={videos.video01.title}  
-                descricao={videos.video01.descricao} 
-                url="https://youtu.be/lNORW8z-ftw" 
-                fonte={videos.video01.fonte}
+
+                <Sanfona
+                    title={sanfona.title}
+                    text={sanfona.text}
+                    iconImage={images.seta}
                 />
-                
-                <Questionario/>
-                <SectionBox 
+
+                <VideoPlayer
+                    title={videos.video01.title}
+                    descricao={videos.video01.descricao}
+                    url="https://youtu.be/lNORW8z-ftw"
+                    fonte={videos.video01.fonte}
+                />
+
+                <SectionBox
                     sessao={sessoes.sassao02}
+                    imgTop={images.baloonOrangeTop}
+                    imgBottom={images.baloonWhiteBottom}
                 />
+
+                <WhiteBox
+                    paragTitle={whiteBoard.textTitle01}
+                    editorial={whiteBoard.title01}
+                    parag={whiteBoard.parag01}
+                />
+
+                <VideoPlayer
+                    title={videos.video02.title}
+                    descricao={videos.video02.descricao}
+                    url="https://youtu.be/lNORW8z-ftw"
+                    fonte={videos.video02.fonte}
+                />
+
+                <ImageBox
+                    imagem={images.indigenaFuture}
+                    link={fontes.link02}
+                    fonte={fontes.text02}
+                />
+
+                <WhiteBox
+                    paragTitle={whiteBoard.textTitle01}
+                    editorial={whiteBoard.title01}
+                    parag={whiteBoard.parag01}
+                />
+
+                <Questionario />
             </div>
         );
     }
