@@ -16,6 +16,7 @@ import iconVideo from '../../../assets/iconVideo.svg'
 import indigenaFuture from '../../../assets/indigenaFuture.svg'
 import baloonWhiteBottom from '../../../assets/baloonWhiteBottom.svg'
 import baloonOrangeTop from '../../../assets/baloonOrangeTop.svg' 
+import mulheres from '../../../assets/3mulheres.svg'
 
 const images = {
     bordabrancaesq,
@@ -35,7 +36,8 @@ const images = {
     iconVideo,
     indigenaFuture,
     baloonWhiteBottom,
-    baloonOrangeTop
+    baloonOrangeTop,
+    mulheres
 }
 
 export default images;

@@ -2,7 +2,7 @@
     grid-column: 1 / 13;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    height: 16.25rem;
+    height: auto;
     justify-items: center;
     align-items: center;
 }

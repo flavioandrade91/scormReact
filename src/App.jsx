@@ -12,9 +12,10 @@ import { PurpleBox } from './components/main/boxes/PurpleBox';
 import { ImageBox } from './components/main/boxes/ImageBox';
 import VideoPlayer from './components/multimidia/VideoPlayer';
 import { Questionario } from './components/questionario/Questionario';
-import { apresentacao, contexto, introducao, title, sessoes, sanfona, fontes, videos, podcast, whiteBoard } from './components/main/boxes/LibraryText';
+import { apresentacao, contexto, introducao, title, sessoes, sanfona, fontes, videos, podcast, whiteBox } from './components/main/boxes/LibraryText';
 import images from './components/main/boxes/LibraryImgs'
-import { WhiteBox } from './components/main/boxes/WhiteBox';
+import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox'
+
 
 class App extends Component {
 
@@ -63,6 +64,12 @@ class App extends Component {
                     texto={sessoes.texto}
                 />
 
+                <WhiteBox
+                    data={whiteBox}
+                    start={0}
+                    end={3}
+                />
+
                 <ImageBox
                     imagem={images.hatsImage}
                     link={fontes.link01}
@@ -88,12 +95,6 @@ class App extends Component {
                     imgBottom={images.baloonWhiteBottom}
                 />
 
-                <WhiteBox
-                    paragTitle={whiteBoard.textTitle01}
-                    editorial={whiteBoard.title01}
-                    parag={whiteBoard.parag01}
-                />
-
                 <VideoPlayer
                     title={videos.video02.title}
                     descricao={videos.video02.descricao}
@@ -108,9 +109,28 @@ class App extends Component {
                 />
 
                 <WhiteBox
-                    paragTitle={whiteBoard.textTitle01}
-                    editorial={whiteBoard.title01}
-                    parag={whiteBoard.parag01}
+                    data={whiteBox}
+                    start={3}
+                    end={9}
+                />
+
+                <ImageBox
+                    imagem={images.mulheres}
+                    link={fontes.link03}
+                    fonte={fontes.text03}
+                />
+
+                <WhiteBox
+                    data={whiteBox}
+                    start={9}
+                    end={14}
+                />
+
+                <VideoPlayer
+                    title={videos.video02.title}
+                    descricao={videos.video02.descricao}
+                    url="https://youtu.be/lNORW8z-ftw"
+                    fonte={videos.video02.fonte}
                 />
 
                 <Questionario />
