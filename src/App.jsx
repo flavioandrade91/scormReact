@@ -12,13 +12,14 @@ import { PurpleBox } from './components/main/boxes/PurpleBox';
 import { ImageBox } from './components/main/boxes/ImageBox';
 import VideoPlayer from './components/multimidia/VideoPlayer';
 import { Questionario } from './components/questionario/Questionario';
-import { apresentacao, contexto, introducao, title, sessoes, sanfona, fontes, videos, podcast, whiteBox } from './components/main/boxes/LibraryText';
+import data from './components/main/boxes/Dados';
 import images from './components/main/boxes/LibraryImgs'
 import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox'
 
+const sessoes = data.sessoes[0];
+const podcast = data.podcast[0];
 
 class App extends Component {
-
     constructor(props) {
         super(props);
         Scorm.init();
@@ -41,30 +42,29 @@ class App extends Component {
     render() {
         return (
             <div class="App">
-                <Header title={title.titulo01} />
+                <Header title={data.title} />
                 <Main />
-                <Podcast
-                    title={podcast.podcast01.title}
-                    curso={podcast.podcast01.curso}
-                    unidadde={podcast.podcast01.unidade}
-                    descricao={podcast.podcast01.modulo}
-                />
 
+                <Podcast
+                    title={data.podcast.title}
+                    />
+
+                    {/* 
                 <GrayBox
-                    texto={introducao.texto1}
+                    texto={data.sessoes[1]}
                 />
 
                 <SectionBox
-                    sessao={sessoes.sassao01}
+                    sessao={sessoes.sessao[0]}
                     imgTop={images.baloonGray}
                     imgBottom={images.baloonPurple}
                 />
 
                 <PurpleBox
-                    texto={sessoes.texto}
-                />
+                    texto={sessoes.sessao[1]}
+                /> */}
 
-                <WhiteBox
+                {/* <WhiteBox
                     data={whiteBox}
                     start={0}
                     end={3}
@@ -72,40 +72,40 @@ class App extends Component {
 
                 <ImageBox
                     imagem={images.hatsImage}
-                    link={fontes.link01}
-                    fonte={fontes.text01}
+                    link={}
+                    fonte={}
                 />
 
                 <Sanfona
-                    title={sanfona.title}
-                    text={sanfona.text}
+                    title={}
+                    text={}
                     iconImage={images.seta}
                 />
 
                 <VideoPlayer
-                    title={videos.video01.title}
-                    descricao={videos.video01.descricao}
-                    url="https://youtu.be/lNORW8z-ftw"
-                    fonte={videos.video01.fonte}
+                    title={}
+                    descricao={}
+                    url={}
+                    fonte={}
                 />
 
                 <SectionBox
-                    sessao={sessoes.sassao02}
+                    sessao={}
                     imgTop={images.baloonOrangeTop}
                     imgBottom={images.baloonWhiteBottom}
                 />
 
                 <VideoPlayer
-                    title={videos.video02.title}
-                    descricao={videos.video02.descricao}
-                    url="https://youtu.be/lNORW8z-ftw"
-                    fonte={videos.video02.fonte}
+                    title={}
+                    descricao={}
+                    url={}
+                    fonte={}
                 />
 
                 <ImageBox
                     imagem={images.indigenaFuture}
-                    link={fontes.link02}
-                    fonte={fontes.text02}
+                    link={}
+                    fonte={}
                 />
 
                 <WhiteBox
@@ -116,8 +116,8 @@ class App extends Component {
 
                 <ImageBox
                     imagem={images.mulheres}
-                    link={fontes.link03}
-                    fonte={fontes.text03}
+                    link={}
+                    fonte={}
                 />
 
                 <WhiteBox
@@ -127,13 +127,14 @@ class App extends Component {
                 />
 
                 <VideoPlayer
-                    title={videos.video02.title}
-                    descricao={videos.video02.descricao}
-                    url="https://youtu.be/lNORW8z-ftw"
-                    fonte={videos.video02.fonte}
+                    title={}
+                    descricao={}
+                    url={}
+                    fonte={}
                 />
 
-                <Questionario />
+
+                <Questionario /> */}
             </div>
         );
     }

@@ -72,6 +72,18 @@
             color: #6F2282;
         }
 
+        .textoBox02{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            margin-left: 20px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            align-content: center;
+            color: #6F2282;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
         .curso{
 
         }
@@ -79,7 +91,7 @@
 
         }
         .modulo{
-            
+
         }
 
 

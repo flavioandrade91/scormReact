@@ -62,8 +62,9 @@
     }
     .apresentacao h1{
         text-transform: uppercase;
-        color: #FCBA5A;
         font-weight: 400;
+        color: #FCBA5A;
+        margin-top: 2rem;
     }
     .apresentacao p{
         font-size: 1.25rem;
@@ -472,7 +473,7 @@
         color: #eee;
         text-align: center;
         word-spacing:0px;
-        /* text-indent: 2rem; */
+        text-indent: 2rem;
         margin-bottom: 2rem;
     }
     .contexto h1{
@@ -499,8 +500,6 @@
     }
   }
 
-
-
-
-
-
+.teste{
+    background-color: #FCBA5A;
+}

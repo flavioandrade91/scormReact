@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Main.module.css";
 import imagens from "../main/boxes/LibraryImgs";
-import { introducao, apresentacao, contexto } from "../main/boxes/LibraryText";
+import data from "./boxes/Dados";
 
 export function Main() {
     return (
@@ -32,19 +32,31 @@ export function Main() {
                 <img src={imagens.formaRoxo} alt="Forma Roxo" className={styles.formaroxo} />
                 <div className={styles.introducao}>
                     <div className={styles.apresentacao}>
-                        <h1>{apresentacao.titulo}</h1>
-                        <p>{apresentacao.parag01}</p>
-                        <p>{apresentacao.parag02}</p>
-                        <p>{apresentacao.parag03}</p>
+                        {data.apresentacao.map((item, index) => {
+                            return (
+                                <>
+                                <h1 className={styles.apresentacao}>{item.titulo}</h1>
+                                <p key={index} >
+                                    {item.parag}
+                                </p>
+                                </>
+                            );
+                        })}
                     </div>
 
                     <div className={styles.traco}></div>
 
                     <div className={styles.contexto}>
-                        <h1>{contexto.titulo}</h1>
-                        <p>{contexto.parag01}</p>
-                        <p>{contexto.parag02}</p>
-                        <p>{contexto.parag03}</p>
+                        {data.contexto.map((item, index) => {
+                            return (
+                                <>
+                                <h1 className={styles.contextoTitle}>{item.titulo}</h1>
+                                <p key={index} >
+                                    {item.parag}
+                                </p>
+                                </>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
