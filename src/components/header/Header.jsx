@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Header.module.css';
-import images from '../main/boxes/LibraryImgs'
+import images from '../../components/main/boxes/Images'
 
 export function Header({title}) {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Main.module.css";
-import imagens from "../main/boxes/LibraryImgs";
+import imagens from './boxes/Images';
 import data from "./boxes/Dados";
 
 export function Main() {

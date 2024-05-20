@@ -1,38 +1,31 @@
 import React, { useState, useRef } from "react";
 import styles from './Podcast.module.css'
-import iconMicrofone from '../../assets/iconMicrofone.svg'
-import logoSenai from '../../assets/iconeSenaiPlay.png'
-import { AudioPlayer } from "../multimidia/AudioPlayer";
+import images from '../main/boxes/Images'
+import { AudioPlayer } from '../multimidia/AudioPlayer';
 
-export function Podcast({title}) {
+export function Podcast({ podcasts, id }) {
+    const podcast = podcasts.find(podcast => podcast.id === id);
     return (
         <>
             <section className={styles.podcast}>
-                <div className={styles.podcastcontainer}>
-                    <div className={styles.playercontainer}>
-
-                        <div className={styles.box01}>
-                            <img src={iconMicrofone} alt="" srcset="" />
-                            <p className={styles.textoBox01}>{title}</p>
-                        </div>
-
-                        <div className={styles.box02}>
-                            <img src={logoSenai} alt="" srcset="" />
-
-                            <p className={styles.textoBox02}>Curso Técnico: <b>Técnico em Produção de Moda</b></p>
-                            <p className={styles.textoBox02}>Unidade Curricular: <b>01</b></p>
-                            <p className={styles.textoBox02}>Módulo: <b>Fundamentos da Produção de Moda</b></p>
-
-                        </div>
-
-                        <div className={styles.box03}>
-                            <AudioPlayer />
-                        </div>
-
+                <img className={styles.arrowLeft} src={images.arrowLeft} alt="" />
+                <img className={styles.arrowRigth} src={images.arrowRig} alt="" />
+                
+        {podcast ? (
+                <div className={styles.container}>
+                    <img className={styles.iconPodcast} src={images.iconPodcast} alt="" srcset="" />
+                    <span>PODCAST / {podcast.title}</span>
+                    <img className={styles.logoSenaiPlay}  src={images.logoSenaiPlay} alt="" srcset="" />
+                    <p>
+                    Curso Técnico: <b>Técnico em Produção de Moda</b><br/>
+                    Unidade Curricular: <b>01</b><br/>
+                    Módulo: <b>Fundamentos da Produção de Moda</b><br/>
+                    </p>
+                    <div className={styles.audioPlayer}>
+                    <AudioPlayer/>
                     </div>
-                    <div className={styles.formasDir}></div>
-                    <div className={styles.formasEsq}></div>
                 </div>
+                ):(<p>erro no player</p>)}                    
             </section>
         </>
     );

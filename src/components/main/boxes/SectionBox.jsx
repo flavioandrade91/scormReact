@@ -1,7 +1,8 @@
 import React from "react";
 import styles from './SectionBox.module.css'
 
-export function SectionBox({sessao, imgTop, imgBottom}) {
+export function SectionBox({id, sessoes, imgTop, imgBottom}) {
+    const sessao = sessoes.find(sessao => sessao.id === id);
     return (
         <>
             <section className={styles.SectionBox}>
@@ -10,7 +11,8 @@ export function SectionBox({sessao, imgTop, imgBottom}) {
                 </div>
 
                 <div className={styles.titleImageBox}>
-                    <h1>{sessao}</h1>
+                    {sessao ? (<h1>{sessao.sessao}</h1>):
+                    (<p>Sessao Fora</p>)}
                 </div>
 
                 <div className={styles.baloonPurple}>

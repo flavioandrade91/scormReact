@@ -45,7 +45,8 @@ const data = {
           ],
           introducao: [
             {
-              texto1: `O produtor de moda pode atuar de diversas formas,
+              id:0,
+              texto: `O produtor de moda pode atuar de diversas formas,
                 no desenvolvimento de figurinos para novelas,
                 filmes ou outras produções, stylist criando toda
                 a concepção e atmosfera de apresentação de uma
@@ -57,11 +58,13 @@ const data = {
                 autêntica e alinhada aos seus objetivos.`
             },
             {
-              texto2: 'Texto 2'
+              id:1,
+              texto: ''
             }
           ],
           sessoes: [
             {
+              id:0,
               sessao: 'História',
               texto: `Antes de iniciarmos o estudo sobre os fundamentos da produção
               de moda, vamos compreender um pouco sobre seu contexto histórico
@@ -69,42 +72,50 @@ const data = {
               vez mais espaço.`
             },
             {
+              id:1,
               sessao: 'Projetos de Exposição de Produtos',
               texto: `Visam promover marcas, destacar tendências e capturar a atenção do público,
               podendo ser desenvolvidos em ambientes físicos ou digitais.`
             },
             {
+              id:2,
               sessao: 'Eventos de Moda',
               texto: `Os participantes podem não apenas visualizar as coleções, mas também experimentar
               a estética e a identidade da marca de maneira mais sensorial.`
           },
           {
+            id:3,
             sessao: 'Infraestrutura da Produção de Moda',
             texto: `É possível a criação de experiências envolventes e possibilidades de 
               destacar os produtos de maneira impactante.`
           },
           {
+            id:4,
             sessao: 'Novas Tecnologias Aplicadas a Produção de Moda',
             texto: `São importantes para inovação e criatividade, melhoram a experiência dos consumidores,
               trazem eficiência operacional e possibilitam um maior alcance.`
           },
           {
+            id:5,
             sessao: 'Representações Gráficas dos Projetos',
             texto: `Dentro da produção de moda essas representações são importantes para uma comunicação
               efetiva, visualização de conceitos, planejamento, execução e promoção de projetos.`
           },
           {
+            id:6,
             sessao: 'Elementos da Linguagem Visual',
             texto: `Um meio de comunicação que utiliza elementos visuais para transmitir uma mensagem,
               através de imagens e símbolos.`
           },
           {
+            id:7,
             sessao: 'Briefing',
             texto: `Documento que contém informações essenciais para execução de um projeto, 
               deve ser redigido de maneira sucinta e objetiva. Deve conter objetivo, características
               do cliente, público-alvo, prazos, orçamento, canais de comunicação, referências e inspirações.`
           },
           {
+            id:8,
             sessao: 'Pesquisa Aplicada à Produção de Moda',
             texto: {
               parag1: `A pesquisa pode ser relacionada a uma jornada exploratória, envolvendo leitura, visitação 
@@ -116,6 +127,7 @@ const data = {
             }
           },
           {
+            id:9,
             sessao: 'fechamento do módulo',
             texto: ''
           }
@@ -180,13 +192,63 @@ const data = {
             content: `Objetivo de contar histórias de maneira mais profunda e artística, sendo mais orientado para a narrativa.`
           }
         ],
-        sanfona: {
+
+        sanfona: [
+          {
+          id:0,
           title: 'Anos 20 e 30',
           text: `Ênfase na individualidade e na expressão
-            pessoal na moda, que foi um precursor para
-            o desenvolvimento da produção de moda como
-            a conhecemos hoje.`
-        },
+                 pessoal na moda, que foi um precursor para
+                 o desenvolvimento da produção de moda como
+                 a conhecemos hoje.`
+         },
+         {
+          id:1,
+          title: 'Anos 40 e 50',
+          text: `Depois da   segunda guerra mundial, o mundo
+                 passou por diversas transformações, como a
+                 entrada maciça das mulheres no mercado de 
+                 trabalho, e com isso o surgimento de revistas
+                 exclusivamente voltadas para esse grupo.`
+         },
+         {
+          id:2, 
+          title: 'A partir dos anos 60',
+          text: `Surgimento do prêt-à-porter e a necessidade
+                 de estruturação de equipes de produção de 
+                 moda.`
+         },
+         {
+          id:3,
+          title: 'Anos 80',
+          text: `Ascensão das supermodelos e da fotografia de
+                 moda, contribuindo para a criação de imagens
+                 icônicas.`
+         },
+         {
+          id:4,
+          title: 'Anos 90',
+          text: `Ocorreu a ascensão das top models, inicio da 
+                 conscientização racial nas passarelas e
+                 campanhas publicitárias.`
+         },
+         {
+          id:5,
+          title: 'Anos 2000',
+          text: `A era digital fez com que a internet e depois 
+                 as redes sociais pulverizassem as últimas
+                 tendências e coleções das marcas de moda.`
+         },
+         {
+          id:6,
+          title: 'Atualmente',
+          text: `Abordagem mais sustentável e inclusiva, trazendo
+                 uma conscientização sobre práticas éticas na 
+                 indústria da moda.`
+         },
+      ],
+
+
         fontes: [
           {
             fonte: 'Figura 1 – Revista de Moda da Década de 20. Fonte: da Mari Calegari.',
@@ -229,12 +291,15 @@ const data = {
         ],
         podcast: [
           {
+            id:0,
             title: 'Apresentação da unidade curricular'
           },
           {
+            id:1,
             title: 'Inovações Tecnológicas na Produção de Moda'
           },
           {
+            id:2,
             title: 'Briefing'
           }
         ]

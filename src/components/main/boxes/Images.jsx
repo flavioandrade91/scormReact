@@ -17,6 +17,15 @@ import indigenaFuture from '../../../assets/indigenaFuture.svg'
 import baloonWhiteBottom from '../../../assets/baloonWhiteBottom.svg'
 import baloonOrangeTop from '../../../assets/baloonOrangeTop.svg' 
 import mulheres from '../../../assets/3mulheres.svg'
+import arrowLeft from '../../../assets/ArrowArtLef.svg'
+import arrowRig from '../../../assets/ArrowArtRig.svg'
+import logoSenaiPlay from '../../../assets/IconSenaiPlay.svg'
+import iconPodcast from '../../../assets/iconMicrofone.svg'
+import ImgO1Quest from '../../../assets/Img01Quest.svg'
+import ImgO2Quest from '../../../assets/Img02Quest.svg'
+import ImgO3Quest from '../../../assets/Img03Quest.svg'
+import OK from '../../../assets/Correct.svg'
+import NO from '../../../assets/Wrong.svg'
 
 const images = {
     bordabrancaesq,
@@ -37,7 +46,16 @@ const images = {
     indigenaFuture,
     baloonWhiteBottom,
     baloonOrangeTop,
-    mulheres
+    mulheres,
+    arrowLeft,
+    arrowRig,
+    logoSenaiPlay,
+    iconPodcast,
+    ImgO1Quest,
+    ImgO2Quest,
+    ImgO3Quest,
+    OK,
+    NO
 }
 
 export default images;

@@ -1,11 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Questinario.module.css'
-import flag from '../../assets/IconFlag.svg'
-import ImgO1Quest from '../../assets/Img01Quest.svg'
-import ImgO2Quest from '../../assets/Img02Quest.svg'
-import ImgO3Quest from '../../assets/Img03Quest.svg'
-import OK from '../../assets/Correct.svg'
-import NO from '../../assets/Wrong.svg'
+import images from '../Images';
 
 export function Questionario() {
     const questions = [

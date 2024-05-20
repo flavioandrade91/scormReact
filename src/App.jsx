@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.css'; // Supondo que você tenha um arquivo App.css
 import Learner from './components/Learner';
 import Scorm from './scorm/Scorm';
 import { Header } from './components/header/Header';
-import { Main } from './components/main/Main';
 import { Podcast } from './components/podcast/Podcast';
+import { Main } from './components/main/Main';
 import { GrayBox, texto } from './components/main/boxes/GrayBox';
 import { SectionBox } from './components/main/boxes/SectionBox';
 import { Sanfona } from './components/main/sanfona/Sanfona';
 import { PurpleBox } from './components/main/boxes/PurpleBox';
 import { ImageBox } from './components/main/boxes/ImageBox';
-import VideoPlayer from './components/multimidia/VideoPlayer';
-import { Questionario } from './components/questionario/Questionario';
+// import VideoPlayer from '@components/multimidia/VideoPlayer';
+// import { Questionario } from '@components/questionario/Questionario';
 import data from './components/main/boxes/Dados';
-import images from './components/main/boxes/LibraryImgs'
-import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox'
+import images from './components/main/boxes/Images';
+import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox';
 
-const sessoes = data.sessoes[0];
 const podcast = data.podcast[0];
+const introducao = data.introducao[0];
+const sanfona = data.sanfona[0];
 
 class App extends Component {
     constructor(props) {
@@ -26,115 +27,99 @@ class App extends Component {
         this.state = {
             learnerName: Scorm.getLearnerName(),
             assessment: []
-        }
+        };
     }
 
     finish() {
         Scorm.finish();
     }
 
-    updateAssesment(correct, response) {
+    updateAssessment(correct, response) {
         this.setState({ assessment: this.state.assessment.concat([correct]) });
         Scorm.submitMCQ(correct, response);
     }
 
-
     render() {
         return (
-            <div class="App">
-                <Header title={data.title} />
+            <div className="App">
+                <Header
+                    title={data.title}
+                />
+
                 <Main />
 
                 <Podcast
-                    title={data.podcast.title}
-                    />
-
-                    {/* 
-                <GrayBox
-                    texto={data.sessoes[1]}
+                    podcasts={data.podcast}
+                    id={0}
                 />
 
+                {/* Exemplo de uso dos componentes comentados */}
+
+                <GrayBox
+                    textos={data.introducao}
+                    id={0}
+                />
+
+
                 <SectionBox
-                    sessao={sessoes.sessao[0]}
+                    id={0}
+                    sessoes={data.sessoes}
                     imgTop={images.baloonGray}
                     imgBottom={images.baloonPurple}
                 />
 
                 <PurpleBox
-                    texto={sessoes.sessao[1]}
-                /> */}
+                    textos={data.sessoes}
+                    id={0}
+                />
 
-                {/* <WhiteBox
-                    data={whiteBox}
+                <WhiteBox
+                    data={data.whiteBox}
                     start={0}
                     end={3}
                 />
 
                 <ImageBox
                     imagem={images.hatsImage}
-                    link={}
-                    fonte={}
+                    link="#"
+                    fonte="Source of image"
                 />
-
-                <Sanfona
-                    title={}
-                    text={}
+                {/* {data.sanfonas.map((sanfona, index) => (
+                    <Sanfona
+                        key={sanfona.id}
+                        id={sanfona.id}
+                        sanfonas={data.sanfonas}
+                        iconImage={images.seta}
+                    />
+                ))} */}
+                {/* <Sanfona
+                    id={0}
+                    sanfonas={data.sanfonas}
                     iconImage={images.seta}
-                />
+                /> */}
 
-                <VideoPlayer
-                    title={}
-                    descricao={}
-                    url={}
-                    fonte={}
-                />
+                {/* 
+        <VideoPlayer title="Video Title" descricao="Description" url="video_url" fonte="Source of video" />
 
-                <SectionBox
-                    sessao={}
-                    imgTop={images.baloonOrangeTop}
-                    imgBottom={images.baloonWhiteBottom}
-                />
+        <SectionBox
+          sessao="Another session"
+          imgTop={images.baloonOrangeTop}
+          imgBottom={images.baloonWhiteBottom}
+        />
 
-                <VideoPlayer
-                    title={}
-                    descricao={}
-                    url={}
-                    fonte={}
-                />
+        <VideoPlayer title="Another Video Title" descricao="Another Description" url="another_video_url" fonte="Another Source of video" />
 
-                <ImageBox
-                    imagem={images.indigenaFuture}
-                    link={}
-                    fonte={}
-                />
+        <ImageBox imagem={images.indigenaFuture} link="#" fonte="Another Source of image" />
 
-                <WhiteBox
-                    data={whiteBox}
-                    start={3}
-                    end={9}
-                />
+        <WhiteBox data={data.whiteBox} start={3} end={9} />
 
-                <ImageBox
-                    imagem={images.mulheres}
-                    link={}
-                    fonte={}
-                />
+        <ImageBox imagem={images.mulheres} link="#" fonte="Yet Another Source of image" />
 
-                <WhiteBox
-                    data={whiteBox}
-                    start={9}
-                    end={14}
-                />
+        <WhiteBox data={data.whiteBox} start={9} end={14} />
 
-                <VideoPlayer
-                    title={}
-                    descricao={}
-                    url={}
-                    fonte={}
-                />
+        <VideoPlayer title="Yet Another Video Title" descricao="Yet Another Description" url="yet_another_video_url" fonte="Yet Another Source of video" />
 
-
-                <Questionario /> */}
+        <Questionario /> */}
             </div>
         );
     }

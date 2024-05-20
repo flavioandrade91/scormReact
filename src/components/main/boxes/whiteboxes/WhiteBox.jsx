@@ -1,6 +1,5 @@
 import React from "react";
 import styles from './WhiteBox.module.css';
-import images from '../LibraryImgs';
 
 export function WhiteBox({ data = [], start = 0, end = data.length }) {
   return (
