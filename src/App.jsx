@@ -10,7 +10,7 @@ import { SectionBox } from './components/main/boxes/SectionBox';
 import { Sanfona } from './components/main/sanfona/Sanfona';
 import { PurpleBox } from './components/main/boxes/PurpleBox';
 import { ImageBox } from './components/main/boxes/ImageBox';
-// import VideoPlayer from '@components/multimidia/VideoPlayer';
+import VideoPlayer from './components/multimidia/VideoPlayer';
 // import { Questionario } from '@components/questionario/Questionario';
 import data from './components/main/boxes/Dados';
 import images from './components/main/boxes/Images';
@@ -18,7 +18,7 @@ import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox';
 
 const podcast = data.podcast[0];
 const introducao = data.introducao[0];
-const sanfona = data.sanfona[0];
+const sanfonas = data.sanfonas || [];
 
 class App extends Component {
     constructor(props) {
@@ -73,40 +73,98 @@ class App extends Component {
                     id={0}
                 />
 
+                <ImageBox
+                    id={1}
+                    fontes={data.fontes}
+                    imagem={images.hatsImage}
+                />
+
+                {/* Renderizar as primeiras 3 sanfonas */}
+                <Sanfona
+                    sanfonas={data.sanfonas}
+                    iconImage={images.seta}
+                    start={0}
+                    end={8}
+                />
+
+                <VideoPlayer
+                    id={0}
+                    videos={data.videos}
+                />
+
+
+                <SectionBox
+                    id={1}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonOrangeTop}
+                    imgBottom={images.baloonWhiteBottom}
+                />
+
                 <WhiteBox
                     data={data.whiteBox}
                     start={0}
                     end={3}
                 />
 
-                <ImageBox
-                    imagem={images.hatsImage}
-                    link="#"
-                    fonte="Source of image"
+                <VideoPlayer
+                    id={1}
+                    videos={data.videos}
                 />
-                {/* {data.sanfonas.map((sanfona, index) => (
-                    <Sanfona
-                        key={sanfona.id}
-                        id={sanfona.id}
-                        sanfonas={data.sanfonas}
-                        iconImage={images.seta}
-                    />
-                ))} */}
-                {/* <Sanfona
-                    id={0}
-                    sanfonas={data.sanfonas}
-                    iconImage={images.seta}
-                /> */}
+
+                <ImageBox
+                    id={1}
+                    fontes={data.fontes}
+                    imagem={images.indigenaFuture}
+                />
+
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={3}
+                    end={9}
+                />
+
+                <ImageBox
+                    id={1}
+                    fontes={data.fontes}
+                    imagem={images.mulheres}
+                />
+
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={9}
+                    end={13}
+                />
+
+                <VideoPlayer
+                    id={2}
+                    videos={data.videos}
+                />
+
+
+                <SectionBox
+                    id={2}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonOrangeTop}
+                    imgBottom={images.baloonPurple}
+                />
+
+                <PurpleBox
+                    textos={data.sessoes}
+                    id={1}
+                />
+
+                <VideoPlayer
+                    id={3}
+                    videos={data.videos}
+                />
+                
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={14}
+                    end={16}
+                />
 
                 {/* 
-        <VideoPlayer title="Video Title" descricao="Description" url="video_url" fonte="Source of video" />
-
-        <SectionBox
-          sessao="Another session"
-          imgTop={images.baloonOrangeTop}
-          imgBottom={images.baloonWhiteBottom}
-        />
-
         <VideoPlayer title="Another Video Title" descricao="Another Description" url="another_video_url" fonte="Another Source of video" />
 
         <ImageBox imagem={images.indigenaFuture} link="#" fonte="Another Source of image" />

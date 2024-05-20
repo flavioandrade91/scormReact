@@ -1,6 +1,6 @@
 .videoComponent {
-    font-family: 'Roboto', sans-serif;
     grid-column: 1 / 13;
+    font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 9rem 30rem 3rem;
