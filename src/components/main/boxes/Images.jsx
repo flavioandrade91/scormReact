@@ -28,8 +28,10 @@ import OK from '../../../assets/Correct.svg'
 import NO from '../../../assets/Wrong.svg'
 import manequeins from '../../../assets/manequins.svg'
 import baloonPurpleBottom from '../../../assets/baloonPurpleBottom.svg'
+import baloonPurpleTop from '../../../assets/baloonPurpleTop.svg'
 import baloonWhiteTop from '../../../assets/baloonWhiteTop.svg'
 import desfile from '../../../assets/desfile.svg'
+import BorderTopPurpleLeft from '../../../assets/BorderTopPurpleLeft.svg'
 
 const images = {
     bordabrancaesq,
@@ -63,7 +65,9 @@ const images = {
     manequeins,
     baloonPurpleBottom,
     baloonWhiteTop, 
-    desfile
+    desfile,
+    baloonPurpleTop,
+    BorderTopPurpleLeft
 }
 
 export default images;

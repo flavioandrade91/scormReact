@@ -11,15 +11,12 @@ import { Sanfona } from './components/main/sanfona/Sanfona';
 import { PurpleBox } from './components/main/boxes/PurpleBox';
 import { ImageBox } from './components/main/boxes/ImageBox';
 import VideoPlayer from './components/multimidia/VideoPlayer';
+import { questionarios } from './components/questionario/BancoQuestoes'
 import { Questionario } from './components/questionario/Questionario';
 import data from './components/main/boxes/Dados';
 import images from './components/main/boxes/Images';
 import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox';
 import { ImagemArtigo } from './components/main/boxes/ImagemArtigo';
-
-const podcast = data.podcast[0];
-const introducao = data.introducao[0];
-const sanfonas = data.sanfonas || [];
 
 class App extends Component {
     constructor(props) {
@@ -157,6 +154,7 @@ class App extends Component {
                 <VideoPlayer
                     id={3}
                     videos={data.videos}
+                    border={images.BorderTopPurpleLeft}
                 />
 
                 <WhiteBox
@@ -198,21 +196,41 @@ class App extends Component {
                     imagem={images.desfile}
                 />
 
-                <Questionario />
-                {/* 
-        <VideoPlayer title="Another Video Title" descricao="Another Description" url="another_video_url" fonte="Another Source of video" />
+                <Questionario questions={questionarios.questionario1} />
 
-        <ImageBox imagem={images.indigenaFuture} link="#" fonte="Another Source of image" />
+                <SectionBox
+                    id={4}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonPurpleTop}
+                    imgBottom={images.baloonPurpleBottom}
+                />
+                <PurpleBox
+                    textos={data.sessoes}
+                    id={4}
+                />
+                <SectionBox
+                    id={5}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonPurpleTop}
+                    imgBottom={images.baloonPurpleBottom}
+                />
+                <PurpleBox
+                    textos={data.sessoes}
+                    id={5}
+                />
 
-        <WhiteBox data={data.whiteBox} start={3} end={9} />
-
-        <ImageBox imagem={images.mulheres} link="#" fonte="Yet Another Source of image" />
-
-        <WhiteBox data={data.whiteBox} start={9} end={14} />
-
-        <VideoPlayer title="Yet Another Video Title" descricao="Yet Another Description" url="yet_another_video_url" fonte="Yet Another Source of video" />
-*/}
-     
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={21}
+                    end={25}
+                />
+                <Podcast
+                    podcasts={data.podcast}
+                    id={1}
+                />
+                <Questionario 
+                    questions={questionarios.questionario2} 
+                />
             </div>
         );
     }

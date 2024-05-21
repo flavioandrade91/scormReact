@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 import styles from './VideoPlayer.module.css';
 import images from '../main/boxes/Images';
 
-function VideoPlayer({ id, videos }) {
+function VideoPlayer({ id, videos, border}) {
     const video = videos && videos.find(video => video.id === id);
 
     return (
@@ -11,6 +11,7 @@ function VideoPlayer({ id, videos }) {
             {video ? (
                 <>
                     <img className={styles.formaLinha} src={images.formaLinha} alt="" />
+                    <img className={styles.borda} src={border} alt="" />
                     <div className={styles.playerHeader}>
                         <img src={images.iconVideo} alt="" />
                         <div className={styles.playerTitle}>
