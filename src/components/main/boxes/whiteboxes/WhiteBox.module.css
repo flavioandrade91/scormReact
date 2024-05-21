@@ -1,6 +1,7 @@
 .whiteBoxContent {
     grid-column: 1 / 13;
     display: grid;
+    height: auto;
     grid-template-columns: repeat(12, 1fr);
     height: auto;
     justify-items: center;

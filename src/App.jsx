@@ -11,10 +11,11 @@ import { Sanfona } from './components/main/sanfona/Sanfona';
 import { PurpleBox } from './components/main/boxes/PurpleBox';
 import { ImageBox } from './components/main/boxes/ImageBox';
 import VideoPlayer from './components/multimidia/VideoPlayer';
-// import { Questionario } from '@components/questionario/Questionario';
+import { Questionario } from './components/questionario/Questionario';
 import data from './components/main/boxes/Dados';
 import images from './components/main/boxes/Images';
 import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox';
+import { ImagemArtigo } from './components/main/boxes/ImagemArtigo';
 
 const podcast = data.podcast[0];
 const introducao = data.introducao[0];
@@ -157,13 +158,47 @@ class App extends Component {
                     id={3}
                     videos={data.videos}
                 />
-                
+
                 <WhiteBox
                     data={data.whiteBox}
-                    start={14}
-                    end={16}
+                    start={13}
+                    end={15}
                 />
 
+                <ImagemArtigo
+                    imagem={images.manequeins}
+                />
+
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={15}
+                    end={17}
+                />
+
+                <SectionBox
+                    id={3}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonWhiteTop}
+                    imgBottom={images.baloonPurpleBottom}
+                />
+
+                <PurpleBox
+                    textos={data.sessoes}
+                    id={2}
+                />
+
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={17}
+                    end={21}
+                />
+                <ImageBox
+                    id={1}
+                    fontes={data.fontes}
+                    imagem={images.desfile}
+                />
+
+                <Questionario />
                 {/* 
         <VideoPlayer title="Another Video Title" descricao="Another Description" url="another_video_url" fonte="Another Source of video" />
 
@@ -176,8 +211,8 @@ class App extends Component {
         <WhiteBox data={data.whiteBox} start={9} end={14} />
 
         <VideoPlayer title="Yet Another Video Title" descricao="Yet Another Description" url="yet_another_video_url" fonte="Yet Another Source of video" />
-
-        <Questionario /> */}
+*/}
+     
             </div>
         );
     }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Questinario.module.css'
-import images from '../Images';
+import images from '../main/boxes/Images';
 
 export function Questionario() {
     const questions = [
@@ -63,7 +63,7 @@ export function Questionario() {
             </div>
             <div className={styles.flagBox}>
                 <div className={styles.flag}>
-                    <img src={flag} alt="" />
+                    <img src={images.flag} alt="" />
                 </div>
             </div>
         </section>
@@ -79,15 +79,15 @@ export function Questionario() {
             </span>
             <div className={styles.boxImages}>
                 <div className={styles.images}>
-                    <img src={ImgO1Quest} alt="" />
+                    <img src={images.ImgO1Quest} alt="" />
                     <span>1</span>
                 </div>
                 <div className={styles.images}>
-                    <img src={ImgO2Quest} alt="" />
+                    <img src={images.ImgO2Quest} alt="" />
                     <span>2</span>
                 </div>
                 <div className={styles.images}>
-                    <img src={ImgO3Quest} alt="" />
+                    <img src={images.ImgO3Quest} alt="" />
                     <span>3</span>
                 </div>
             </div>
@@ -121,7 +121,7 @@ export function Questionario() {
                 </form>
                 {showModal && (
                     <div className={styles.modal}>
-                        <img src={isCorrectAnswer ? OK : NO} alt={isCorrectAnswer ? "Correto" : "Errado"} />
+                        <img src={isCorrectAnswer ? images.OK : images.NO} alt={isCorrectAnswer ? "Correto" : "Errado"} />
                     </div>
                 )}
             </div>

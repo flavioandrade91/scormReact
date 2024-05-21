@@ -1,0 +1,10 @@
+.ImagemArtigo{
+    grid-column: 4 / 10;
+    height: auto;
+    display: grid;
+}
+
+.ImagemArtigo img {    
+    width: 100%;
+    overflow: hidden;
+}

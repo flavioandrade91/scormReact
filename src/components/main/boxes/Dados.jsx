@@ -64,7 +64,7 @@ const data = {
           ],
           sessoes: [
             {
-              id:0,
+              id: 0,
               sessao: 'História',
               texto: `Antes de iniciarmos o estudo sobre os fundamentos da produção
               de moda, vamos compreender um pouco sobre seu contexto histórico
@@ -72,287 +72,340 @@ const data = {
               vez mais espaço.`
             },
             {
-              id:1,
+              id: 1,
               sessao: 'Projetos de Imagens',
               texto: `Visam promover marcas, destacar tendências e capturar a atenção do público,
               podendo ser desenvolvidos em ambientes físicos ou digitais.`
             },
             {
-              id:2,
+              id: 2,
               sessao: 'Projetos de Exposição de Produtos',
               texto: `Os participantes podem não apenas visualizar as coleções, mas também experimentar
               a estética e a identidade da marca de maneira mais sensorial.`
-          },
-          {
-            id:3,
-            sessao: 'Infraestrutura da Produção de Moda',
-            texto: `É possível a criação de experiências envolventes e possibilidades de 
+            },
+            {
+              id: 3,
+              sessao: 'Eventos de Moda',
+              texto: `Os participantes podem não apenas visualizar as coleções, mas também experimentar a estética e a identidade da marca de maneira mais sensorial.`
+            },
+            {
+              id: 4,
+              sessao: 'Infraestrutura da Produção de Moda',
+              texto: `É possível a criação de experiências envolventes e possibilidades de 
               destacar os produtos de maneira impactante.`
-          },
-          {
-            id:4,
-            sessao: 'Novas Tecnologias Aplicadas a Produção de Moda',
-            texto: `São importantes para inovação e criatividade, melhoram a experiência dos consumidores,
+            },
+            {
+              id: 5,
+              sessao: 'Novas Tecnologias Aplicadas a Produção de Moda',
+              texto: `São importantes para inovação e criatividade, melhoram a experiência dos consumidores,
               trazem eficiência operacional e possibilitam um maior alcance.`
-          },
-          {
-            id:5,
-            sessao: 'Representações Gráficas dos Projetos',
-            texto: `Dentro da produção de moda essas representações são importantes para uma comunicação
+            },
+            {
+              id: 6,
+              sessao: 'Representações Gráficas dos Projetos',
+              texto: `Dentro da produção de moda essas representações são importantes para uma comunicação
               efetiva, visualização de conceitos, planejamento, execução e promoção de projetos.`
-          },
-          {
-            id:6,
-            sessao: 'Elementos da Linguagem Visual',
-            texto: `Um meio de comunicação que utiliza elementos visuais para transmitir uma mensagem,
+            },
+            {
+              id: 7,
+              sessao: 'Elementos da Linguagem Visual',
+              texto: `Um meio de comunicação que utiliza elementos visuais para transmitir uma mensagem,
               através de imagens e símbolos.`
-          },
-          {
-            id:7,
-            sessao: 'Briefing',
-            texto: `Documento que contém informações essenciais para execução de um projeto, 
+            },
+            {
+              id: 8,
+              sessao: 'Briefing',
+              texto: `Documento que contém informações essenciais para execução de um projeto, 
               deve ser redigido de maneira sucinta e objetiva. Deve conter objetivo, características
               do cliente, público-alvo, prazos, orçamento, canais de comunicação, referências e inspirações.`
-          },
-          {
-            id:8,
-            sessao: 'Pesquisa Aplicada à Produção de Moda',
-            texto: {
-              parag1: `A pesquisa pode ser relacionada a uma jornada exploratória, envolvendo leitura, visitação 
+            },
+            {
+              id: 9,
+              sessao: 'Pesquisa Aplicada à Produção de Moda',
+              texto: {
+                parag1: `A pesquisa pode ser relacionada a uma jornada exploratória, envolvendo leitura, visitação 
                 ou observação, e sempre obtida através do registro de tais informações. Proporciona insights
                 que orientam o desenvolvimento de conceitos, estilos e narrativas visuais.`,
-              parag2: `Existem diversos tipos de pesquisa, como pesquisa de comportamento, mercado, tendências, tema 
+                parag2: `Existem diversos tipos de pesquisa, como pesquisa de comportamento, mercado, tendências, tema 
                 e tecnologia. Podem ser realizadas utilizando diversos métodos e técnicas, podendo ser registradas
                 através de caderno de tendências, painel de inspiração ou sketchbook.`
+              }
+            },
+            {
+              id: 10,
+              sessao: 'fechamento do módulo',
+              texto: ''
             }
-          },
-          {
-            id:9,
-            sessao: 'fechamento do módulo',
-            texto: ''
-          }
-        ],
+          ],
+          
         whiteBox: [
           {
+            id: 0,
             type: 'textTitle01',
-            content: `Através dos projetos de imagens, sejam eles físicos ou digitais,
-              as marcas se apresentam para seus consumidores e se conectam com eles.`
+            content: `Através dos projetos de imagens, sejam eles físicos ou digitais, as marcas se apresentam para seus consumidores e se conectam com eles.`
           },
           {
+            id: 1,
             type: 'title',
             content: 'Editorial'
           },
           {
+            id: 2,
             type: 'parag',
-            content: `Função de contar histórias, apresentar conceitos e 
-              temas através de imagens. Encontrados em revistas,
-              websites e mídias sociais.`
+            content: `Função de contar histórias, apresentar conceitos e temas através de imagens. Encontrados em revistas, websites e mídias sociais.`
           },
           {
+            id: 3,
             type: 'title',
             content: 'Catálogo e lookbook'
           },
           {
+            id: 4,
             type: 'parag',
-            content: `Utilizado como ferramenta direta de vendas e o lookbook orientado 
-              para a expressão estilística da marca.`
+            content: `Utilizado como ferramenta direta de vendas e o lookbook orientado para a expressão estilística da marca.`
           },
           {
+            id: 5,
             type: 'title',
             content: 'Fotos e-commerce'
           },
           {
+            id: 6,
             type: 'parag',
-            content: `Relação direta com a experiência do usuário, influenciando 
-              diretamente as decisões de compra dos consumidores.`
+            content: `Relação direta com a experiência do usuário, influenciando diretamente as decisões de compra dos consumidores.`
           },
           {
+            id: 7,
             type: 'title',
             content: 'Campanha publicitária'
           },
           {
+            id: 8,
             type: 'parag',
-            content: `Responsáveis por transmitir a identidade da marca através
-              de histórias contadas.`
+            content: `Responsáveis por transmitir a identidade da marca através de histórias contadas.`
           },
           {
+            id: 9,
             type: 'title',
             content: 'Vídeo publicitário'
           },
           {
+            id: 10,
             type: 'parag',
             content: `Centrados na promoção de produtos para impulsionar as vendas e comunicar sobre os produtos disponíveis.`
           },
           {
+            id: 11,
             type: 'title',
             content: 'Fashion filme'
           },
           {
+            id: 12,
             type: 'parag',
             content: `Objetivo de contar histórias de maneira mais profunda e artística, sendo mais orientado para a narrativa.`
           },
           {
+            id: 13,
             type: 'title',
             content: `Vitrine`
           },
           {
+            id: 14,
             type: 'parag',
-            content: `Objetivo de atrair a atenção das pessoas, comunicar a identidade da marca, exibir produtos-chave e incentivar a entrada dos consumidores na loja. de contar histórias de maneira mais profunda e artística, sendo mais orientado para a narrativa.`
+            content: `Objetivo de atrair a atenção das pessoas, comunicar a identidade da marca, exibir produtos-chave e incentivar a entrada dos consumidores na loja.`
           },
           {
+            id: 15,
             type: 'title',
             content: `Showroom`
           },
           {
+            id: 16,
             type: 'parag',
             content: `Ambiente mais íntimo e estratégico para apresentar coleções e interagir com compradores.`
           },
           {
+            id: 17,
             type: 'title',
             content: `Feira`
           },
           {
+            id: 18,
             type: 'parag',
-            content: `Oferecem um ambiente favorável para a cosntrução de relacionamentos gerando oportunidades de negócios.s íntimo e estratégico para apresentar coleções e interagir com compradores.ivo de atrair a atenção das pessoas, comunicar a identidade da marca, exibir produtos-chave e incentivar a entrada dos consumidores na loja. de contar histórias de maneira mais profunda e artística, sendo mais orientado para a narrativa.`
+            content: `Oferecem um ambiente favorável para a construção de relacionamentos gerando oportunidades de negócios.`
           },
           {
+            id: 19,
             type: 'title',
             content: `Desfiles`
           },
           {
+            id: 20,
             type: 'parag',
-            content: `Uma maneira de expressão artística, onde através da música, iluminação, cenografia e as roupas se cria uma experiência para envolver os espectadores.ecem um ambiente favorável para a cosntrução de relacionamentos gerando oportunidades de negócios.s íntimo e estratégico para apresentar coleções e interagir com compradores.ivo de atrair a atenção das pessoas, comunicar a identidade da marca, exibir produtos-chave e incentivar a entrada dos consumidores na loja. de contar histórias de maneira mais profunda e artística, sendo mais orientado para a narrativa.`
+            content: `Uma maneira de expressão artística, onde através da música, iluminação, cenografia e as roupas se cria uma experiência para envolver os espectadores.`
           },
           {
+            id: 21,
             type: 'title',
             content: `Projetos de imagem`
           },
           {
+            id: 22,
             type: 'parag',
             content: `Realidade aumentada, permitindo que os realizem experimentações virtuais de roupas, maquiagens e acessórios antes da compra. Inteligência artificial traz maior agilidade e automatização para os processos de edição de imagens. Imagens 360° e a realidade virtual, possibilitam uma experiência mais imersiva tanto de produtos como ambientes.`
           },
           {
+            id: 23,
             type: 'title',
             content: `Projetos de exposição de produtos`
           },
           {
+            id: 24,
             type: 'parag',
-            content: `QR Codes interativos nas vitrines, utilização de  tecnologia NFC em etiquetas com a finalidade de fornecer informações detalhadas,  projeções  mapeadas, que transformam qualquer superfície em telas de mídia, sensores de movimento para criar interatividade em displays, softwares e aplicativos para criar modelos e ambientes virtuais.`
+            content: `QR Codes interativos nas vitrines, utilização de tecnologia NFC em etiquetas com a finalidade de fornecer informações detalhadas, projeções mapeadas, que transformam qualquer superfície em telas de mídia, sensores de movimento para criar interatividade em displays, softwares e aplicativos para criar modelos e ambientes virtuais.`
           },
           {
+            id: 25,
             type: 'title',
             content: ``
           },
           {
+            id: 26,
             type: 'parag',
             content: `Dentro da produção de moda essas representações são importantes para uma comunicação efetiva, visualização de conceitos, planejamento, execução e promoção de projetos.`
           },
           {
+            id: 27,
             type: 'title',
             content: ``
           },
           {
+            id: 28,
             type: 'parag',
             content: `Um meio de comunicação que utiliza elementos visuais para transmitir uma mensagem, através de imagens e símbolos.`
           },
           {
+            id: 29,
             type: 'title',
             content: `Relação entre o todo e as partes`
           },
           {
+            id: 30,
             type: 'parag',
             content: `Influencia a criação de composições que são visualmente eficazes e funcionalmente coerentes.`
           },
           {
+            id: 31,
             type: 'title',
             content: `Perspectiva`
           },
           {
+            id: 32,
             type: 'parag',
             content: `Utilizado para representar a tridimensionalidade. A linha do horizonte representa o nível dos olhos de um observador, em uma paisagem ela separa o céu e a terra.`
           },
           {
+            id: 33,
             type: 'title',
             content: `Proporção`
           },
           {
+            id: 34,
             type: 'parag',
             content: `Possibilita estabelecer uma hierarquia visual dentro de uma composição.`
           },
           {
+            id: 35,
             type: 'title',
             content: `Escala`
           },
           {
+            id: 36,
             type: 'parag',
             content: `Relação entre a medida de objetos representados visualmente e a medida real do que está sendo representado.`
           },
           {
+            id: 37,
             type: 'title',
             content: `Dimensão`
           },
           {
+            id: 38,
             type: 'parag',
             content: `Garante profundidade, onde objetos mais próximos parecem maior e mais distantes menor.`
           },
           {
+            id: 39,
             type: 'title',
             content: `Peso visual`
           },
           {
+            id: 40,
             type: 'parag',
             content: `Capacidade de deter a atenção ao ponto desejado atraindo ou repelindo as demais representações que se localizam próximas ao campo de composição.`
           },
           {
+            id: 41,
             type: 'title',
             content: `Textura`
           },
           {
+            id: 42,
             type: 'parag',
             content: `Projetar a sensação e o sentido tátil das superfícies dos objetos, simulando texturas táteis.`
           },
           {
+            id: 43,
             type: 'title',
             content: `Luz e sombra`
           },
           {
+            id: 44,
             type: 'parag',
             content: `Responsáveis por determinar o volume dos objetos.`
           },
           {
+            id: 45,
             type: 'title',
             content: `Linha`
           },
           {
+            id: 46,
             type: 'parag',
             content: `Quando os pontos estão alinhados e próximos entre si, sendo impossível a identificação individual de cada um deles.`
           },
           {
+            id: 47,
             type: 'title',
             content: `Forma`
           },
           {
+            id: 48,
             type: 'parag',
             content: `Surge a partir de uma linha.`
           },
           {
+            id: 49,
             type: 'title',
             content: ``
           },
           {
+            id: 50,
             type: 'parag',
             content: `A pesquisa pode ser relacionada a uma jornada exploratória, envolvendo leitura, visitação ou observação, e sempre obtida através do registro de tais informações. Proporciona insights que orientam o desenvolvimento de conceitos, estilos e narrativas visuais.`
           },
           {
+            id: 51,
             type: 'title',
             content: ``
           },
           {
+            id: 52,
             type: 'parag',
             content: `Existem diversos tipos de pesquisa, como pesquisa de comportamento, mercado, tendências, tema e tecnologia. Podem ser realizadas utilizando diversos métodos e técnicas, podendo ser registradas através de caderno de tendências, painel de inspiração ou sketchbook.`
           },
-
         ],
+        
 
         sanfonas: [
           {

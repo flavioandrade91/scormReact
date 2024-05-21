@@ -26,6 +26,10 @@ import ImgO2Quest from '../../../assets/Img02Quest.svg'
 import ImgO3Quest from '../../../assets/Img03Quest.svg'
 import OK from '../../../assets/Correct.svg'
 import NO from '../../../assets/Wrong.svg'
+import manequeins from '../../../assets/manequins.svg'
+import baloonPurpleBottom from '../../../assets/baloonPurpleBottom.svg'
+import baloonWhiteTop from '../../../assets/baloonWhiteTop.svg'
+import desfile from '../../../assets/desfile.svg'
 
 const images = {
     bordabrancaesq,
@@ -55,7 +59,11 @@ const images = {
     ImgO2Quest,
     ImgO3Quest,
     OK,
-    NO
+    NO,
+    manequeins,
+    baloonPurpleBottom,
+    baloonWhiteTop, 
+    desfile
 }
 
 export default images;
