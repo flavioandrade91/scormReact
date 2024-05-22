@@ -17,6 +17,7 @@ import data from './components/main/boxes/Dados';
 import images from './components/main/boxes/Images';
 import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox';
 import { ImagemArtigo } from './components/main/boxes/ImagemArtigo';
+import { CardsBox } from './components/main/boxes/CardsBox';
 
 class App extends Component {
     constructor(props) {
@@ -231,6 +232,7 @@ class App extends Component {
                 <Questionario 
                     questions={questionarios.questionario2} 
                 />
+                <CardsBox/>
             </div>
         );
     }
