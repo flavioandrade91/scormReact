@@ -518,7 +518,23 @@ const data = {
       id: 2,
       title: 'Briefing'
     }
-  ]
+  ],
+  cards: [
+    {
+        id: 0,
+        box: [
+            { id: 1, content: 'Recursos' },
+            { id: 2, content: 'Exposição de produtos' },
+            { id: 3, content: 'Projetos de Imagem' }
+        ],
+        text: [
+            { id: 1, content: 'Cada um com uma funcionalidade diferente, que se adequa a finalidade desejada.' },
+            { id: 2, content: 'Manequins e bases, elementos decorativos, iluminação, planos de fundo, adesivos e decalques, ganchos, fitas adesivas, ferramentas de corte e materiais sazonais que são selecionados de acordo com eventos específicos ou estações do ano.' },
+            { id: 3, content: 'Equipamentos e estúdios fotográficos, roupas e acessórios, fundo infinito, equipamentos de iluminação e modelos profissionais. Eventos de moda: stands de exposição, mesas, prateleiras, módulos ajustáveis, estantes expansíveis e bancadas versáteis.' }
+        ]
+    },
+    // Outros cards podem ser adicionados aqui
+]
 };
 
 export default data;

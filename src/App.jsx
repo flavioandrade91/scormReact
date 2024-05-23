@@ -232,7 +232,9 @@ class App extends Component {
                 <Questionario 
                     questions={questionarios.questionario2} 
                 />
-                <CardsBox/>
+              <CardsBox id={1} textId={1} cards={data.cards} />
+              <CardsBox id={2} textId={2} cards={data.cards} />
+              <CardsBox id={3} textId={3} cards={data.cards} />
             </div>
         );
     }

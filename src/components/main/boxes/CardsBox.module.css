@@ -1,51 +1,40 @@
 .cardContainer {
     grid-column: 1/13;
-    background-color: aquamarine;
     height: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-
+    margin-top: 3rem;
 }
 
 .cardsBox {
     grid-column: 4 / 10;
-    height: 10rem;
-    margin: 5rem 0;
-    background-color: #eeeeee;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 5.3rem 6.8rem;
+    grid-template-rows: auto auto;
     justify-items: stretch;
     align-items: center;
 }
 
-.cardBox1 {
-    grid-column: 1/ 2;
+.cardBox {
     height: 5.3rem;
-    background-color: #6F2282;
-}
-
-.cardBox1, .cardBox2, .cardBox3 span{
-    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Text color */
     font-size: 2rem;
     text-align: center;
 }
 
-.cardBox2 {
-    grid-column: 2 / 3;
-    height: 5.3rem;
-    background-color: #CCCCCC;
-}
-
-.cardBox3 {
-    grid-column: 3 / 4;  
-    height: 5.3rem;
-    background-color: #CCCCCC;
-}
-
 .cardContent {
+    grid-column: 1 / 4;
     height: 6rem;
-    width: 100%;
     margin: 0;
+    text-align: center;
     color: #000000;
+}
+
+
+.ativo{
+    background-color: #6F2282;
 }
