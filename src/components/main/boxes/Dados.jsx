@@ -457,6 +457,36 @@ const data = {
          uma conscientização sobre práticas éticas na 
          indústria da moda.`
     },
+    {
+      id: 7,
+      title: 'Ilustração para styling de moda',
+      text: `Comunicar visualmente o estilo desejado para a produção de moda.`
+    },
+    {
+      id: 8,
+      title: 'Projetos de exposição',
+      text: `facilitar a comunicação e implementação do projeto, auxiliando na tomada de decisões e   fornecendo um panorama geral dos resultados que serão alcançados.`
+    },
+    {
+      id: 9,
+      title: 'Projetos de desfile',
+      text: `Comunicação clara da visão criativa para o desfile. Incluindo a seleção de peças, paleta de cores, estilos e a atmosfera desejada.`
+    },
+    {
+      id: 10,
+      title: 'Projetos de visual merchandisign',
+      text: `Criar uma experiência visual atrativa para os consumidores, onde o foco deve ser no destaque para os produtos com a finalidade de incentivar as vendas..`
+    },
+    {
+      id: 11,
+      title: 'Projetos de vitrine 3D',
+      text: `Os elementos das vitrines são apresentados de modo tridimensional, possibilita uma   apresentação mais realista que representem de fato como a vitrine ficará ao final.`
+    },
+    {
+      id: 11,
+      title: 'Storyboard',
+      text: `Serve para visualizar e planejar narrativas visuais, sequências de eventos, poses de modelos e detalhes de vestuário.`
+    },
   ],
   fontes: [
     {
@@ -523,17 +553,30 @@ const data = {
     {
         id: 0,
         box: [
-            { id: 1, content: 'Recursos' },
-            { id: 2, content: 'Exposição de produtos' },
-            { id: 3, content: 'Projetos de Imagem' }
+            { id: 0, content: 'Recursos' }
         ],
         text: [
-            { id: 1, content: 'Cada um com uma funcionalidade diferente, que se adequa a finalidade desejada.' },
-            { id: 2, content: 'Manequins e bases, elementos decorativos, iluminação, planos de fundo, adesivos e decalques, ganchos, fitas adesivas, ferramentas de corte e materiais sazonais que são selecionados de acordo com eventos específicos ou estações do ano.' },
-            { id: 3, content: 'Equipamentos e estúdios fotográficos, roupas e acessórios, fundo infinito, equipamentos de iluminação e modelos profissionais. Eventos de moda: stands de exposição, mesas, prateleiras, módulos ajustáveis, estantes expansíveis e bancadas versáteis.' }
+            { id: 0, content: 'Cada um com uma funcionalidade diferente, que se adequa a finalidade desejada.' }
         ]
     },
-    // Outros cards podem ser adicionados aqui
+    {
+        id: 1,
+        box: [
+            { id: 0, content: 'Exposição de produtos' },
+        ],
+        text: [
+            { id: 0, content: 'Manequins e bases, elementos decorativos, iluminação, planos de fundo, adesivos e decalques, ganchos, fitas adesivas, ferramentas de corte e materiais sazonais que são selecionados de acordo com eventos específicos ou estações do ano.' },
+        ]
+    },
+    {
+        id: 2,
+        box: [
+            { id: 0, content: 'Projetos de Imagem' }
+        ],
+        text: [
+            { id: 0, content: 'Equipamentos e estúdios fotográficos, roupas e acessórios, fundo infinito, equipamentos de iluminação e modelos profissionais. Eventos de moda: stands de exposição, mesas, prateleiras, módulos ajustáveis, estantes expansíveis e bancadas versáteis.' }
+        ]
+    },
 ]
 };
 

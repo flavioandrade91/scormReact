@@ -1,0 +1,8 @@
+.artigoContent{
+    grid-column: 2 / 12;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: aqua;
+}

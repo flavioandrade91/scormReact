@@ -1,19 +1,104 @@
-.containerBoxImage {
-    grid-column: 1 / 13;
-    display: flex;
-    flex-direction: column;
-}
-.containerBoxImage img{
-    width: 100%;
-    overflow: hidden;
+/* Estilos para telas grandes */
+@media (min-width: 1200px) {
+    .containerBoxImage {
+        grid-column: 1 / 13;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerBoxImage img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+    }
+    .fonte {
+        height: 30px;
+        margin-right: 10%;
+    }
 }
 
-.footer{
-    display: flex;
-    justify-content: end;
+/* Estilos para telas médias */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .containerBoxImage {
+        grid-column: 1 / 13;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerBoxImage img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+    }
+    .fonte {
+        height: 30px;
+        margin-right: 10%;
+    }
 }
 
-.fonte {
-    height: 30px;
-    margin-right: 10%;
+/* Estilos para telas pequenas */
+@media (max-width: 992px) and (min-width: 768px) {
+    .containerBoxImage {
+        grid-column: 1 / 13;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerBoxImage img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+    }
+    .fonte {
+        height: 30px;
+        margin-right: 10%;
+    }
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) and (min-width: 576px) {
+    .containerBoxImage {
+        grid-column: 1 / 13;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerBoxImage img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+    }
+    .fonte {
+        height: 30px;
+        margin-right: 10%;
+    }
+}
+
+/* Estilos para telas extra pequenas */
+@media (max-width: 576px) and (min-width: 320px) {
+    .containerBoxImage {
+        grid-column: 1 / 13;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerBoxImage img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+    }
+    .fonte {
+        height: 30px;
+        margin-right: 10%;
+    }
 }

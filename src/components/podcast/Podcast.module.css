@@ -1,71 +1,364 @@
-.podcast{
-    grid-column: 1 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: #FCBA5A; 
-    align-items: center;
-    box-sizing: border-box;
-}
-.arrowLeft{
-    grid-column: 1 / 2;
-    justify-self: stretch;
-    width:6rem;
-    justify-self: start;
-}    
+/* Estilos para telas grandes */
+@media (min-width: 1200px) {
+    .podcast {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: #FCBA5A; 
+        align-items: center;
+        box-sizing: border-box;
+    }
 
-.arrowRigth{
-    grid-column: 12 / 13;
-    justify-self: stretch;
-    width:6rem;
-    justify-self: end;
-}
-.container{
-    grid-column: 4 / 10;
-    grid-row: 1;    
-    display: grid;
-    /* width: 50rem; */
-    grid-template-columns: 6rem 6rem 1fr;
-    grid-template-rows: 6rem 6rem 6rem;
-    border: 2px solid purple;
-    
+    .arrowLeft {
+        grid-column: 1 / 2;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: start;
+    }
+
+    .arrowRigth {
+        grid-column: 12 / 13;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: end;
+    }
+
+    .container {
+        grid-column: 4 / 10;
+        grid-row: 1;    
+        display: grid;
+        grid-template-columns: 6rem 6rem 1fr;
+        grid-template-rows: 6rem 6rem 6rem;
+        border: 2px solid purple;
+    }
+
+    .iconPodcast {
+        grid-column: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logoSenaiPlay {
+        grid-column: 2;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .audioPlayer {
+        grid-column: 1 / 6;
+        grid-row: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container span {
+        font-family: 'Roboto', sans-serif;
+        grid-column: 2 / 6;
+        margin-left: 2rem;
+        align-self: center;
+        font-weight: bold;
+        color: #6F2282;
+        font-size: 1.25rem;
+    }
+
+    .container p {
+        grid-column: 3 / 4;
+        grid-row: 2;
+        align-self: stretch;
+        color: #6F2282;
+        padding-left: 2rem;
+    }
 }
 
-.iconPodcast{
-    grid-column: 1;
-    width: 100%;
-    overflow: hidden;
-    /* max-width: 6rem;
-    max-height: 6rem; */
+/* Estilos para telas médias */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .podcast {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: #FCBA5A; 
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .arrowLeft {
+        grid-column: 1 / 2;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: start;
+    }
+
+    .arrowRigth {
+        grid-column: 12 / 13;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: end;
+    }
+
+    .container {
+        grid-column: 4 / 10;
+        grid-row: 1;    
+        display: grid;
+        grid-template-columns: 6rem 6rem 1fr;
+        grid-template-rows: 6rem 6rem 6rem;
+        border: 2px solid purple;
+    }
+
+    .iconPodcast {
+        grid-column: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logoSenaiPlay {
+        grid-column: 2;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .audioPlayer {
+        grid-column: 1 / 6;
+        grid-row: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container span {
+        font-family: 'Roboto', sans-serif;
+        grid-column: 2 / 6;
+        margin-left: 2rem;
+        align-self: center;
+        font-weight: bold;
+        color: #6F2282;
+        font-size: 1.25rem;
+    }
+
+    .container p {
+        grid-column: 3 / 4;
+        grid-row: 2;
+        align-self: stretch;
+        color: #6F2282;
+        padding-left: 2rem;
+    }
 }
 
-.logoSenaiPlay{
-    grid-column: 2;
-    width: 100%;
-    overflow: hidden;
+/* Estilos para telas pequenas */
+@media (max-width: 992px) and (min-width: 768px) {
+    .podcast {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: #FCBA5A; 
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .arrowLeft {
+        grid-column: 1 / 2;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: start;
+    }
+
+    .arrowRigth {
+        grid-column: 12 / 13;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: end;
+    }
+
+    .container {
+        grid-column: 4 / 10;
+        grid-row: 1;    
+        display: grid;
+        grid-template-columns: 6rem 6rem 1fr;
+        grid-template-rows: 6rem 6rem 6rem;
+        border: 2px solid purple;
+    }
+
+    .iconPodcast {
+        grid-column: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logoSenaiPlay {
+        grid-column: 2;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .audioPlayer {
+        grid-column: 1 / 6;
+        grid-row: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container span {
+        font-family: 'Roboto', sans-serif;
+        grid-column: 2 / 6;
+        margin-left: 2rem;
+        align-self: center;
+        font-weight: bold;
+        color: #6F2282;
+        font-size: 1.25rem;
+    }
+
+    .container p {
+        grid-column: 3 / 4;
+        grid-row: 2;
+        align-self: stretch;
+        color: #6F2282;
+        padding-left: 2rem;
+    }
 }
 
-.audioPlayer{
-    grid-column: 1 / 6;
-    grid-row: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Estilos para telas menores */
+@media (max-width: 768px) and (min-width: 576px) {
+    .podcast {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: #FCBA5A; 
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .arrowLeft {
+        grid-column: 1 / 2;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: start;
+    }
+
+    .arrowRigth {
+        grid-column: 12 / 13;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: end;
+    }
+
+    .container {
+        grid-column: 4 / 10;
+        grid-row: 1;    
+        display: grid;
+        grid-template-columns: 6rem 6rem 1fr;
+        grid-template-rows: 6rem 6rem 6rem;
+        border: 2px solid purple;
+    }
+
+    .iconPodcast {
+        grid-column: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logoSenaiPlay {
+        grid-column: 2;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .audioPlayer {
+        grid-column: 1 / 6;
+        grid-row: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container span {
+        font-family: 'Roboto', sans-serif;
+        grid-column: 2 / 6;
+        margin-left: 2rem;
+        align-self: center;
+        font-weight: bold;
+        color: #6F2282;
+        font-size: 1.25rem;
+    }
+
+    .container p {
+        grid-column: 3 / 4;
+        grid-row: 2;
+        align-self: stretch;
+        color: #6F2282;
+        padding-left: 2rem;
+    }
 }
 
-.container span{
-    font-family: 'Roboto', sans-serif;
-    grid-column: 2 / 6;
-    margin-left: 2rem;
-    align-self: center;
-    font-weight: bold;
-    color:#6F2282;
-    font-size: 1.25rem;
-}
+/* Estilos para telas extra pequenas */
+@media (max-width: 576px) and (min-width: 320px) {
+    .podcast {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: #FCBA5A; 
+        align-items: center;
+        box-sizing: border-box;
+    }
 
-.container p{
-    grid-column: 3 /4;
-    grid-row: 2;
-    align-self: stretch;
-    color: #6F2282;
-    padding-left: 2rem; 
+    .arrowLeft {
+        grid-column: 1 / 2;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: start;
+    }
+
+    .arrowRigth {
+        grid-column: 12 / 13;
+        justify-self: stretch;
+        width: 6rem;
+        justify-self: end;
+    }
+
+    .container {
+        grid-column: 1 / 13;
+        grid-row: 1;    
+        display: grid;
+        grid-template-columns: 6rem 6rem 1fr;
+        grid-template-rows: repeat(3, 6rem);
+        border: 2px solid purple;
+    }
+
+    .iconPodcast {
+        grid-column: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logoSenaiPlay {
+        grid-column: 2;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .audioPlayer {
+        grid-column: 1 / 13;
+        grid-row: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container span {
+        font-family: 'Roboto', sans-serif;
+        grid-column: 2 / 13;
+        margin-left: 2rem;
+        align-self: center;
+        font-weight: bold;
+        color: #6F2282;
+        font-size: 1.25rem;
+    }
+
+    .container p {
+        grid-column: 1 / 13;
+        grid-row: 2;
+        align-self: stretch;
+        color: #6F2282;
+        padding-left: 2rem;
+    }
 }

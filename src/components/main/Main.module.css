@@ -1,6 +1,7 @@
+/* Estilos para telas grandes */
 @media (min-width: 1200px) {
- .container{
-    font-family: "Roboto Condensed", sans-serif;    
+    .container {
+        font-family: "Roboto Condensed", sans-serif;    
         grid-column: 1 / 13;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -10,29 +11,27 @@
         height: auto;
         padding-bottom: 10rem;
     }    
-    .box{
+    .box {
         grid-column: 1 / 3;
         grid-row: 1/ 4;
         background-color: #6F2282;
     }
-    .boxfig{   
+    .boxfig {   
         display: grid;
         grid-template-columns: repeat(3, 6rem);
         grid-template-rows: 6rem 6rem 25rem;
-  
     }
-    .formalaranja{  
+    .formalaranja {  
         grid-column: 2 / 3;        
         object-fit: cover;
         overflow: hidden;
     }
-  
-    .boxcinza{  
-        grid-column:  3 / 4;   
+    .boxcinza {  
+        grid-column: 3 / 4;   
         overflow: hidden;
         background-color: rgba(188, 194, 194, 0.925);
     }
-    .boxicon{ 
+    .boxicon { 
         grid-column: 3/4;
         grid-row: 2;  
         display: flex;   
@@ -41,32 +40,32 @@
         overflow: hidden;      
         background-color: #FCBA5A;
     }
-    .boxicon img{
+    .boxicon img {
         width: 4rem;
         height: 4rem;
     }
-    .formalinhas{
+    .formalinhas {
         grid-column: 1/2;
         grid-row: 2/4;  
         overflow: hidden;
     }
-    .formaroxo{
+    .formaroxo {
         grid-column: 12/13;
         max-width: 100%;
         justify-self: end;
         overflow: hidden;
     }
-    .introducao{
+    .introducao {
         grid-column: 4 / 10;
         grid-row: 2;
     }
-    .apresentacao h1{
+    .apresentacao h1 {
         text-transform: uppercase;
         font-weight: 400;
         color: #FCBA5A;
         margin-top: 2rem;
     }
-    .apresentacao p{
+    .apresentacao p {
         font-size: 1.25rem;
         font-weight: 300;
         color: #eee;
@@ -74,13 +73,13 @@
         text-indent: 2rem;
         margin-bottom: 2rem;
     }
-    .contexto h1{
+    .contexto h1 {
         text-transform: uppercase;
         font-weight: 400;
         color: #FCBA5A;
         margin-top: 2rem;
     }
-    .contexto p{
+    .contexto p {
         font-size: 1.25rem;
         font-weight: 300;
         color: #eee;
@@ -88,16 +87,17 @@
         text-indent: 2rem;       
         margin-bottom: 2rem;
     }
-    .traco{
-        grid: 4 /10;
+    .traco {
+        grid-column: 4 / 10;
         height: 0.2rem;
         width: auto;
         background-color: #00000077;
-
     }
 }
- @media (max-width: 1200px) and (min-width:992px){
-    .container{
+
+/* Estilos para telas médias */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .container {
         font-family: "Roboto Condensed", sans-serif;    
         grid-column: 1 / 13;
         display: grid;
@@ -108,36 +108,35 @@
         height: auto;
         padding-bottom: 10rem;
     }    
-    .box{
+    .box {
         grid-column: 1 / 3;
         grid-row: 1/ 4;
         background-color: #6F2282;
     }
-    .boxfig{   
+    .boxfig {   
         display: grid;
         grid-template-columns: repeat(3, 4rem);
         grid-template-rows: 4rem 4rem 25rem;
-  
     }
-    .formalaranja{  
+    .formalaranja {  
         width: 100%;
         height: auto;
         overflow: hidden;
         grid-column: 2 / 3;
     }
-    .formalaranja img{
+    .formalaranja img {
         /* background-color: rgb(198, 246, 230); */
         /* object-fit: contain;
         overflow: hidden; */
     }
-    .boxcinza{  
-        grid-column:  3 / 4;
+    .boxcinza {  
+        grid-column: 3 / 4;
         width: 100%;
         height: auto;   
         overflow: hidden;
         background-color: rgba(188, 194, 194, 0.925);
     }
-    .boxicon{ 
+    .boxicon { 
         grid-column: 3/4;
         grid-row: 2;  
         display: flex;   
@@ -148,36 +147,35 @@
         overflow: hidden;     
         background-color: #FCBA5A;
     }
-    .boxicon img{
+    .boxicon img {
         width: 60%;
         height: auto;
         overflow: hidden; ;
     }
-    .formalinhas{
+    .formalinhas {
         grid-column: 1/2;
         grid-row: 2/4;  
         width: 100%;
         height: auto;
         overflow: hidden; 
         margin-top: 3px;
-        
     }
-    .formaroxo{
+    .formaroxo {
         grid-column: 12/13;
         max-width: 100%;
         justify-self: end;
         overflow: hidden;
     }
-    .introducao{
+    .introducao {
         grid-column: 4 / 11;
         grid-row: 2;
     }
-    .apresentacao h1{
+    .apresentacao h1 {
         text-transform: uppercase;
         color: #FCBA5A;
         font-weight: 400;
     }
-    .apresentacao p{
+    .apresentacao p {
         font-size: 1.25rem;
         font-weight: 300;
         color: #eee;
@@ -185,13 +183,13 @@
         text-indent: 2rem;
         margin-bottom: 2rem;
     }
-    .contexto h1{
+    .contexto h1 {
         text-transform: uppercase;
         font-style: bold;
         color: #FCBA5A;
         margin-top: 2rem;
     }
-    .contexto p{
+    .contexto p {
         font-size: 1.25rem;
         font-weight: 200;
         color: #eee;
@@ -199,16 +197,17 @@
         text-indent: 2rem;       
         margin-bottom: 2rem;
     }
-    .traco{
-        grid: 4 /10;
+    .traco {
+        grid-column: 4 / 10;
         height: 0.2rem;
         width: auto;
         background-color: #00000077;
-
     }
-  }
- @media (max-width: 992px) and (min-width:768px){
-    .container{
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 992px) and (min-width: 768px) {
+    .container {
         font-family: "Roboto Condensed", sans-serif;    
         grid-column: 1 / 13;
         display: grid;
@@ -219,36 +218,35 @@
         height: auto;
         padding-bottom: 10rem;
     }    
-    .box{
+    .box {
         grid-column: 1 / 3;
         grid-row: 1/ 4;
         background-color: #6F2282;
     }
-    .boxfig{   
+    .boxfig {   
         display: grid;
         grid-template-columns: repeat(3, 4rem);
         grid-template-rows: 4rem 4rem 25rem;
-  
     }
-    .formalaranja{  
+    .formalaranja {  
         width: 100%;
         height: auto;
         overflow: hidden;
         grid-column: 2 / 3;
     }
-    .formalaranja img{
+    .formalaranja img {
         /* background-color: rgb(198, 246, 230); */
         /* object-fit: contain;
         overflow: hidden; */
     }
-    .boxcinza{  
-        grid-column:  3 / 4;
+    .boxcinza {  
+        grid-column: 3 / 4;
         width: 100%;
         height: auto;   
         overflow: hidden;
         background-color: rgba(188, 194, 194, 0.925);
     }
-    .boxicon{ 
+    .boxicon { 
         grid-column: 3/4;
         grid-row: 2;  
         display: flex;   
@@ -259,36 +257,35 @@
         overflow: hidden;     
         background-color: #FCBA5A;
     }
-    .boxicon img{
+    .boxicon img {
         width: 60%;
         height: auto;
         overflow: hidden; ;
     }
-    .formalinhas{
+    .formalinhas {
         grid-column: 1/2;
         grid-row: 2/4;  
         width: 100%;
         height: auto;
         overflow: hidden; 
         margin-top: 3px;
-        
     }
-    .formaroxo{
+    .formaroxo {
         grid-column: 12/13;
         max-width: 100%;
         justify-self: end;
         overflow: hidden;
     }
-    .introducao{
+    .introducao {
         grid-column: 5 / 12;
         grid-row: 2;
     }
-    .apresentacao h1{
+    .apresentacao h1 {
         text-transform: uppercase;
         font-weight: 400;
         color: #FCBA5A;
     }
-    .apresentacao p{
+    .apresentacao p {
         font-size: 1.25rem;
         font-weight: 300;
         color: #eee;
@@ -296,13 +293,13 @@
         text-indent: 2rem;
         margin-bottom: 2rem;
     }
-    .contexto h1{
+    .contexto h1 {
         text-transform: uppercase;
         font-weight: 400;
         color: #FCBA5A;
         margin-top: 2rem;
     }
-    .contexto p{
+    .contexto p {
         font-size: 1.25rem;
         font-weight: 300;
         color: #eee;
@@ -310,16 +307,17 @@
         text-indent: 2rem;       
         margin-bottom: 2rem;
     }
-    .traco{
-        grid: 4 /10;
+    .traco {
+        grid-column: 4 / 10;
         height: 0.2rem;
         width: auto;
         background-color: #00000077;
-
     }
-  }
- @media (max-width: 768px) and (min-width: 576px){
-    .container{
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) and (min-width: 576px) {
+    .container {
         font-family: "Roboto Condensed", sans-serif;    
         grid-column: 1 / 13;
         display: grid;
@@ -330,35 +328,34 @@
         height: auto;
         padding-bottom: 10rem;
     }    
-    .box{
+    .box {
         grid-column: 1 / 3;
         grid-row: 1/ 4;
         background-color: #6F2282;
     }
-    .boxfig{   
+    .boxfig {   
         display: grid;
         grid-template-columns: repeat(3, 3rem);
-        grid-template-rows:3rem 3rem 15rem;
-  
+        grid-template-rows: 3rem 3rem 15rem;
     }
-    .formalaranja{  
+    .formalaranja {  
         width: 100%;
         height: auto;
         overflow: hidden;
         grid-column: 2 / 3;
     }
-    .formalaranja img{       
+    .formalaranja img {       
         object-fit: contain;
         object-position: -10px -10px;
     }
-    .boxcinza{  
-        grid-column:  3 / 4;
+    .boxcinza {  
+        grid-column: 3 / 4;
         width: 100%;
         height: auto;   
         overflow: hidden;
         background-color: rgba(188, 194, 194, 0.925);
     }
-    .boxicon{ 
+    .boxicon { 
         grid-column: 3/4;
         grid-row: 2;  
         display: flex;   
@@ -369,39 +366,38 @@
         overflow: hidden;     
         background-color: #FCBA5A;
     }
-    .boxicon img{
+    .boxicon img {
         width: 60%;
         height: auto;
         overflow: hidden; ;
     }
-    .formalinhas{
+    .formalinhas {
         grid-column: 1/2;
         grid-row: 2/4;  
         width: 100%;
         height: auto;
         overflow: hidden; 
         margin-top: 3px;
-        
     }
-    .formaroxo{
+    .formaroxo {
         grid-column: 12/13;
         max-width: 100%;
         justify-self: end;
         overflow: hidden;
     }
-    .introducao{
+    .introducao {
         grid-column: 5 / 12;
         grid-row: 2;
     }
-    .apresentacao{
+    .apresentacao {
         margin-top: -20px;
     }
-    .apresentacao h1{
+    .apresentacao h1 {
         text-transform: uppercase;
         font-weight: 500;
         color: #FCBA5A;
     }
-    .apresentacao p{
+    .apresentacao p {
         font-size: 2rem;
         font-weight: 400;
         color: #eee;
@@ -409,13 +405,13 @@
         text-indent: 2rem;
         margin-bottom: 2rem;
     }
-    .contexto h1{
+    .contexto h1 {
         text-transform: uppercase;
         font-weight: 500;
         color: #FCBA5A;
         margin-top: 2rem;
     }
-    .contexto p{
+    .contexto p {
         font-size: 2rem;
         font-weight: 400;
         color: #eee;
@@ -423,16 +419,17 @@
         text-indent: 2rem;       
         margin-bottom: 2rem;
     }
-    .traco{
-        grid: 4 /10;
+    .traco {
+        grid-column: 4 / 10;
         height: 0.2rem;
         width: auto;
         background-color: #00000077;
-
     }
-  }
- @media (max-width: 576px) and (min-width: 320px){
-    .container{
+}
+
+/* Estilos para telas extra pequenas */
+@media (max-width: 576px) and (min-width: 320px) {
+    .container {
         font-family: "Roboto Condensed", sans-serif;    
         grid-column: 1 / 13;
         display: grid;
@@ -443,47 +440,45 @@
         height: auto;
         padding-bottom: 10rem;
     }    
-    .box{
+    .box {
        display: none;
     }
-   
-    .formaroxo{
+    .formaroxo {
         grid-column: 12/13;
         max-width: 100%;
         justify-self: end;
         overflow: hidden;
     }
-
-    .introducao{
+    .introducao {
         grid-column: 2 / 12;
         grid-row: auto;
         margin-top: 2rem;
     }
-    .apresentacao{
-      margin-top: -100px;
+    .apresentacao {
+        margin-top: -100px;
     }
-    .apresentacao h1{
+    .apresentacao h1 {
         text-transform: uppercase;
         text-align: center;
         color: #FCBA5A;
     }
-    .apresentacao p{
+    .apresentacao p {
         font-size: 2rem;
         font-weight: 600;
         color: #eee;
         text-align: center;
-        word-spacing:0px;
+        word-spacing: 0px;
         text-indent: 2rem;
         margin-bottom: 2rem;
     }
-    .contexto h1{
+    .contexto h1 {
         text-transform: uppercase;
         font-style: bold;
         text-align: center;
         color: #FCBA5A;
         margin-top: 2rem;
     }
-    .contexto p{
+    .contexto p {
         font-size: 2rem;
         font-weight: 600;
         color: #eee;
@@ -491,15 +486,14 @@
         text-indent: 2rem;       
         margin-bottom: 2rem;
     }
-    .traco{
-        grid: 4 /10;
+    .traco {
+        grid-column: 4 / 10;
         height: 0.2rem;
         width: auto;
         background-color: #00000077;
-
     }
-  }
+}
 
-.teste{
+.teste {
     background-color: #FCBA5A;
 }

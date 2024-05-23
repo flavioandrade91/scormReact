@@ -1,20 +1,119 @@
-.boxPurple{
-    grid-column: 1 / 13;
-    font-family: 'Roboto Condensed', sans-serif;
-    height: 10rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    justify-content: center;
-    align-content: center;
-    background-color: #6F2282;
+/* Estilos para telas grandes */
+@media (min-width: 1200px) {
+    .boxPurple {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-content: center;
+        align-content: center;
+        background-color: #6F2282;
+    }
+
+    .introHistoria {
+        grid-column: 2 / 12;
+        color: #eee;
+        text-align: center;
+    }
+
+    .introHistoria p {
+        font-size: 1.5rem;
+    }
 }
 
-.introHistoria{
-    grid-column: 2 / 12;
-    color: #eee;
-    text-align: center;
+/* Estilos para telas médias */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .boxPurple {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-content: center;
+        align-content: center;
+        background-color: #6F2282;
+    }
 
+    .introHistoria {
+        grid-column: 2 / 12;
+        color: #eee;
+        text-align: center;
+    }
+
+    .introHistoria p {
+        font-size: 1.5rem;
+    }
 }
-.introHistoria p{
-    font-size: 1.5rem;
+
+/* Estilos para telas pequenas */
+@media (max-width: 992px) and (min-width: 768px) {
+    .boxPurple {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-content: center;
+        align-content: center;
+        background-color: #6F2282;
+    }
+
+    .introHistoria {
+        grid-column: 2 / 12;
+        color: #eee;
+        text-align: center;
+    }
+
+    .introHistoria p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) and (min-width: 576px) {
+    .boxPurple {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-content: center;
+        align-content: center;
+        background-color: #6F2282;
+    }
+
+    .introHistoria {
+        grid-column: 2 / 12;
+        color: #eee;
+        text-align: center;
+    }
+
+    .introHistoria p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos para telas extra pequenas */
+@media (max-width: 576px) and (min-width: 320px) {
+    .boxPurple {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-content: center;
+        align-content: center;
+        background-color: #6F2282;
+    }
+
+    .introHistoria {
+        grid-column: 1 / 13;
+        color: #eee;
+        text-align: center;
+    }
+
+    .introHistoria p {
+        font-size: 1.25rem;
+    }
 }

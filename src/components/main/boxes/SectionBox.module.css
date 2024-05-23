@@ -1,71 +1,214 @@
-.SectionBox {
-    grid-column: 1 /13;
-    font-family: 'Roboto Condensed', sans-serif;
-    height: auto;
-    
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows:3rem 23.4rem 3rem;
-    
-    /* border: 2px solid black; */
-    
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)
-    ),url('../../../assets/imgbanner.png') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* Estilos para telas grandes */
+@media (min-width: 1200px) {
+    .SectionBox {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3rem 23.4rem 3rem;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ), url('../../../assets/imgbanner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-.titleImageBox{
-    grid-column: 1 /13;
-    grid-row: 2 /3;    
-    justify-self: center;
-    align-self: center;
+    .titleImageBox {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;    
+        justify-self: center;
+        align-self: center;
+    }
 
-    h1{
+    .titleImageBox h1 {
         color: #eee;
         font-size: 4rem;
         font-weight: 300;
     }
+
+    .baloonGray {
+        grid-column: 1 / 13;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .baloonPurple {
+        grid-column: 1 / 13;
+        grid-row: 3;
+        justify-self: center;
+    }
 }
 
-.baloonGray {
-    grid-column: 1 / 13;
-    grid-row: 1;
-    justify-self: center;
+/* Estilos para telas médias */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .SectionBox {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3rem 23.4rem 3rem;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ), url('../../../assets/imgbanner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .titleImageBox {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;    
+        justify-self: center;
+        align-self: center;
+    }
+
+    .titleImageBox h1 {
+        color: #eee;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    .baloonGray {
+        grid-column: 1 / 13;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .baloonPurple {
+        grid-column: 1 / 13;
+        grid-row: 3;
+        justify-self: center;
+    }
 }
 
-.baloonPurple {
-    grid-column: 1 / 13;
-    grid-row: 3;
-    justify-self: center;
+/* Estilos para telas pequenas */
+@media (max-width: 992px) and (min-width: 768px) {
+    .SectionBox {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3rem 23.4rem 3rem;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ), url('../../../assets/imgbanner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .titleImageBox {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;    
+        justify-self: center;
+        align-self: center;
+    }
+
+    .titleImageBox h1 {
+        color: #eee;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    .baloonGray {
+        grid-column: 1 / 13;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .baloonPurple {
+        grid-column: 1 / 13;
+        grid-row: 3;
+        justify-self: center;
+    }
 }
 
+/* Estilos para telas menores */
+@media (max-width: 768px) and (min-width: 576px) {
+    .SectionBox {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3rem 23.4rem 3rem;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ), url('../../../assets/imgbanner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-/* .bannerHats{
-   grid-column: 1 /13;
-   justify-items: center;
-   align-items: center;
-   display: flex;
-   flex-direction: column;
-   height: 11rem;
-   object-fit: contain;
-   background-color: #6F2282;
+    .titleImageBox {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;    
+        justify-self: center;
+        align-self: center;
+    }
+
+    .titleImageBox h1 {
+        color: #eee;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    .baloonGray {
+        grid-column: 1 / 13;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .baloonPurple {
+        grid-column: 1 / 13;
+        grid-row: 3;
+        justify-self: center;
+    }
 }
 
-.bannerHats p{
-    flex: 1;
-    align-self: flex-end;
-    margin-right: 17rem;
-    margin-top: 10px;
-    color: #555;
-    font-size:1rem ;
-}
+/* Estilos para telas extra pequenas */
+@media (max-width: 576px) and (min-width: 320px) {
+    .SectionBox {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3rem auto 3rem;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ), url('../../../assets/imgbanner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-.bannerHats p a:active{
-    color: #555;
+    .titleImageBox {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;    
+        justify-self: center;
+        align-self: center;
+    }
+
+    .titleImageBox h1 {
+        color: #eee;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    .baloonGray {
+        grid-column: 1 / 13;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .baloonPurple {
+        grid-column: 1 / 13;
+        grid-row: 3;
+        justify-self: center;
+    }
 }
-.bannerHats p a:visited{
-    color: #555;
-} */

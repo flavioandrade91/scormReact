@@ -18,6 +18,7 @@ import images from './components/main/boxes/Images';
 import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox';
 import { ImagemArtigo } from './components/main/boxes/ImagemArtigo';
 import { CardsBox } from './components/main/boxes/CardsBox';
+import { Artigo } from './components/main/boxes/Artigo';
 
 class App extends Component {
     constructor(props) {
@@ -209,10 +210,16 @@ class App extends Component {
                     textos={data.sessoes}
                     id={4}
                 />
+                <CardsBox id={0} textId={0} cards={data.cards} />
+                <CardsBox id={1} textId={0} cards={data.cards} />
+                <CardsBox id={2} textId={0} cards={data.cards} />
+                <br />
+                <br />
+
                 <SectionBox
                     id={5}
                     sessoes={data.sessoes}
-                    imgTop={images.baloonPurpleTop}
+                    imgTop={images.baloonWhiteTop}
                     imgBottom={images.baloonPurpleBottom}
                 />
                 <PurpleBox
@@ -229,12 +236,54 @@ class App extends Component {
                     podcasts={data.podcast}
                     id={1}
                 />
-                <Questionario 
-                    questions={questionarios.questionario2} 
+                <Questionario
+                    questions={questionarios.questionario2}
                 />
-              <CardsBox id={1} textId={1} cards={data.cards} />
-              <CardsBox id={2} textId={2} cards={data.cards} />
-              <CardsBox id={3} textId={3} cards={data.cards} />
+                <SectionBox
+                    id={6}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonPurpleTop}
+                    imgBottom={images.baloonWhiteBottom}
+                />
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={25}
+                    end={28}
+                />
+                <Sanfona
+                    sanfonas={data.sanfonas}
+                    iconImage={images.seta}
+                    start={7}
+                    end={13}
+                />
+                <SectionBox
+                    id={7}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonWhiteTop}
+                    imgBottom={images.baloonWhiteBottom}
+                />
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={28}
+                    end={33}
+                />
+
+                <Artigo
+                    texts={data.text}
+                    images={images.fig001}
+                />
+
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={33}
+                    end={45}
+                />
+                <ImageBox
+                    id={1}
+                    fontes={data.fontes}
+                    imagem={images.desfile}
+                />
+
             </div>
         );
     }
