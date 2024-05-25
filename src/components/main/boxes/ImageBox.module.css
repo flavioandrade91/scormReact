@@ -15,7 +15,20 @@
     }
     .fonte {
         height: 30px;
+        margin: 5px;
         margin-right: 10%;
+        position: absolute;
+        z-index: 5;      
+    }
+
+    .fonte a{
+        color: #000;
+        text-decoration: none;
+
+    }
+    .fonte a:visited{
+        color: #000;
+        text-decoration: none;
     }
 }
 
@@ -37,6 +50,18 @@
     .fonte {
         height: 30px;
         margin-right: 10%;
+        position: absolute;
+        z-index: 5;      
+    }
+
+    .fonte a{
+        color: #000;
+        text-decoration: none;
+
+    }
+    .fonte a:visited{
+        color: #000;
+        text-decoration: none;
     }
 }
 
@@ -54,10 +79,18 @@
     .footer {
         display: flex;
         justify-content: end;
+        position: absolute;
+        z-index: 5;      
     }
-    .fonte {
-        height: 30px;
-        margin-right: 10%;
+
+    .fonte a{
+        color: #000;
+        text-decoration: none;
+
+    }
+    .fonte a:visited{
+        color: #000;
+        text-decoration: none;
     }
 }
 
@@ -79,6 +112,18 @@
     .fonte {
         height: 30px;
         margin-right: 10%;
+        position: absolute;
+        z-index: 5;      
+    }
+
+    .fonte a{
+        color: #000;
+        text-decoration: none;
+
+    }
+    .fonte a:visited{
+        color: #000;
+        text-decoration: none;
     }
 }
 
@@ -100,5 +145,17 @@
     .fonte {
         height: 30px;
         margin-right: 10%;
+        position: absolute;
+        z-index: 5;      
+    }
+
+    .fonte a{
+        color: #000;
+        text-decoration: none;
+
+    }
+    .fonte a:visited{
+        color: #000;
+        text-decoration: none;
     }
 }

@@ -117,7 +117,9 @@ const data = {
       sessao: 'Briefing',
       texto: `Documento que contém informações essenciais para execução de um projeto, 
       deve ser redigido de maneira sucinta e objetiva. Deve conter objetivo, características
-      do cliente, público-alvo, prazos, orçamento, canais de comunicação, referências e inspirações.`
+      do cliente, público-alvo, prazos, orçamento, canais de comunicação, referências e inspirações.`,
+      imageName: "briefing",
+      fonte:`Figura 15 – Briefing. Fonte: DMX Web.`
     },
     {
       id: 9,
@@ -133,7 +135,7 @@ const data = {
     },
     {
       id: 10,
-      sessao: 'fechamento do módulo',
+      sessao: 'Fechamento do módulo',
       texto: ''
     }
   ],
@@ -503,7 +505,22 @@ const data = {
       id: 2,
       fonte: 'Figura 3 – Campanha Publicitária de Moda. Fonte: Marcas pelo Mundo.',
       link: 'https://marcaspelomundo.com.br/anunciantes/brasilidade-e-tema-da-campanha-de-carnaval-2023-da-studio-z/'
-    }
+    },
+    {
+      id: 3,
+      fonte: 'Figura 4 – Vitrine de Loja. Fonte: Fashion Bubbles.',
+      link: 'https://www.fashionbubbles.com/decoracao-2/vitrine-da-copa/'
+    },
+    {
+      id: 4,
+      fonte: 'Figura 14 – Luz, Sombra e Volume. Fonte: Pinterest.',
+      link: 'https://br.pinterest.com/pin/798896421409186150/'
+    },
+    {
+      id: 5,
+      fonte: 'Figura 16 – Painel de Inspirações. Fonte: Garota Luxuosa.',
+      link: 'https://garotaluxuosa-com-br56.webnode.page/l/moodboard-como-criar-um-painel-de-inspiracao-de-moda-e-estilo-de-vida/'
+    },
   ],
   videos: [
     {
@@ -577,7 +594,63 @@ const data = {
             { id: 0, content: 'Equipamentos e estúdios fotográficos, roupas e acessórios, fundo infinito, equipamentos de iluminação e modelos profissionais. Eventos de moda: stands de exposição, mesas, prateleiras, módulos ajustáveis, estantes expansíveis e bancadas versáteis.' }
         ]
     },
-]
+],
+ artigos:[
+    {
+      id:0,
+      text:`O ponto de vista é identificado através de uma linha vertical que é perpendicular a linha do horizonte, e ele encontra-se exatamente na junção das duas linhas.`,
+      fonte:`Figura 7 – Linha do Horizonte e Ponto de Vista. Fonte: Blog dos Arteiros.`,
+      url:`https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
+      imageName: 'LHPV' // Nome da chave correspondente no objeto images
+    },
+    {
+      id:1,
+      text:`O ponto de fuga fica localizado na linha do horizonte, na direção onde todas as linhas paralelas convergem, quando analisadas em perspectiva.`,
+      fonte:`Figura 8 – Ponto de Fuga. Fonte: Blog dos Arteiros.`,
+      url:`https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
+      imageName: 'LHPF' // Nome da chave correspondente no objeto images
+    },
+    {
+      id:2,
+      text:`As linhas de fuga são imaginárias e elas que descrevem o efeito da perspectiva e convergem para o ponto de fuga.`,
+      fonte:`Figura 9 - Linhas de Fuga. Fonte: Blog dos Arteiros.`,
+      url:`https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
+      imageName: 'LHPFFUGA' // Nome da chave correspondente no objeto images
+
+    },
+    {
+      id:3,
+      text:`Na perspectiva paralela as linhas de fuga se deslocam apenas para um ponto.`,
+      fonte:`Figura 10 - Perspectiva Paralela. Fonte: Blog dos Arteiros.`,
+      url:`https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
+      imageName: 'LHPFPVABC' // Nome da chave correspondente no objeto images
+
+    },
+    {
+      id:4,
+      text:`Na perspectiva oblíqua, o objeto fica com uma de suas arestas viradas para o observador, as linhas de fulga então se deslocam para dois pontos.`,
+      fonte:`Figura 11 – Perspectiva Oblíqua. Fonte: Blog dos Arteiros.`,
+      url:`https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
+      imageName: 'LHPVP1P2' // Nome da chave correspondente no objeto images
+
+    },
+    {
+      id:5,
+      text:`Na perspectiva aérea para representar um objeto analisado em posição oblíqua a partir de um ponto bem alto, é necessário que o mesmo possua três pontos de fuga, dois deles na linha do horizonte e um na vertical do ponto de vista.`,
+      fonte:`Figura 12 – Perspectiva Aérea. Fonte: Blog dos Arteiros.`,
+      url:`https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
+      imageName: 'LHPF1PVPF3' // Nome da chave correspondente no objeto images
+
+    },
+    {
+      id:7,
+      text:`Na perspectiva contra plano ou de esgoto o nível visual do observador é mais baixo, tornando-a oposta na maneira de visualização e assim alterando a localização do terceiro ponto de fuga.`,
+      fonte:`Figura 13 – Perspectiva Contra Plano ou de Esgoto. Fonte: Blog dos Arteiros.`,
+      url:`https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
+      imageName: 'LHPF1PVPF3' // Nome da chave correspondente no objeto images
+
+    }
+ ],
 };
 
 export default data;

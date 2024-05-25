@@ -25,6 +25,7 @@
         grid-column: 2 / 3;        
         object-fit: cover;
         overflow: hidden;
+        background-color: #531961;
     }
     .boxcinza {  
         grid-column: 3 / 4;   
@@ -123,6 +124,7 @@
         height: auto;
         overflow: hidden;
         grid-column: 2 / 3;
+        background-color: #531961;
     }
     .formalaranja img {
         /* background-color: rgb(198, 246, 230); */
@@ -233,6 +235,7 @@
         height: auto;
         overflow: hidden;
         grid-column: 2 / 3;
+        background-color: #531961;
     }
     .formalaranja img {
         /* background-color: rgb(198, 246, 230); */
@@ -343,6 +346,7 @@
         height: auto;
         overflow: hidden;
         grid-column: 2 / 3;
+        background-color: #531961;
     }
     .formalaranja img {       
         object-fit: contain;

@@ -2,9 +2,9 @@ import bordabrancaesq from '../../../assets/BorderDownLefBottom.svg'
 import formalinha from '../../../assets/ArrowArtWhiteTop.svg'
 import bordalaranjaCimaDir from '../../../assets/BorderRigOrange.svg'
 import iconFolha from "../../../assets/iconFolha.png"
-import formalaranja from "../../../assets/formaLaranjaCimaEsq.png"
-import formalinhas from "../../../assets/FormaLinhasRoxo.png"
-import formaRoxo from "../../../assets/formaRoxoCimaDir.png"
+import BorderOrangeTopLeft from "../../../assets/BorderOrangeTopLeft.svg"
+import FormaLinhasPurpleBlack from "../../../assets/FormaLinhasPurpleBlack.svg"
+import BorderPurpleBlackTopRight from "../../../assets/BorderPurpleBlackTopRight.svg"
 import backImage from '../../../assets/BannerHeader.svg'
 import baloonGray from '../../../assets/BorderBottomGray.svg'
 import baloonPurple from '../../../assets/BorderTopPurple.svg'
@@ -32,17 +32,31 @@ import baloonPurpleTop from '../../../assets/baloonPurpleTop.svg'
 import baloonWhiteTop from '../../../assets/baloonWhiteTop.svg'
 import desfile from '../../../assets/desfile.svg'
 import BorderTopPurpleLeft from '../../../assets/BorderTopPurpleLeft.svg'
+import LHPV from '../../../assets/LH-PV.png'
+import LHPF from '../../../assets/LH-PF.svg'
+import LHPFFUGA from '../../../assets/LH-PF-LinhaFuga.svg'
+import LHPFPVABC from '../../../assets/LH-PF-PF-ABC.svg'
+import LHPVP1P2 from '../../../assets/PF1-LH-PV-PF2.svg'
+import LHPF1PVPF3 from '../../../assets/LH-PF1-PV-PF3.svg'
+import LHPVP1P2P3 from '../../../assets/LH-PF1-PV-PF2-PF3.svg'
+import bolaBranca from '../../../assets/bolaBranca.svg'
+import briefing from '../../../assets/briefing.svg'
+import designPurple from '../../../assets/designModaPurple.svg'
+import livro from '../../../assets/livro.svg'
+import baloonGrayBottom from '../../../assets/baloonGrayBottom.svg'
+
 
 const images = {
     bordabrancaesq,
     formalinha,
     bordalaranjaCimaDir,
     iconFolha,
-    formalaranja,
-    formalinhas,
-    formaRoxo,
+    BorderOrangeTopLeft,
+    FormaLinhasPurpleBlack,
+    BorderPurpleBlackTopRight,
     backImage,
     baloonGray,
+    baloonGrayBottom,
     baloonPurple,
     hatsImage,
     flag,
@@ -67,7 +81,18 @@ const images = {
     baloonWhiteTop, 
     desfile,
     baloonPurpleTop,
-    BorderTopPurpleLeft
+    BorderTopPurpleLeft,
+    LHPV,
+    LHPF,
+    LHPFFUGA,
+    LHPFPVABC,
+    LHPVP1P2,
+    LHPF1PVPF3,
+    bolaBranca,
+    briefing,
+    designPurple,
+    livro
+
 }
 
 export default images;

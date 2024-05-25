@@ -10,13 +10,13 @@ export function Main() {
                 <div className={styles.box}>
                     <div className={styles.boxfig}>
                         <div className={styles.formalaranja}>
-                            <img src={imagens.formalaranja} alt="Forma Laranja" />
+                            <img src={imagens.BorderOrangeTopLeft} alt="Forma Laranja" />
                         </div>
 
                         <div className={styles.boxcinza}></div>
 
                         <div className={styles.formalinhas}>
-                            <img src={imagens.formalinhas} alt="Forma Linhas" />
+                            <img src={imagens.FormaLinhasPurpleBlack} alt="Forma Linhas" />
                         </div>
 
                         <div className={styles.boxicon}>
@@ -29,7 +29,7 @@ export function Main() {
                     </div>
                 </div>
 
-                <img src={imagens.formaRoxo} alt="Forma Roxo" className={styles.formaroxo} />
+                <img src={imagens.BorderPurpleBlackTopRight} alt="Forma Roxo" className={styles.formaroxo} />
                 <div className={styles.introducao}>
                     <div className={styles.apresentacao}>
                         {data.apresentacao.map((item, index) => {

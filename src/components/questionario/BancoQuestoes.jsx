@@ -43,6 +43,46 @@ export const questionarios = {
             ],
            
         },
+    ],    
+
+    questionario3: [
+        {
+            id: 0,
+            questao: `3) Existem vários tipos de perspectiva e cada uma com sua característica específica, associe corretamente os conceitos de perspectiva de acordo com suas descrições correspondentes.[br][br]
+                        
+            A) As linhas de fuga se deslocam para dois pontos.[br][br]
+            
+            B) O ponto de fuga fica localizado na linha do horizonte, na direção onde todas as linhas paralelas convergem.[br][br]
+            
+            C) Necessita de três pontos de fuga, dois na linha do horizonte e um na vertical do ponto de vista.[br][br]
+            
+            D) As linhas de fuga se deslocam apenas para um ponto.[br][br]`,
+            
+            questionText: 'Selecione a opção correta:',
+            answerOptions: [
+                { answerText: ' A) A: Perspectiva paralela; B: Perspectiva contra plano; C: Perspectiva aérea; D: Perspectiva oblíqua.', isCorrect: true },
+                { answerText: ' B) A: Perspectiva contra plano; B: Perspectiva paralela; C: Perspectiva aérea; D: Perspectiva oblíqua.', isCorrect: false },
+                { answerText: ' C) A: Perspectiva contra plano; B: Perspectiva oblíqua; C: Perspectiva aérea; D: Perspectiva paralela.', isCorrect: false },
+                { answerText: ' D) A: Perspectiva paralela; B: Perspectiva oblíqua; C: Perspectiva aérea; D: Perspectiva contra plano', isCorrect: false },
+            ],
+           
+        },
+    ],    
+    questionario4: [
+        {
+            id: 0,
+            questao: `4) Qual é a principal finalidade do briefing em um projeto de produção de moda?[br][br]`,
+            
+            questionText: 'Selecione a opção correta:',
+            answerOptions: [
+                { answerText: ' A) Registro de informações durante a pesquisa aplicada.', isCorrect: true },
+                { answerText: ' B) Orientar o desenvolvimento de conceitos, estilos e narrativas visuais.', isCorrect: false },
+                { answerText: ' C) Definir métodos e técnicas para a realização da pesquisa.', isCorrect: false },
+                { answerText: ' D) Elaborar um caderno de tendências para inspiração.', isCorrect: false },
+                { answerText: ' D) Monitorar os prazos e orçamento do projeto.', isCorrect: false },
+            ],
+           
+        },
         // Mais questões podem ser adicionadas aqui
     ],
 };

@@ -19,6 +19,8 @@ import { WhiteBox } from './components/main/boxes/whiteboxes/WhiteBox';
 import { ImagemArtigo } from './components/main/boxes/ImagemArtigo';
 import { CardsBox } from './components/main/boxes/CardsBox';
 import { Artigo } from './components/main/boxes/Artigo';
+import Briefing from './components/main/boxes/Briefing';
+import { Encerramento } from './components/main/boxes/Encerramento';
 
 class App extends Component {
     constructor(props) {
@@ -73,8 +75,9 @@ class App extends Component {
                     id={0}
                 />
 
+                {/* 0 */}
                 <ImageBox
-                    id={1}
+                    id={0}
                     fontes={data.fontes}
                     imagem={images.hatsImage}
                 />
@@ -110,7 +113,7 @@ class App extends Component {
                     id={1}
                     videos={data.videos}
                 />
-
+                {/* 1 */}
                 <ImageBox
                     id={1}
                     fontes={data.fontes}
@@ -122,9 +125,9 @@ class App extends Component {
                     start={3}
                     end={9}
                 />
-
+                {/* 2 */}
                 <ImageBox
-                    id={1}
+                    id={2}
                     fontes={data.fontes}
                     imagem={images.mulheres}
                 />
@@ -192,8 +195,9 @@ class App extends Component {
                     start={17}
                     end={21}
                 />
+                {/* 3 */}
                 <ImageBox
-                    id={1}
+                    id={3}
                     fontes={data.fontes}
                     imagem={images.desfile}
                 />
@@ -267,23 +271,70 @@ class App extends Component {
                     start={28}
                     end={33}
                 />
-
                 <Artigo
-                    texts={data.text}
-                    images={images.fig001}
+                    artigos={data.artigos}
                 />
-
                 <WhiteBox
                     data={data.whiteBox}
                     start={33}
                     end={45}
                 />
+                {/* 4 */}
                 <ImageBox
-                    id={1}
+                    id={4}
                     fontes={data.fontes}
-                    imagem={images.desfile}
+                    imagem={images.bolaBranca}
+                />
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={45}
+                    end={50}
+                />
+                <Questionario
+                    questions={questionarios.questionario3}
+                />
+                <SectionBox
+                    id={8}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonPurpleTop}
+                    imgBottom={images.baloonWhiteBottom}
                 />
 
+                <Briefing
+                    id={8}
+                    texts={data.sessoes}
+                    images={images.briefing}
+                />
+                <Podcast
+                    podcasts={data.podcast}
+                    id={1}
+                />
+                <SectionBox
+                    id={9}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonOrangeTop}
+                    imgBottom={images.baloonWhiteBottom}
+                />
+                <WhiteBox
+                    data={data.whiteBox}
+                    start={50}
+                    end={54}
+                />
+                <ImageBox
+                    id={5}
+                    fontes={data.fontes}
+                    imagem={images.designPurple}
+                />
+                <Questionario
+                    questions={questionarios.questionario4}
+                />
+                <SectionBox
+                    id={10}
+                    sessoes={data.sessoes}
+                    imgTop={images.baloonPurpleTop}
+                    imgBottom={images.baloonGrayBottom}
+                />
+                <Encerramento/>
             </div>
         );
     }
