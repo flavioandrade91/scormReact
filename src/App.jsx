@@ -334,10 +334,16 @@ class App extends Component {
                     imgTop={images.baloonPurpleTop}
                     imgBottom={images.baloonGrayBottom}
                 />
-                <Encerramento/>
+                <Encerramento
+                    id={10}
+                    sessoes={data.sessoes}
+                    FotoPerfil={images.fotoPerfil}
+                    autores={data.autor}
+                />
+
             </div>
         );
     }
 }
-
+console.log(data.autor)
 export default App;

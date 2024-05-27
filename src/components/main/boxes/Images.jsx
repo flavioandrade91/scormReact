@@ -44,6 +44,8 @@ import briefing from '../../../assets/briefing.svg'
 import designPurple from '../../../assets/designModaPurple.svg'
 import livro from '../../../assets/livro.svg'
 import baloonGrayBottom from '../../../assets/baloonGrayBottom.svg'
+import iconPerfil from '../../../assets/iconPerfil.svg'
+import fotoPerfil from '../../../assets/FotoPerfil.svg'
 
 
 const images = {
@@ -91,7 +93,9 @@ const images = {
     bolaBranca,
     briefing,
     designPurple,
-    livro
+    livro,
+    iconPerfil,
+    fotoPerfil
 
 }
 

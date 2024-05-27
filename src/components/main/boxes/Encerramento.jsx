@@ -1,8 +1,12 @@
 import React from "react";
 import styles from './Encerramento.module.css'
 import images from './Images'
+import data from './Dados'
+import { Autores } from "./Autores";
+import { Referencias } from "./Referencias";
 
-export function Encerramento({id, texts}) {
+export function Encerramento({ id, sessoes}) {
+    const sessao = sessoes.find(sessao => sessao.id === id);
     return (
         <main className={styles.enceramentoContainer}>
             <section className={styles.headerContent}>
@@ -22,15 +26,34 @@ export function Encerramento({id, texts}) {
             </section>
             <section className={styles.recapitulandoContent}>
                 <header className={styles.header}>
-                    <img src={images.livro} alt="" />
+                    <img src={images.livro} alt="Livro" />
                     <p>RECAPITULANDO</p>
+
                 </header>
+                {sessao ? (
+                    <div className={styles.recapitulando}>
+                        <p>{sessao.texto.prag1}</p>
+                        <p>{sessao.texto.prag2}</p>
+                        <p>{sessao.texto.prag3}</p>
+                    </div>
+                ) : (
+                    <p>Erro ao carregar</p>
+                )}
+              
             </section>
-            <p></p>
-            <img className={styles.imagesLinhas1} src={images.FormaLinhasPurpleBlack} alt="" srcset="" />
-            <img className={styles.imagesLinhas2} src={images.FormaLinhasPurpleBlack} alt="" srcset="" />
-            <img className={styles.imagesLinhas3} src={images.FormaLinhasPurpleBlack} alt="" srcset="" />
-            <img className={styles.imagesLinhas4} src={images.FormaLinhasPurpleBlack} alt="" srcset="" />
+
+            <Autores
+                    id={0}
+                    autores={data.autor}
+                    FotoPerfil={images.fotoPerfil}
+                />
+
+            <Referencias referencias={data.referencias}/> 
+
+            <img className={styles.imagesLinhas1} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />
+            <img className={styles.imagesLinhas2} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />
+            <img className={styles.imagesLinhas3} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />
+            <img className={styles.imagesLinhas4} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />
         </main>
     );
 }

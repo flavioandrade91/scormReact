@@ -1,0 +1,5 @@
+.ReferenciaContainer{
+    grid-column: 3 /8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
