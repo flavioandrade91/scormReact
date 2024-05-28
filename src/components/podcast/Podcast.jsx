@@ -1,37 +1,34 @@
-import React, { useState, useRef } from "react";
-import styles from './Podcast.module.css'
-import iconMicrofone from '../../assets/iconMicrofone.svg'
-import logoSenai from '../../assets/iconeSenaiPlay.png'
-import {AudioPlayer} from "../multimidia/AudioPlayer";
+import React from "react";
+import styles from './Podcast.module.css';
+import images from '../main/boxes/Images';
+import { AudioPlayer } from '../multimidia/AudioPlayer';
 
-export function Podcast() {
-        return (
-            <>
-                <section className={styles.podcast}>
-                    <div className={styles.podcastcontainer}>
-                        <div className={styles.playercontainer}>
+export function Podcast({ podcasts, id }) {
+  // Verificar se 'podcasts' está definido antes de usar 'find'
+  const podcast = podcasts && podcasts.find(podcast => podcast.id === id);
 
-                            <div className={styles.box01}>
-                                <img src={iconMicrofone} alt="" srcset="" />
-                                <p className={styles.textoBox01}>podcast  /  Apresentação da unidade curricular</p>
-                            </div>
-                            <div className={styles.box02}>
-                                <img src={logoSenai} alt="" srcset="" />
-                                <p className={styles.textoBox02}>
-                                    Curso Técnico: <strong>Técnico em Produção de Moda</strong><br />
-                                    Unidade Curricular: <strong>01</strong><br />
-                                    Módulo: <strong>Fundamentos da Produção de Moda</strong></p><br />
-                            </div>
-                            
-                            <div className={styles.box03}>
-                                <AudioPlayer/>
-                            </div>
+  return (
+    <section className={styles.podcast}>
+      <img className={styles.arrowLeft} src={images.arrowLeft} alt="Seta esquerda" />
+      <img className={styles.arrowRigth} src={images.arrowRig} alt="Seta direita" />
 
-                        </div>
-                        <div className={styles.formasDir}></div>
-                        <div className={styles.formasEsq}></div>
-                    </div>
-                </section>
-            </>
-        );
-    }
+      {podcast ? (
+        <div className={styles.container}>
+          <img className={styles.iconPodcast} src={images.iconPodcast} alt="Ícone do podcast" />
+          <span>PODCAST / {podcast.title}</span>
+          <img className={styles.logoSenaiPlay} src={images.logoSenaiPlay} alt="Logo Senai Play" />
+          <p>
+            Curso Técnico: <b>Técnico em Produção de Moda</b><br />
+            Unidade Curricular: <b>01</b><br />
+            Módulo: <b>Fundamentos da Produção de Moda</b><br />
+          </p>
+          <div className={styles.audioPlayer}>
+            <AudioPlayer />
+          </div>
+        </div>
+      ) : (
+        <p>Erro no player</p>
+      )}
+    </section>
+  );
+}

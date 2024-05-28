@@ -1,0 +1,22 @@
+.rodapeContainer {
+    grid-column: 1 / 13;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555; /* Cor de fundo opcional */
+    padding: 1rem 0;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espaço entre as logos */
+}
+
+.logo {
+    max-height: 100px; /* Ajuste este valor conforme necessário */
+    height: auto;
+    width: auto;
+}

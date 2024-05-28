@@ -1,40 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './Sanfona.module.css';
-import seta from '../../../assets/SetaCima.svg';
 
-export function Sanfona() {
-    const [modal, setModal] = useState(false);
-    const [icon, setIcon] = useState({seta});
+export function Sanfona({ sanfonas, iconImage, start, end }) {
+    const itemsToRender = sanfonas.slice(start, end);
+    const [expandedItems, setExpandedItems] = useState(new Array(itemsToRender.length).fill(false));
 
-    const toggleModal = () => {
-        setModal(!modal);
-        setIcon
+    const toggleModal = (index) => {
+        setExpandedItems(prev => {
+            const newExpandedItems = [...prev];
+            newExpandedItems[index] = !newExpandedItems[index];
+            return newExpandedItems;
+        });
     };
 
-    const BoxSanfona = () => (
-        <div className={styles.boxSanfona}>
-            <div className={styles.bodySanfona}>
-                <div className={styles.sanfonaItem}>
-                    <p>
-                        Ênfase na individualidade e na expressão pessoal na moda, que foi um precursor para
-                        o desenvolvimento da produção de moda como a conhecemos hoje.
-                    </p>
-                </div>
-            </div>
-        </div>
-    );
-
     return (
-        <>
-            <div className={styles.sanfonaContent}>
-                <div className={styles.headerSanfona}>
-                    <span className={styles.title}>Anos 20 e 30</span>
-                    <button className={styles.colapse} onClick={toggleModal}>
-                        <img src={seta} alt="Expandir ou colapsar" />
-                    </button>
+        <div className={styles.sanfonaContainer}>
+            {itemsToRender.map((sanfona, index) => (
+                <div key={sanfona.id}  className={styles.sanfonaContent}>
+                    <div className={styles.headerSanfona}>
+                        <span className={styles.title}>{sanfona.title}</span>
+                        <button className={styles.colapse} onClick={() => toggleModal(index)}>
+                            <img src={iconImage} alt="Expandir ou colapsar" />
+                        </button>
+                    </div>
+                    {expandedItems[index] && (
+                        <div className={styles.boxSanfona}>
+                            <div className={styles.bodySanfona}>
+                                <div className={styles.sanfonaItem}>
+                                    <p>{sanfona.text}</p>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
-                {modal && <BoxSanfona />}
-            </div>
-        </>
+            ))}
+        </div>
     );
 }

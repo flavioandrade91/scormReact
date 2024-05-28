@@ -1,43 +1,259 @@
-.sanfonaContent{
-    grid-column: 1 / 13;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-content: flex-start;
-    padding: 2rem;
+/* Estilos para telas grandes */
+@media (min-width: 1200px) {
+    .sanfonaContainer {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-content: flex-start;
+        padding: 2rem;
+    }
+
+    .sanfonaContent {
+        grid-column: 4 / 10;
+        background-color: #6F2282;
+        margin-bottom: 1rem;
+    }
+
+    .boxSanfona {
+        grid-column: 4 / 10;
+        height: 6rem;
+        background-color: #eee;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+
+    .colapse {
+        background: none;
+        border: none;
+    }
+
+    .headerSanfona {
+        grid-column: 4 / 10;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        background-color: #6F2282;
+    }
+
+    .bodySanfona {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 6rem;
+        padding: 0 1.8rem;
+    }
 }
 
-.boxSanfona{
-    grid-column: 4/10;
-    height: 6rem;
-    background-color:#eee;
+/* Estilos para telas médias */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .sanfonaContainer {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-content: flex-start;
+        padding: 2rem;
+    }
+
+    .sanfonaContent {
+        grid-column: 4 / 10;
+        background-color: #6F2282;
+        margin-bottom: 1rem;
+    }
+
+    .boxSanfona {
+        grid-column: 4 / 10;
+        height: 6rem;
+        background-color: #eee;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+
+    .colapse {
+        background: none;
+        border: none;
+    }
+
+    .headerSanfona {
+        grid-column: 4 / 10;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        background-color: #6F2282;
+    }
+
+    .bodySanfona {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 6rem;
+        padding: 0 1.8rem;
+    }
 }
 
-.title{
-    margin-left: 10px;
+/* Estilos para telas pequenas */
+@media (max-width: 992px) and (min-width: 768px) {
+    .sanfonaContainer {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-content: flex-start;
+        padding: 2rem;
+    }
+
+    .sanfonaContent {
+        grid-column: 4 / 10;
+        background-color: #6F2282;
+        margin-bottom: 1rem;
+    }
+
+    .boxSanfona {
+        grid-column: 4 / 10;
+        height: 6rem;
+        background-color: #eee;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+
+    .colapse {
+        background: none;
+        border: none;
+    }
+
+    .headerSanfona {
+        grid-column: 4 / 10;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        background-color: #6F2282;
+    }
+
+    .bodySanfona {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 6rem;
+        padding: 0 1.8rem;
+    }
 }
 
-.colapse{
-    background: none;
-    border: none;
+/* Estilos para telas menores */
+@media (max-width: 768px) and (min-width: 576px) {
+    .sanfonaContainer {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-content: flex-start;
+        padding: 2rem;
+    }
+
+    .sanfonaContent {
+        grid-column: 4 / 10;
+        background-color: #6F2282;
+        margin-bottom: 1rem;
+    }
+
+    .boxSanfona {
+        grid-column: 4 / 10;
+        height: 6rem;
+        background-color: #eee;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+
+    .colapse {
+        background: none;
+        border: none;
+    }
+
+    .headerSanfona {
+        grid-column: 4 / 10;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        background-color: #6F2282;
+    }
+
+    .bodySanfona {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 6rem;
+        padding: 0 1.8rem;
+    }
 }
 
-.headerSanfona{
-    grid-column: 4 /10;
-    font-family:'Roboto', sans-serif;
-    font-weight: 600;
-    color: #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3rem;
-    background-color:  #6F2282;
-}
+/* Estilos para telas extra pequenas */
+@media (max-width: 576px) and (min-width: 320px) {
+    .sanfonaContainer {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-content: flex-start;
+        padding: 2rem;
+    }
 
-.bodySanfona{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    height: 6rem;
-    padding: 0 1.8rem 0 1.8rem;
+    .sanfonaContent {
+        grid-column: 1 / 13;
+        background-color: #6F2282;
+        margin-bottom: 1rem;
+    }
+
+    .boxSanfona {
+        grid-column: 1 / 13;
+        height: 6rem;
+        background-color: #eee;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+
+    .colapse {
+        background: none;
+        border: none;
+    }
+
+    .headerSanfona {
+        grid-column: 1 / 13;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        background-color: #6F2282;
+    }
+
+    .bodySanfona {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 6rem;
+        padding: 0 1.8rem;
+    }
 }

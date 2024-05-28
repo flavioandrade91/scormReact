@@ -1,25 +1,22 @@
 import React from "react";
 import styles from './SectionBox.module.css'
-import backImage from '../../../assets/BannerHeader.svg'
-import baloonGray from '../../../assets/BorderBottomGray.svg'
-import baloonPurple from '../../../assets/BorderTopPurple.svg'
-import hatsImage from '../../../assets/hatsImage.svg'
 
-
-export function SectionBox() {
+export function SectionBox({id, sessoes, imgTop, imgBottom}) {
+    const sessao = sessoes.find(sessao => sessao.id === id);
     return (
         <>
             <section className={styles.SectionBox}>
                 <div className={styles.baloonGray}>
-                    <img src={baloonGray} alt="" srcset="" />
+                    <img src={imgTop} alt="" srcset="" />
                 </div>
 
                 <div className={styles.titleImageBox}>
-                    <h1>HISTÓRIA</h1>
+                    {sessao ? (<h1>{sessao.sessao}</h1>):
+                    (<p>Sessao Fora</p>)}
                 </div>
 
                 <div className={styles.baloonPurple}>
-                    <img src={baloonPurple} alt="" srcset="" />
+                    <img src={imgBottom} alt="" srcset="" />
                 </div>
             </section>
 
