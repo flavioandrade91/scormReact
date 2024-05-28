@@ -16,22 +16,20 @@ export function Sanfona({ sanfonas, iconImage, start, end }) {
     return (
         <div className={styles.sanfonaContainer}>
             {itemsToRender.map((sanfona, index) => (
-                <div key={sanfona.id}  className={styles.sanfonaContent}>
-                    <div className={styles.headerSanfona}>
+                <div key={sanfona.id} className={styles.sanfonaContent}>
+                    <div className={styles.headerSanfona} onClick={() => toggleModal(index)}>
                         <span className={styles.title}>{sanfona.title}</span>
-                        <button className={styles.colapse} onClick={() => toggleModal(index)}>
+                        <button className={`${styles.colapse} ${expandedItems[index] ? styles.expanded : ''}`}>
                             <img src={iconImage} alt="Expandir ou colapsar" />
                         </button>
                     </div>
-                    {expandedItems[index] && (
-                        <div className={styles.boxSanfona}>
-                            <div className={styles.bodySanfona}>
-                                <div className={styles.sanfonaItem}>
-                                    <p>{sanfona.text}</p>
-                                </div>
+                    <div className={`${styles.boxSanfona} ${expandedItems[index] ? styles.expanded : ''}`}>
+                        <div className={`${styles.bodySanfona} ${expandedItems[index] ? styles.expanded : ''}`}>
+                            <div className={styles.sanfonaItem}>
+                                <p>{sanfona.text}</p>
                             </div>
                         </div>
-                    )}
+                    </div>
                 </div>
             ))}
         </div>

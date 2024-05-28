@@ -21,6 +21,7 @@ import { CardsBox } from './components/main/boxes/CardsBox';
 import { Artigo } from './components/main/boxes/Artigo';
 import Briefing from './components/main/boxes/Briefing';
 import { Encerramento } from './components/main/boxes/Encerramento';
+import { VideoPlayerPodcast } from './components/multimidia/VideoPlayerPodcast';
 
 class App extends Component {
     constructor(props) {
@@ -50,10 +51,6 @@ class App extends Component {
 
                 <Main />
 
-                <Podcast
-                    podcasts={data.podcast}
-                    id={0}
-                />
 
                 {/* Exemplo de uso dos componentes comentados */}
 
@@ -340,8 +337,9 @@ class App extends Component {
                     FotoPerfil={images.fotoPerfil}
                     autores={data.autor}
                 />
-
+               
             </div>
+            
         );
     }
 }

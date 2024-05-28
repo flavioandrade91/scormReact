@@ -1,9 +1,10 @@
+/* CSS para desktops grandes */
 @media (min-width: 1200px) {
     .header {
         font-family: 'Roboto Condensed', sans-serif;
-        grid-column: 1 / 13; 
-        flex-direction: column; 
-        display: grid;             
+        grid-column: 1 / 13;
+        flex-direction: column;
+        display: grid;
         width: 100%;
         height: auto;
         background-image: url('../../assets/BannerHeader.svg');
@@ -13,118 +14,101 @@
         margin-top: 0;
     }
 
-    .box01{
+    .box01 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 100px;       
+        height: 100px;
     }
-    
-    .img_linha{ 
-        width: 20rem;    
+
+    .img_linha {
+        width: 20rem;
         height: 5rem;
         object-fit: contain;
     }
 
-    .borda_laranja{
-        width: auto;    
+    .borda_laranja {
+        width: auto;
         height: 5rem;
     }
 
-    .box02{
+    .box02 {
         display: flex;
         align-items: end;
         width: 100%;
-        height: 80px;    
+        height: 80px;
     }
 
-    .borda_branca{       
+    .borda_branca {
         height: 5rem;
     }
 
-     .box_title { 
-        display: flex;   
-        align-content: center;  
+    .box_title {
+        display: flex;
+        align-content: center;
         justify-content: start;
         align-items: center;
         width: 100%;
-        height: 300px; 
-        font-size: 3rem;         
-        color: #6F2282;     
+        height: 300px;
+        font-size: 3rem;
+        color: #6F2282;
     }
 
-    .title{
-      text-align: left;
-      width: 30rem;
-      padding-left: 6rem;  
-      font-weight: 300; 
-      text-transform: uppercase;
+    .title {
+        text-align: left;
+        width: 30rem;
+        padding-left: 6rem;
+        font-weight: 300;
+        text-transform: uppercase;
     }
 }
 
+/* CSS para laptops */
 @media (max-width: 1200px) and (min-width: 992px) {
     .header {
         font-family: 'Roboto Condensed', sans-serif;
-        grid-column: 1 /13;
+        grid-column: 1 / 13;
         width: 100%;
         height: auto;
         background-image: url('../../assets/BannerHeader.svg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-
-        .box01{
+    }
+      
+        .box01 {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            height: 100px;       
+            height: 80px;
         }
-        
-        .img_linha{ 
-            width: 20rem;    
-            height: 5rem;
-            object-fit: contain;
-        }
-    
-        .borda_laranja{
-            width: auto;    
-            height: 5rem;
-        }
-    
-        .box02{
+
+        .box02 {
             display: flex;
             align-items: end;
             width: 100%;
-            height: 80px;    
+            height: 70px;
         }
-    
-        .borda_branca{       
-            height: 5rem;
-        }
-    
-         .box_title { 
-            display: flex;   
-            align-content: center;  
+        .box_title {
+            display: flex;
+            align-content: center;
             justify-content: start;
             align-items: center;
             width: 100%;
-            height: 300px; 
-            font-size: 3rem;
-            color: #6F2282;     
+            height: 250px;
+            font-size: 2.5rem;
+            color: #6F2282;
         }
-    
-        .title{
+        .title {
             text-align: left;
-            width: 30rem;
-            padding-left: 6rem;  
-            font-weight: 300; 
+            width: 25rem;
+            padding-left: 5rem;
+            font-weight: 300;
             text-transform: uppercase;
         }
-
-    }
 }
 
-
+/* CSS para tablets em modo paisagem */
 @media (max-width: 992px) and (min-width: 768px) {
     .header {
         font-family: 'Roboto Condensed', sans-serif;
@@ -135,180 +119,178 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+    }
 
-        .box01{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            height: 100px;       
-        }
-        
-        .img_linha{ 
-            width: 20rem;    
-            height: 5rem;
-            object-fit: contain;
-        }
-    
-        .borda_laranja{
-            width: auto;    
-            height: 5rem;
-        }
-    
-        .box02{
-            display: flex;
-            align-items: end;
-            width: 100%;
-            height: 80px;    
-        }
-    
-        .borda_branca{       
-            height: 5rem;
-        }
-    
-         .box_title { 
-            display: flex;   
-            align-content: center;  
-            justify-content: start;
-            align-items: center;
-            width: 100%;
-            height: 300px; 
-            font-size: 3rem;  
-            color: #6F2282;     
-        }
-    
-        .title{
-            text-align: left;
-            width: 30rem;
-            padding-left: 6rem;  
-            font-weight: 300; 
-            text-transform: uppercase;
-        }
+    .box01 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+    }
 
+    .img_linha {
+        width: 18rem;
+        height: 4rem;
+        object-fit: contain;
+    }
+
+    .borda_laranja {
+        width: auto;
+        height: 4rem;
+    }
+
+    .box02 {
+        display: flex;
+        align-items: end;
+        width: 100%;
+        height: 70px;
+    }
+
+    .borda_branca {
+        height: 4rem;
+    }
+
+    .box_title {
+        display: flex;
+        align-content: center;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        font-size: 2.5rem;
+        color: #6F2282;
+    }
+
+    .title {
+        text-align: left;
+        width: 25rem;
+        padding-left: 5rem;
+        font-weight: 300;
+        text-transform: uppercase;
     }
 }
 
-
+/* CSS para tablets em modo retrato e smartphones grandes */
 @media (max-width: 768px) and (min-width: 576px) {
     .header {
         font-family: 'Roboto Condensed', sans-serif;
         grid-column: 1 / 13;
         width: 100%;
-        height:auto;
+        height: auto;
         background-image: url('../../assets/BannerHeader.svg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
     }
 
-    .box01{
+    .box01 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: auto;       
+        height: auto;
     }
-    
-    .img_linha{ 
-        width: 15rem;    
+
+    .img_linha {
+        width: 15rem;
         height: 4rem;
         object-fit: cover;
         object-position: top;
     }
 
-    .borda_laranja{
-        width: auto;    
+    .borda_laranja {
+        width: auto;
         height: 5rem;
     }
-    .box02{
+
+    .box02 {
         display: flex;
         align-items: end;
         width: 100%;
-        height: 80px;    
+        height: 80px;
     }
 
-    .borda_branca{       
+    .borda_branca {
         height: 5rem;
     }
 
-     .box_title { 
-        display: flex;   
-        align-content: center;  
+    .box_title {
+        display: flex;
+        align-content: center;
         justify-content: start;
         align-items: center;
         width: 100%;
-        height: 300px; 
-        font-size: 3rem;  
-        color: #6F2282;     
+        height: 300px;
+        font-size: 2.5rem;
+        color: #6F2282;
     }
 
-    .title{
+    .title {
         text-align: left;
         width: 20rem;
-        padding-left: 3rem;  
-        font-weight: 300; 
+        padding-left: 3rem;
+        font-weight: 300;
         text-transform: uppercase;
     }
-
 }
 
-
-@media (max-width: 576px) and (min-width: 320px) {
+/* CSS para smartphones pequenos */
+@media (max-width: 576px) {
     .header {
         font-family: 'Roboto Condensed', sans-serif;
-        grid-column: 1/13;
+        grid-column: 1 / 13;
         width: 100%;
-        height: 620px;
+        height: auto;
         background-image: url('../../assets/BannerHeader.svg');
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-        background-repeat: no-repeat;
     }
 
-    .box01{
+    .box01 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 100px;       
+        height: auto;
     }
-    
-    .img_linha{ 
-        width: 16rem;    
-        height: 4rem;
+
+    .img_linha {
+        width: 12rem;
+        height: 3rem;
         object-fit: contain;
     }
 
-    .borda_laranja{
-        width: auto;    
-        height: 5rem;
+    .borda_laranja {
+        width: auto;
+        height: 4rem;
     }
 
-    .box02{
+    .box02 {
         display: flex;
         align-items: end;
         width: 100%;
-        height: 80px;    
+        height: 60px;
     }
 
-    .borda_branca{       
-        height: 5rem;
+    .borda_branca {
+        height: 4rem;
     }
 
-     .box_title { 
-        display: flex;   
-        align-content: center;  
-        justify-content: start;
+    .box_title {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 27.5rem; 
-        font-size: 3rem;  
-        color: #6F2282;   
+        height: auto;
+        font-size: 2rem;
+        color: #6F2282;
+        padding: 1rem;
     }
 
-    .title{
-        text-align: left;
-        width: 20rem;
-        padding-left: 2.5rem;  
-        font-weight: 300; 
-        text-transform: uppercase; 
+    .title {
+        text-align: center;
+        width: 100%;
+        padding: 0 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
     }
 }
-

@@ -1,7 +1,8 @@
 import React from "react";
-import styles from './Podcast.module.css';
+import styles from '../../components/multimidia/VideoPlayerPodcast.module.css';
 import images from '../main/boxes/Images';
-import { AudioPlayer } from '../multimidia/AudioPlayer';
+import { VideoPlayerPodcast } from '../multimidia/VideoPlayerPodcast';
+import data from "../main/boxes/Dados";
 
 export function Podcast({ podcasts, id }) {
   // Verificar se 'podcasts' está definido antes de usar 'find'
@@ -23,7 +24,7 @@ export function Podcast({ podcasts, id }) {
             Módulo: <b>Fundamentos da Produção de Moda</b><br />
           </p>
           <div className={styles.audioPlayer}>
-            <AudioPlayer />
+            {/* <VideoPlayerPodcast podcasts={data.podcast}/> */}
           </div>
         </div>
       ) : (

@@ -1,0 +1,87 @@
+.videoplayer {
+    /* grid-column: 1 / 13; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    background-color: orange;
+    padding: 20px;
+  }
+  
+  .videoContainer {
+    grid-column: span 10;
+    position: relative;
+  }
+  
+  .playbutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .playbutton img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .iconVol {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .progressAudio {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+  
+  .progressAudio input[type="range"] {
+    width: 100%;
+  }
+  
+  .Boxtimebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+  
+  .timebar input[type="range"] {
+    width: 80%;
+  }
+  
+  .textFormat {
+    color: white;
+  }
+  
+  .podcastList {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .podcastList button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .podcastList button:hover {
+    background: white;
+    color: orange;
+  }
+  

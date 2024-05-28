@@ -96,7 +96,7 @@
     }
 }
 
-/* Estilos para telas médias */
+/* Estilos para telas médias (1200px - 992px) */
 @media (max-width: 1200px) and (min-width: 992px) {
     .container {
         font-family: "Roboto Condensed", sans-serif;    
@@ -126,11 +126,7 @@
         grid-column: 2 / 3;
         background-color: #531961;
     }
-    .formalaranja img {
-        /* background-color: rgb(198, 246, 230); */
-        /* object-fit: contain;
-        overflow: hidden; */
-    }
+
     .boxcinza {  
         grid-column: 3 / 4;
         width: 100%;
@@ -152,7 +148,7 @@
     .boxicon img {
         width: 60%;
         height: auto;
-        overflow: hidden; ;
+        overflow: hidden;
     }
     .formalinhas {
         grid-column: 1/2;
@@ -207,7 +203,7 @@
     }
 }
 
-/* Estilos para telas pequenas */
+/* Estilos para tablets em modo paisagem (992px - 768px) */
 @media (max-width: 992px) and (min-width: 768px) {
     .container {
         font-family: "Roboto Condensed", sans-serif;    
@@ -237,11 +233,6 @@
         grid-column: 2 / 3;
         background-color: #531961;
     }
-    .formalaranja img {
-        /* background-color: rgb(198, 246, 230); */
-        /* object-fit: contain;
-        overflow: hidden; */
-    }
     .boxcinza {  
         grid-column: 3 / 4;
         width: 100%;
@@ -263,7 +254,7 @@
     .boxicon img {
         width: 60%;
         height: auto;
-        overflow: hidden; ;
+        overflow: hidden;
     }
     .formalinhas {
         grid-column: 1/2;
@@ -318,7 +309,7 @@
     }
 }
 
-/* Estilos para telas menores */
+/* Estilos para tablets em modo retrato e smartphones grandes (768px - 576px) */
 @media (max-width: 768px) and (min-width: 576px) {
     .container {
         font-family: "Roboto Condensed", sans-serif;    
@@ -373,7 +364,7 @@
     .boxicon img {
         width: 60%;
         height: auto;
-        overflow: hidden; ;
+        overflow: hidden;
     }
     .formalinhas {
         grid-column: 1/2;
@@ -391,7 +382,7 @@
     }
     .introducao {
         grid-column: 5 / 12;
-        grid-row: 2;
+        grid-row: 2.
     }
     .apresentacao {
         margin-top: -20px;
@@ -431,7 +422,7 @@
     }
 }
 
-/* Estilos para telas extra pequenas */
+/* Estilos para smartphones pequenos (576px - 320px) */
 @media (max-width: 576px) and (min-width: 320px) {
     .container {
         font-family: "Roboto Condensed", sans-serif;    
@@ -445,7 +436,7 @@
         padding-bottom: 10rem;
     }    
     .box {
-       display: none;
+        display: none;
     }
     .formaroxo {
         grid-column: 12/13;
@@ -456,7 +447,7 @@
     .introducao {
         grid-column: 2 / 12;
         grid-row: auto;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
     .apresentacao {
         margin-top: -100px;
@@ -473,11 +464,10 @@
         text-align: center;
         word-spacing: 0px;
         text-indent: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 8rem;
     }
     .contexto h1 {
         text-transform: uppercase;
-        font-style: bold;
         text-align: center;
         color: #FCBA5A;
         margin-top: 2rem;
@@ -498,6 +488,71 @@
     }
 }
 
-.teste {
-    background-color: #FCBA5A;
+/* Estilos para telas extra pequenas (menos de 320px) */
+@media (max-width: 320px) {
+    .container {
+        font-family: "Roboto Condensed", sans-serif;
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 6rem auto;
+        background-color: #6F2282;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10rem;
+    }
+    .box {
+        display: none;
+    }
+    .formaroxo {
+        grid-column: 12/13;
+        max-width: 100%;
+        justify-self: end;
+        overflow: hidden;
+    }
+    .introducao {
+        grid-column: 2 / 12;
+        grid-row: auto;
+        margin-top: 2rem;
+    }
+    .apresentacao {
+        margin-top: -100px;
+        
+    }
+    .apresentacao h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: #FCBA5A;
+    }
+    .apresentacao p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #eee;
+        text-align: center;
+        word-spacing: 0px;
+        text-indent: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contexto h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: #FCBA5A;
+        margin-top: 2rem;
+    }
+    .contexto p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #eee;
+        text-align: center;
+        text-indent: 2rem;       
+        margin-bottom: 2rem;
+    }
+    .traco {
+        grid-column: 4 / 10;
+        height: 0.2rem;
+        width: auto;
+        background-color: #00000077;
+    }
 }
+
+

@@ -570,20 +570,31 @@ const data = {
       descricao: 'Assista ao vídeo e conheça mais sobre a relação entre Projetos de Exposição de Produtos e Eventos de Moda.',
       url: 'https://www.youtube.com/watch?v=SuqrIg6f-F4&list=PLPli_KFbLinGXZkNL_vdalCnOHpMV4xAO&index=3',
       fonte: 'Vídeo 4 - Projetos de Exposição de Produtos e Eventos de Moda. Fonte: SENAI Play, 11/03/2024.'
-    }
+    },
+    {
+      id: 4,
+      title: 'Apresentação da unidade curricular',
+      descricao: 'Assista ao vídeo e conheça mais sobre a relação entre Projetos de Exposição de Produtos e Eventos de Moda.',
+      url: 'https://www.youtube.com/watch?v=9JnJn7ULaGQ',
+      fonte: ''
+    },
+
   ],
   podcast: [
     {
       id: 0,
-      title: 'Apresentação da unidade curricular'
+      title: 'Apresentação da unidade curricular',
+      link:'https://www.youtube.com/watch?v=9JnJn7ULaGQ'
     },
     {
       id: 1,
-      title: 'Inovações Tecnológicas na Produção de Moda'
+      title: 'Inovações Tecnológicas na Produção de Moda',
+      link:''
     },
     {
       id: 2,
-      title: 'Briefing'
+      title: 'Briefing',
+      link:''
     }
   ],
   cards: [
