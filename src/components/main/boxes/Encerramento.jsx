@@ -4,6 +4,8 @@ import images from './Images'
 import data from './Dados'
 import { Autores } from "./Autores";
 import { Referencias } from "./Referencias";
+import { Creditos } from "./Creditos";
+import { Rodape } from "./Rodape";
 
 export function Encerramento({ id, sessoes}) {
     const sessao = sessoes.find(sessao => sessao.id === id);
@@ -49,7 +51,8 @@ export function Encerramento({ id, sessoes}) {
                 />
 
             <Referencias referencias={data.referencias}/> 
-
+            <Creditos creditos={data.creditos}  />    
+            <Rodape />
             <img className={styles.imagesLinhas1} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />
             <img className={styles.imagesLinhas2} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />
             <img className={styles.imagesLinhas3} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />

@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './Referencias.module.css'
+import React from 'react';
+import styles from './Referencias.module.css';
 
 export function Referencias({ referencias }) {
   const half = Math.ceil(referencias.length / 2);
@@ -8,11 +8,13 @@ export function Referencias({ referencias }) {
 
   return (
     <div className={styles.ReferenciaContainer}>
+      <div className={styles.titulo}>Referências</div>
+
       <div className={styles.coluna}>
         {firstHalf.map((ref, index) => (
-          <div key={index} className={styles.reference_item}>
-            <p><strong>{ref.nome}</strong></p>
-            <p>{ref.texto}</p>
+          <div key={index} className={styles.reference_item} style={{ gridRow: `span 2` }}>
+            <p>{ref.nome}</p>
+            <p><strong>{ref.texto}</strong></p>
             <a href={ref.link} target="_blank" rel="noopener noreferrer">{ref.link}</a>
           </div>
         ))}
@@ -20,13 +22,13 @@ export function Referencias({ referencias }) {
 
       <div className={styles.coluna}>
         {secondHalf.map((ref, index) => (
-          <div key={index} className={styles.reference_item}>
-            <p><strong>{ref.nome}</strong></p>
-            <p>{ref.texto}</p>
+          <div key={index} className={styles.reference_item} style={{ gridRow: `span 2` }}>
+            <p>{ref.nome}</p>
+            <p><strong>{ref.texto}</strong></p>
             <a href={ref.link} target="_blank" rel="noopener noreferrer">{ref.link}</a>
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }

@@ -46,6 +46,8 @@ import livro from '../../../assets/livro.svg'
 import baloonGrayBottom from '../../../assets/baloonGrayBottom.svg'
 import iconPerfil from '../../../assets/iconPerfil.svg'
 import fotoPerfil from '../../../assets/FotoPerfil.svg'
+import cetiqt from '../../../assets/logoCetiqt.svg'
+import senai from '../../../assets/logoSenai.svg'
 
 
 const images = {
@@ -95,7 +97,9 @@ const images = {
     designPurple,
     livro,
     iconPerfil,
-    fotoPerfil
+    fotoPerfil,
+    cetiqt,
+    senai
 
 }
 

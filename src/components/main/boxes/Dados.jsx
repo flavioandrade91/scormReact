@@ -692,233 +692,238 @@ autor:[
   }
 ], 
 
-referencias:[  
-    {
-        nome: "AUDACES",
-        texto: "Entenda o cenário atual e como se manter competitivo no mercado da moda.",
-        link: "https://audaces.com/pt-br/blog/mercado-moda. Acesso em: 12 fev. 2024."
-    },
-    {
-        nome: "BARBOSA, G.",
-        texto: "Para inspirar: moda na década de 1910. 2012.",
-        link: "https://teoriacriativa.wordpress.com/2012/05/07/para-inspirar-moda-decada-1910/. Acesso em: 05 fev. 2024."
-    },
-    {
-        nome: "BASTOS, C.",
-        texto: "Economia Linear: conceito e efeito. 2020.",
-        link: "https://folhavitoria.com.br/economia/blogs/economia-circular/2020/12/28/economia-linear-conceito-e-efeito/. Acesso em: 16 fev. 2024."
-    },
-    {
-        nome: "COBRA, M.",
-        texto: "Marketing & moda. 2. ed.",
-        link: "São Paulo: Senac, 2007."
-    },
-    {
-        nome: "COSGRAVE, B.",
-        texto: "História da indumentária e da moda: da antiguidade aos dias atuais.",
-        link: "Barcelona: Gustavo Gili, 2012."
-    },
-    {
-        nome: "ESCOLA, B.",
-        texto: "O surgimento da moda.",
-        link: "https://brasilescola.uol.com.br/curiosidades/o-surgimento-moda.htm#:~:text=A%20moda%20surgiu%20em%20meados,a%20inf%C3%A2ncia%20at%C3%A9%20a%20morte.. Acesso em: 20 jan. 2024."
-    },
-    {
-        nome: "GREEN, E. (org.)",
-        texto: "Economia Circular x Linear. 2020.",
-        link: "https://carinhoecogreen.com.br/economia-circular-linear-um-jeito-de-produzir-realmente-sustentavel/. Acesso em: 14 fev. 2024."
-    },
-    {
-        nome: "HISTÓRICA, M.",
-        texto: "Anos 30: crise e glamour. 2013.",
-        link: "https://modahistorica.blogspot.com/2013/05/anos-30-crise-e-glamour.html. Acesso em: 15 fev. 2024."
-    },
-    {
-        nome: "IBERDROLA (org.)",
-        texto: "Design circular: como repensar o processo de criação e apostar na sustentabilidade.",
-        link: "https://www.iberdrola.com/compromisso-social/design-circular#:~:text=Em%20concreto%2C%20esta%20forma%20de,a%20prote%C3%A7%C3%A3o%20do%20meio%20ambiente.. Acesso em: 12 fev. 2024."
-    },
-    {
-        nome: "INDUSTRIAIS, S.",
-        texto: "Design de moda: o que faz e principais atuações.",
-        link: "https://www.mxcursos.com/blog/design-de-moda-o-que-faz-e-principais-atuacoes/. Acesso em: 18 fev. 2024."
-    },
-    {
-        nome: "LAVER, J.",
-        texto: "A roupa e a moda: uma história concisa.",
-        link: "São Paulo (SP): Companhia das Letras, c1989."
-    },
-    {
-        nome: "NOCE, D.",
-        texto: "Moda nos anos 20: o fim das silhuetas e a busca por liberdade e conforto.",
-        link: "https://www.daninoce.com.br/moda/moda-nos-anos-20-o-fim-das-silhuetas-e-a-busca-por-liberdade-e-conforto/. Acesso em: 12 fev. 2024."
-    },
-    {
-        nome: "OLIVEIRA, J. M.",
-        texto: "A história da moda masculina: década de 1910. 2014.",
-        link: "https://mondomoda.com.br/2014/05/19/a-historia-da-moda-masculina-decada-de-1910/. Acesso em: 12 fev. 2024."
-    },
-    {
-        nome: "SANTAELLA, L.",
-        texto: "A moda é sintoma da cultura?",
-        link: "São Paulo: Estação das Letras e Cores, 2023."
-    },
-    {
-        nome: "SANTOS, M. L. P.",
-        texto: "Slow Fashion e Fast Fashion: o que significam?. 2024.",
-        link: "https://www.politize.com.br/slow-fashion-fast-fashion/?https://www.politize.com.br/&gad_source=1&gclid=EAIaIQobChMIlpztxrfHhAMVa-gWBR0cXwXKEAAYASAAEgKUQ_D_BwE. Acesso em: 15 fev. 2024."
-    },
-    {
-        nome: "SEBRAE (org.)",
-        texto: "Slow fashion: o que é e quais as suas vantagens?. 2022.",
-        link: "https://sebrae.com.br/sites/PortalSebrae/artigos/slow-fashion-o-que-e-e-quais-as-suas-vantagens,5858675f1ef6f710VgnVCM100000d701210aRCRD. Acesso em: 15 fev. 2024."
-    },
-    {
-        nome: "SILVA, M. L.",
-        texto: "A economia da moda. 2023.",
-        link: "https://portalunico.com/a-economia-da-moda/. Acesso em: 10 fev. 2024."
-    },
-    {
-        nome: "STOODI (org.)",
-        texto: "Design de moda: guia completo!",
-        link: "https://blog.stoodi.com.br/guias/cursos-e-profissoes/design-de-moda/#:~:text=O%20Design%20de%20Moda%20%C3%A9,bolsas%2C%20cintos%2C%20pulseiras%20etc.. Acesso em: 18 fev. 2024."
-    },
-    {
-        nome: "TREPTOW, D. E.",
-        texto: "Inventando moda: planejamento de coleção. 5. ed.",
-        link: "São Paulo: A Autora, 2013."
-    },
-    {
-        nome: "VOGUE (org.)",
-        texto: "O que é prêt-à-porter e qual é a diferença da alta-costura? 2022.",
-        link: "https://vogue.globo.com/moda/noticia/2022/08/o-que-e-pret-porter-e-qual-e-diferenca-da-alta-costura.html. Acesso em: 15 fev. 2024."
-    },
-    {
-        nome: "YAHN, C.",
-        texto: "Alta costura: o que é, quanto custa, quem faz e quem compra. 2021.",
-        link: "https://ffw.uol.com.br/noticias/moda/alta-costura-o-que-e-quanto-custa-quem-faz-e-quem-compra-2/. Acesso em: 15 fev. 2024."
-    }
+referencias: [
+  {
+    nome: "ATMO DIGITAL.",
+    texto: "Projeção Mapeada: a tendência que domina os eventos. Disponível em:",
+    link: "https://atmodigital.com.br/projecao-mapeada-a-tendencia-que-domina-os-eventos/. Acesso em: 18 fev. 2024."
+  },
+  {
+    nome: "AUDACES",
+    texto: "Entenda o cenário atual e como se manter competitivo no mercado da moda.",
+    link: "https://audaces.com/pt-br/blog/mercado-moda. Acesso em: 12 fev. 2024."
+  },
+  {
+    nome: "BARBOSA, G.",
+    texto: "Para inspirar: moda na década de 1910. 2012.",
+    link: "https://teoriacriativa.wordpress.com/2012/05/07/para-inspirar-moda-decada-1910/. Acesso em: 05 fev. 2024."
+  },
+  {
+    nome: "BASTOS, C.",
+    texto: "Economia Linear: conceito e efeito. 2020.",
+    link: "https://folhavitoria.com.br/economia/blogs/economia-circular/2020/12/28/economia-linear-conceito-e-efeito/. Acesso em: 16 fev. 2024."
+  },
+  {
+    nome: "COBRA, M.",
+    texto: "Marketing & moda. 2. ed.",
+    link: "São Paulo: Senac, 2007."
+  },
+  {
+    nome: "COSGRAVE, B.",
+    texto: "História da indumentária e da moda: da antiguidade aos dias atuais.",
+    link: "Barcelona: Gustavo Gili, 2012."
+  },
+  {
+    nome: "ESCOLA, B.",
+    texto: "O surgimento da moda.",
+    link: "https://brasilescola.uol.com.br/curiosidades/o-surgimento-moda.htm#:~:text=A%20moda%20surgiu%20em%20meados,a%20inf%C3%A2ncia%20at%C3%A9%20a%20morte.. Acesso em: 20 jan. 2024."
+  },
+  {
+    nome: "GREEN, E. (org.)",
+    texto: "Economia Circular x Linear. 2020.",
+    link: "https://carinhoecogreen.com.br/economia-circular-linear-um-jeito-de-produzir-realmente-sustentavel/. Acesso em: 14 fev. 2024."
+  },
+  {
+    nome: "HISTÓRICA, M.",
+    texto: "Anos 30: crise e glamour. 2013.",
+    link: "https://modahistorica.blogspot.com/2013/05/anos-30-crise-e-glamour.html. Acesso em: 15 fev. 2024."
+  },
+  {
+    nome: "IBERDROLA (org.)",
+    texto: "Design circular: como repensar o processo de criação e apostar na sustentabilidade.",
+    link: "https://www.iberdrola.com/compromisso-social/design-circular#:~:text=Em%20concreto%2C%20esta%20forma%20de,a%20prote%C3%A7%C3%A3o%20do%20meio%20ambiente.. Acesso em: 12 fev. 2024."
+  },
+  {
+    nome: "INDUSTRIAIS, S.",
+    texto: "Design de moda: o que faz e principais atuações.",
+    link: "https://www.mxcursos.com/blog/design-de-moda-o-que-faz-e-principais-atuacoes/. Acesso em: 18 fev. 2024."
+  },
+  {
+    nome: "LAVER, J.",
+    texto: "A roupa e a moda: uma história concisa.",
+    link: "São Paulo (SP): Companhia das Letras, c1989."
+  },
+  {
+    nome: "NOCE, D.",
+    texto: "Moda nos anos 20: o fim das silhuetas e a busca por liberdade e conforto.",
+    link: "https://www.daninoce.com.br/moda/moda-nos-anos-20-o-fim-das-silhuetas-e-a-busca-por-liberdade-e-conforto/. Acesso em: 12 fev. 2024."
+  },
+  {
+    nome: "OLIVEIRA, J. M.",
+    texto: "A história da moda masculina: década de 1910. 2014.",
+    link: "https://mondomoda.com.br/2014/05/19/a-historia-da-moda-masculina-decada-de-1910/. Acesso em: 12 fev. 2024."
+  },
+  {
+    nome: "SANTAELLA, L.",
+    texto: "A moda é sintoma da cultura?",
+    link: "São Paulo: Estação das Letras e Cores, 2023."
+  },
+  {
+    nome: "SANTOS, M. L. P.",
+    texto: "Slow Fashion e Fast Fashion: o que significam?. 2024.",
+    link: "https://www.politize.com.br/slow-fashion-fast-fashion/?https://www.politize.com.br/&gad_source=1&gclid=EAIaIQobChMIlpztxrfHhAMVa-gWBR0cXwXKEAAYASAAEgKUQ_D_BwE. Acesso em: 15 fev. 2024."
+  },
+  {
+    nome: "SEBRAE (org.)",
+    texto: "Slow fashion: o que é e quais as suas vantagens?. 2022.",
+    link: "https://sebrae.com.br/sites/PortalSebrae/artigos/slow-fashion-o-que-e-e-quais-as-suas-vantagens,5858675f1ef6f710VgnVCM100000d701210aRCRD. Acesso em: 15 fev. 2024."
+  },
+  {
+    nome: "SILVA, M. L.",
+    texto: "A economia da moda. 2023.",
+    link: "https://portalunico.com/a-economia-da-moda/. Acesso em: 10 fev. 2024."
+  },
+  {
+    nome: "STOODI (org.)",
+    texto: "Design de moda: guia completo!",
+    link: "https://blog.stoodi.com.br/guias/cursos-e-profissoes/design-de-moda/#:~:text=O%20Design%20de%20Moda%20%C3%A9,bolsas%2C%20cintos%2C%20pulseiras%20etc.. Acesso em: 18 fev. 2024."
+  },
+  {
+    nome: "TREPTOW, D. E.",
+    texto: "Inventando moda: planejamento de coleção. 5. ed.",
+    link: "São Paulo: A Autora, 2013."
+  },
+  {
+    nome: "VOGUE (org.)",
+    texto: "O que é prêt-à-porter e qual é a diferença da alta-costura? 2022.",
+    link: "https://vogue.globo.com/moda/noticia/2022/08/o-que-e-pret-porter-e-qual-e-diferenca-da-alta-costura.html. Acesso em: 15 fev. 2024."
+  },
+  {
+    nome: "YAHN, C.",
+    texto: "Alta costura: o que é, quanto custa, quem faz e quem compra. 2021.",
+    link: "https://ffw.uol.com.br/noticias/moda/alta-costura-o-que-e-quanto-custa-quem-faz-e-quem-compra-2/. Acesso em: 15 fev. 2024."
+  }
 ],
 
- agrupadoPorEmpresa : {
+creditos: {
   "CONFEDERAÇÃO NACIONAL DA INDÚSTRIA – CNI": [
-      {
-          nome: "Robson Braga de Andrade",
-          cargo: "Presidente"
-      }
+    {
+      nome: "Robson Braga de Andrade",
+      cargo: "Presidente"
+    }
   ],
   "Diretoria de Educação e Tecnologia – DIRET": [
-      {
-          nome: "Rafael Esmeraldo Lucchesi Ramacciotti",
-          cargo: "Diretor de Educação e Tecnologia"
-      }
+    {
+      nome: "Rafael Esmeraldo Lucchesi Ramacciotti",
+      cargo: "Diretor de Educação e Tecnologia"
+    }
   ],
   "SERVIÇO NACIONAL DE APRENDIZAGEM INDUSTRIAL –­ SENAI": [
-      {
-          nome: "Robson Braga de Andrade",
-          cargo: "Presidente"
-      }
+    {
+      nome: "Robson Braga de Andrade",
+      cargo: "Presidente"
+    }
   ],
   "SENAI – Departamento Nacional": [
-      {
-          nome: "Rafael Esmeraldo Lucchesi Ramacciotti",
-          cargo: "Diretor-Geral"
-      },
-      {
-          nome: "Gustavo Leal Sales Filho",
-          cargo: "Diretor de Operações"
-      }
+    {
+      nome: "Rafael Esmeraldo Lucchesi Ramacciotti",
+      cargo: "Diretor-Geral"
+    },
+    {
+      nome: "Gustavo Leal Sales Filho",
+      cargo: "Diretor de Operações"
+    }
   ],
   "SENAI – Departamento Nacional, SUPERINTENDÊNCIA DE EDUCAÇÃO PROFISSIONAL E SUPERIOR – SUEPS": [
-      {
-          nome: "Felipe Esteves Morgado",
-          cargo: "Superintendente de Educação Profissional e Superior"
-      },
-      {
-          nome: "Luiz Eduardo Leão",
-          cargo: "Gerente de Tecnologias Educacionais"
-      },
-      {
-          nome: "Anna Christina Theodora Aun de Azevedo Nascimento",
-          cargo: "Coordenação Geral de Desenvolvimento dos Recursos Didáticos Nacionais"
-      },
-      {
-          nome: "Cyro Visgueiro Maciel",
-          cargo: "Coordenação Geral de Desenvolvimento dos Recursos Didáticos Nacionais"
-      },
-      {
-          nome: "Laíse Caldeira Pedroso",
-          cargo: "Coordenação Geral de Desenvolvimento dos Recursos Didáticos Nacionais"
-      },
-      {
-          nome: "Décio Campos da Silva",
-          cargo: "Coordenação Geral de Desenvolvimento dos Recursos Didáticos Nacionais"
-      }
+    {
+      nome: "Felipe Esteves Morgado",
+      cargo: "Superintendente de Educação Profissional e Superior"
+    },
+    {
+      nome: "Luiz Eduardo Leão",
+      cargo: "Gerente de Tecnologias Educacionais"
+    },
+    {
+      nome: "Anna Christina Theodora Aun de Azevedo Nascimento",
+      cargo: "Coordenação Geral de Desenvolvimento dos Recursos Didáticos Nacionais"
+    },
+    {
+      nome: "Cyro Visgueiro Maciel",
+      cargo: "Coordenação Geral de Desenvolvimento dos Recursos Didáticos Nacionais"
+    },
+    {
+      nome: "Laíse Caldeira Pedroso",
+      cargo: "Coordenação Geral de Desenvolvimento dos Recursos Didáticos Nacionais"
+    },
+    {
+      nome: "Décio Campos da Silva",
+      cargo: "Coordenação Geral de Desenvolvimento dos Recursos Didáticos Nacionais"
+    }
   ],
   "CENTRO DE TECNOLOGIA DA INDÚSTRIA QUÍMICA E TÊXTIL DO SENAI – SENAI CETIQT": [
-      {
-          nome: "Sérgio Luiz Souza Motta",
-          cargo: "Diretoria Executiva"
-      },
-      {
-          nome: "Fernando Rotta Rodrigues",
-          cargo: "Diretoria de Administração e Finanças"
-      },
-      {
-          nome: "Leandro Neves",
-          cargo: "Gerência de Educação"
-      },
-      {
-          nome: "Renata Rottweiler",
-          cargo: "Coordenação Educação a Distância e Desenvolvimento de Produtos"
-      },
-      {
-          nome: "Priscila Keunecke da Silva",
-          cargo: "Elaboração"
-      }
+    {
+      nome: "Sérgio Luiz Souza Motta",
+      cargo: "Diretoria Executiva"
+    },
+    {
+      nome: "Fernando Rotta Rodrigues",
+      cargo: "Diretoria de Administração e Finanças"
+    },
+    {
+      nome: "Leandro Neves",
+      cargo: "Gerência de Educação"
+    },
+    {
+      nome: "Renata Rottweiler",
+      cargo: "Coordenação Educação a Distância e Desenvolvimento de Produtos"
+    },
+    {
+      nome: "Priscila Keunecke da Silva",
+      cargo: "Elaboração"
+    }
   ],
   "EQUIPE TÉCNICA": [
-      {
-          nome: "Jorge Chimanowsky",
-          cargo: "Revisão Técnica"
-      },
-      {
-          nome: "Ana Maria Lopes",
-          cargo: "Revisão Pedagógica"
-      },
-      {
-          nome: "Camila Bilheiro",
-          cargo: "Design Educacional, Revisão Ortográfica e Gramatical"
-      },
-      {
-          nome: "Daniel Abreu",
-          cargo: "Projeto de Identidade Visual"
-      },
-      {
-          nome: "Flavio Lessa",
-          cargo: "Desenvolvimento Front-end"
-      },
-      {
-          nome: "Daniel de Abreu",
-          cargo: "Fotografias, Ilustrações e Tratamento de Imagens"
-      },
-      {
-          nome: "XXX",
-          cargo: "Diagramação"
-      },
-      {
-          nome: "Thalles Novaes",
-          cargo: "Edição e Pós-Produção Audiovisual"
-      },
-      {
-          nome: "Matheus Borges",
-          cargo: "Edição e Pós-Produção Audiovisual"
-      },
-      {
-          nome: "Robson Braga",
-          cargo: "Normalização"
-      }
-  ]
+    {
+      nome: "Jorge Chimanowsky",
+      cargo: "Revisão Técnica"
+    },
+    {
+      nome: "Ana Maria Lopes",
+      cargo: "Revisão Pedagógica"
+    },
+    {
+      nome: "Camila Bilheiro",
+      cargo: "Design Educacional, Revisão Ortográfica e Gramatical"
+    },
+    {
+      nome: "Daniel Abreu",
+      cargo: "Projeto de Identidade Visual"
+    },
+    {
+      nome: "Flavio Lessa",
+      cargo: "Desenvolvimento Front-end"
+    },
+    {
+      nome: "Daniel de Abreu",
+      cargo: "Fotografias, Ilustrações e Tratamento de Imagens"
+    },
+    {
+      nome: "XXX",
+      cargo: "Diagramação"
+    },
+    {
+      nome: "Thalles Novaes",
+      cargo: "Edição e Pós-Produção Audiovisual"
+    },
+    {
+      nome: "Matheus Borges",
+      cargo: "Edição e Pós-Produção Audiovisual"
+    },
+    {
+      nome: "Robson Braga",
+      cargo: "Normalização"
+    }
+  ],
 }
 };
 

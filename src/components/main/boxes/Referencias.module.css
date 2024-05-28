@@ -1,5 +1,39 @@
-.ReferenciaContainer{
-    grid-column: 3 /8;
+.ReferenciaContainer {
+    grid-column: 3 / 11;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    /* Espaço entre as colunas */
+    margin-top: 4rem;
+}
+
+.coluna {
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.reference_item {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.reference_item p,
+.reference_item a {
+    margin: 0;
+    color: #eee;
+    text-decoration: none;
+    word-wrap: break-word; /* Quebra de linha para links longos */
+}
+
+.titulo {
+    grid-column: 1 / 13;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #FCBA5A;
 }
