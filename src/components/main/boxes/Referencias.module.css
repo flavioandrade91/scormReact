@@ -37,3 +37,83 @@
     margin-bottom: 1rem;
     color: #FCBA5A;
 }
+
+/* Estilos para telas médias */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .ReferenciaContainer {
+        grid-column: 2 / 12;
+        margin-top: 3rem;
+    }
+    
+    .coluna {
+        grid-column: span 6;
+    }
+    
+    .titulo {
+        font-size: 1.8rem;
+    }
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 992px) and (min-width: 768px) {
+    .ReferenciaContainer {
+        grid-column: 1 / 13;
+        margin-top: 2rem;
+    }
+    
+    .coluna {
+        grid-column: span 12;
+    }
+    
+    .titulo {
+        font-size: 1.6rem;
+    }
+}
+
+/* Estilos para tablets em modo retrato e smartphones grandes */
+@media (max-width: 768px) and (min-width: 576px) {
+    .ReferenciaContainer {
+        grid-column: 1 / 13;
+        margin-top: 2rem;
+    }
+    
+    .coluna {
+        grid-column: span 12;
+    }
+    
+    .titulo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .reference_item {
+        padding: .5rem;
+    }
+}
+
+/* Estilos para smartphones pequenos */
+@media (max-width: 576px) {
+    .ReferenciaContainer {
+        grid-column: 1 / 13;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .coluna {
+        grid-column: span 12;
+    }
+    
+    .titulo {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .reference_item {
+        padding: .5rem;
+    }
+    
+    .reference_item p,
+    .reference_item a {
+        font-size: 1rem;
+    }
+}

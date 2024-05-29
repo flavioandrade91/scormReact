@@ -3,12 +3,13 @@
     .boxPurple {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
-        height: 10rem;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         justify-content: center;
         align-content: center;
         background-color: #6F2282;
+        padding: 2rem 0;
     }
 
     .introHistoria {
@@ -27,12 +28,13 @@
     .boxPurple {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
-        height: 10rem;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         justify-content: center;
         align-content: center;
         background-color: #6F2282;
+        padding: 2rem 0;
     }
 
     .introHistoria {
@@ -51,12 +53,13 @@
     .boxPurple {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
-        height: 10rem;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         justify-content: center;
         align-content: center;
         background-color: #6F2282;
+        padding: 2rem 0;
     }
 
     .introHistoria {
@@ -70,32 +73,8 @@
     }
 }
 
-/* Estilos para telas menores */
+/* Estilos para tablets em modo retrato e smartphones grandes */
 @media (max-width: 768px) and (min-width: 576px) {
-    .boxPurple {
-        grid-column: 1 / 13;
-        font-family: 'Roboto Condensed', sans-serif;
-        height: 10rem;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        justify-content: center;
-        align-content: center;
-        background-color: #6F2282;
-    }
-
-    .introHistoria {
-        grid-column: 2 / 12;
-        color: #eee;
-        text-align: center;
-    }
-
-    .introHistoria p {
-        font-size: 1.5rem;
-    }
-}
-
-/* Estilos para telas extra pequenas */
-@media (max-width: 576px) and (min-width: 320px) {
     .boxPurple {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
@@ -105,6 +84,32 @@
         justify-content: center;
         align-content: center;
         background-color: #6F2282;
+        padding: 2rem 0;
+    }
+
+    .introHistoria {
+        grid-column: 2 / 12;
+        color: #eee;
+        text-align: center;
+    }
+
+    .introHistoria p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos para smartphones pequenos */
+@media (max-width: 576px) {
+    .boxPurple {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-content: center;
+        align-content: center;
+        background-color: #6F2282;
+        padding: 1rem 0;
     }
 
     .introHistoria {
@@ -115,5 +120,6 @@
 
     .introHistoria p {
         font-size: 1.25rem;
+        padding: 0 1rem;
     }
 }

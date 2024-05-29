@@ -1,120 +1,128 @@
-/* src/components/Briefing.module.css */
+/* Estilos para telas grandes */
 .briefing_container {
-    grid-column: 2 / 12;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 10px;
-    box-sizing: border-box;
+  grid-column: 2 / 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.text_container {
+  grid-column: 2 / 6;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  position: relative; /* Necessário para os pseudo-elementos */
+  z-index: 1; /* Para garantir que o texto esteja na frente da imagem */
+}
+
+.text_container p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #6F2282;
+}
+
+.text_container::before,
+.text_container::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18rem;
+  height: 1px;
+  background-color: #BBBBBB;
+}
+
+.text_container::before {
+  top: 0;
+}
+
+.text_container::after {
+  bottom: 0;
+}
+
+.image_container {
+  grid-column: 7 / 13;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Necessário para posicionamento do span */
+}
+
+.image_container img {
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+.image_container span {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6F2282;
+  text-align: center;
+}
+
+.image_container a {
+  color: #6F2282;
+  text-decoration: none;
+}
+
+.image_container a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para tablets em modo retrato e smartphones grandes */
+@media (max-width: 768px) {
+  .briefing_container {
+    grid-column: 1 / -1; /* Ocupa toda a largura disponível */
+    grid-template-columns: 1fr; /* Uma coluna em dispositivos móveis */
+    position: relative; /* Necessário para posicionamento da imagem */
   }
-  
+
   .text_container {
-    grid-column: 2 / 6;
-    grid-row: 1;
-    align-self: center;
-    justify-self: center;
+    grid-column: span 12; /* Ocupa toda a largura disponível */
     text-align: center;
-    position: relative; /* Necessário para os pseudo-elementos */
-    z-index: 1; /* Para garantir que o texto esteja na frente da imagem */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo suave */
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2; /* Para garantir que o texto esteja na frente da imagem */
   }
-  
-  .text_container p {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: #6F2282;
-  }
-  
+
   .text_container::before,
   .text_container::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 18rem;
-    height: 1px;
-    background-color: #BBBBBB;
+    width: 100%; /* Ajusta a largura das linhas para dispositivos menores */
   }
-  
-  .text_container::before {
-    top: 0;
-  }
-  
-  .text_container::after {
-    bottom: 0;
-  }
-  
-  .image_container {
-    grid-column: 7 / 13;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Necessário para posicionamento do span */
-  }
-  
-  .image_container img {
-    max-width: 100%;
-    overflow: hidden;
-    height: auto;
-  }
-  
-  .image_container span {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #6F2282;
-    text-align: center;
-  }
-  
-  .image_container a {
-    color: #6F2282;
-    text-decoration: none;
-  }
-  
-  .image_container a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .briefing_container {
-      grid-column: 1 / -1; /* Ocupa toda a largura disponível */
-      grid-template-columns: 1fr; /* Uma coluna em dispositivos móveis */
-      position: relative; /* Necessário para posicionamento da imagem */
-    }
-  
-    .text_container {
-      grid-column: span 12; /* Ocupa toda a largura disponível */
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.7); /* Fundo suave */
-      padding: 20px;
-      border-radius: 8px;
-    }
-  
-    .image_container {
-      grid-column: span 12;
-      position: absolute; /* Posiciona a imagem atrás do texto */
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.3; /* Torna a imagem opaca */
-      z-index: 0; /* Para garantir que a imagem esteja atrás do texto */
-    }
-    
-    .image_container span{        
-        position: absolute;
-    }
 
-    .image_container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Garante que a imagem cubra toda a área */
-    }
+  .image_container {
+    grid-column: span 12;
+    position: absolute; /* Posiciona a imagem atrás do texto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3; /* Torna a imagem opaca */
+    z-index: 1; /* Para garantir que a imagem esteja atrás do texto */
+  }
+
+  .image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área */
   }
   
-  @media (max-width: 480px) {
-    .text_container::before,
-    .text_container::after {
-      width: 100%; /* Ajusta a largura das linhas para dispositivos menores */
-    }
+  .image_container span {        
+    position: absolute;
+    top: calc(100% + 10px); /* Ajusta a posição do span */
   }
-  
+}
+
+/* Estilos para smartphones pequenos */
+@media (max-width: 480px) {
+  .text_container::before,
+  .text_container::after {
+    width: 100%; /* Ajusta a largura das linhas para dispositivos menores */
+  }
+}

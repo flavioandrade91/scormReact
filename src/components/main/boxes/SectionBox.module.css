@@ -6,13 +6,14 @@
         height: auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 3rem 23.4rem 3rem;
+        grid-template-rows: 3rem auto 3rem;
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.5), 
             rgba(0, 0, 0, 0.5)
         ), url('../../../assets/imgbanner.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .titleImageBox {
@@ -20,6 +21,8 @@
         grid-row: 2 / 3;    
         justify-self: center;
         align-self: center;
+        text-align: center;
+        padding: 2rem;
     }
 
     .titleImageBox h1 {
@@ -49,13 +52,14 @@
         height: auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 3rem 23.4rem 3rem;
+        grid-template-rows: 3rem auto 3rem;
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.5), 
             rgba(0, 0, 0, 0.5)
         ), url('../../../assets/imgbanner.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .titleImageBox {
@@ -63,11 +67,13 @@
         grid-row: 2 / 3;    
         justify-self: center;
         align-self: center;
+        text-align: center;
+        padding: 2rem;
     }
 
     .titleImageBox h1 {
         color: #eee;
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 300;
     }
 
@@ -92,13 +98,14 @@
         height: auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 3rem 23.4rem 3rem;
+        grid-template-rows: 3rem auto 3rem;
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.5), 
             rgba(0, 0, 0, 0.5)
         ), url('../../../assets/imgbanner.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .titleImageBox {
@@ -106,11 +113,13 @@
         grid-row: 2 / 3;    
         justify-self: center;
         align-self: center;
+        text-align: center;
+        padding: 2rem;
     }
 
     .titleImageBox h1 {
         color: #eee;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 300;
     }
 
@@ -127,7 +136,7 @@
     }
 }
 
-/* Estilos para telas menores */
+/* Estilos para tablets em modo retrato e smartphones grandes */
 @media (max-width: 768px) and (min-width: 576px) {
     .SectionBox {
         grid-column: 1 / 13;
@@ -135,13 +144,14 @@
         height: auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 3rem 23.4rem 3rem;
+        grid-template-rows: 3rem auto 3rem;
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.5), 
             rgba(0, 0, 0, 0.5)
         ), url('../../../assets/imgbanner.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .titleImageBox {
@@ -149,11 +159,59 @@
         grid-row: 2 / 3;    
         justify-self: center;
         align-self: center;
+        text-align: center;
+        padding: 2rem;
     }
 
     .titleImageBox h1 {
         color: #eee;
-        font-size: 4rem;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .baloonGray {
+        grid-column: 1 / 13;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .baloonPurple {
+        grid-column: 1 / 13;
+        grid-row: 3;
+        justify-self: center;
+    }
+}
+
+/* Estilos para smartphones pequenos */
+@media (max-width: 576px) {
+    .SectionBox {
+        grid-column: 1 / 13;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3rem auto 3rem;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ), url('../../../assets/imgbanner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .titleImageBox {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .titleImageBox h1 {
+        color: #eee;
+        font-size: 2rem;
         font-weight: 300;
     }
 
@@ -171,7 +229,7 @@
 }
 
 /* Estilos para telas extra pequenas */
-@media (max-width: 576px) and (min-width: 320px) {
+@media (max-width: 320px) {
     .SectionBox {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
@@ -185,6 +243,7 @@
         ), url('../../../assets/imgbanner.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .titleImageBox {
@@ -192,11 +251,13 @@
         grid-row: 2 / 3;    
         justify-self: center;
         align-self: center;
+        text-align: center;
+        padding: 1rem;
     }
 
     .titleImageBox h1 {
         color: #eee;
-        font-size: 3rem;
+        font-size: 1.5rem;
         font-weight: 300;
     }
 

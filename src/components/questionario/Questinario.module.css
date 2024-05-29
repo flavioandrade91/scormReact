@@ -1,6 +1,6 @@
 /* Estilos para telas grandes */
 @media (min-width: 1200px) {
-  .questionarioContent {
+    .questionarioContent {
       grid-column: 1 / 13;
       font-family: 'Roboto Condensed', sans-serif;
       display: grid;
@@ -9,132 +9,131 @@
       width: 100%;
       height: 60rem;
       background-color: #6F2282;
-  }
-
-  .headerContent {
+    }
+  
+    .headerContent {
       grid-column: 4 / 10;
       grid-row: 2;
       display: flex;
       justify-content: space-between;
       align-content: stretch;
       margin: 3.1rem 0;
-  }
-
-  .headerTitle {
+    }
+  
+    .headerTitle {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: end;
       padding-top: 30px;
       border-top: .25rem solid #eee;
-  }
-
-  .title {
+    }
+  
+    .title {
       font-size: 2rem;
       text-transform: uppercase;
       color: #eee;
-  }
-
-  .subtitle {
+    }
+  
+    .subtitle {
       font-size: 1.2rem;
       text-transform: uppercase;
       font-style: italic;
       font-weight: 300;
       color: #eee;
-  }
-
-  .flagBox {
+    }
+  
+    .flagBox {
       width: 12.5rem;
       height: auto;
       display: flex;
       justify-content: end;
       align-content: center;
       border-top: .25rem solid #FCBA5A;
-  }
-
-  .flag {
+    }
+  
+    .flag {
       display: flex;
       width: 6.25rem;
       justify-content: center;
       background-color: #FCBA5A;
-  }
-
-  .flagBox img {
+    }
+  
+    .flagBox img {
       background-color: #FCBA5A;
       width: 3.12rem;
-  }
-
-  .questionario {
+    }
+  
+    .questionario {
       grid-column: 4 / 10;
       grid-row: 3;
       color: #eee;
-  }
-
-  .question {
+    }
+  
+    .question {
       background-color: aliceblue;
-  }
-
-  .question p {
+    }
+  
+    .question p {
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 300;
-  }
-
-  .question span {
+    }
+  
+    .question span {
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 300;
       color: #FCBA5A;
-  }
-
-  .questionario p > span {
+    }
+  
+    .questionario p > span {
       color: #FCBA5A;
-  }
-
-  .boxImages {
+    }
+  
+    .boxImages {
       display: flex;
       gap: 1.5rem;
-  }
-
-  .boxImages img {
+    }
+  
+    .boxImages img {
       width: 100%;
       object-fit: contain;
       overflow: hidden;
-  }
-
-  .boxImages span {
+    }
+  
+    .boxImages span {
       display: block;
       text-align: center;
       margin-top: .2rem;
-  }
-
-  .quiz_container {
+    }
+  
+    .quiz_container {
       grid-column: 4 / 10;
       justify-content: start;
       align-content: start;
-  }
-
-  .question_section {
+    }
+  
+    .question_section {
       margin: 2rem 0;
-  }
-
-  .question_count {
-  }
-
-  .question_text {
+    }
+  
+    .question_count {}
+  
+    .question_text {
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 400;
       font-size: 1rem;
-  }
-
-  .answer_section {
+    }
+  
+    .answer_section {
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 300;
       display: flex;
       align-items: start;
       flex-direction: column;
       gap: 1.8rem;
-  }
-
-  .answer_section button {
+    }
+  
+    .answer_section button {
       align-self: center;
       width: 17.9rem;
       height: 3.5rem;
@@ -144,20 +143,20 @@
       text-transform: uppercase;
       border-radius: 30px;
       cursor: pointer;
-  }
-
-  .selected {
+    }
+  
+    .selected {
       font-weight: bold;
-  }
-
-  .submit_button {
+    }
+  
+    .submit_button {
       margin-top: 20px;
       font-size: 16px;
       padding: 10px 20px;
       cursor: pointer;
-  }
-
-  .modal {
+    }
+  
+    .modal {
       position: fixed;
       top: 50%;
       left: 50%;
@@ -165,29 +164,29 @@
       z-index: 1000;
       text-align: center;
       padding: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
       display: flex;
       justify-content: center;
       align-items: center;
-  }
-
-  input[type="radio"]:checked {
+    }
+  
+    input[type="radio"]:checked {
       color: #6F2282;
       background-color: #6F2282;
-  }
-
-  .radio_label.correct {
+    }
+  
+    .radio_label.correct {
       background-color: green;
-  }
-
-  .radio_label.wrong {
+    }
+  
+    .radio_label.wrong {
       background-color: red;
+    }
   }
-}
-
-/* Estilos para telas médias */
-@media (max-width: 1200px) and (min-width: 992px) {
-  .questionarioContent {
+  
+  /* Estilos para telas médias */
+  @media (max-width: 1200px) and (min-width: 992px) {
+    .questionarioContent {
       grid-column: 1 / 13;
       font-family: 'Roboto Condensed', sans-serif;
       display: grid;
@@ -196,739 +195,489 @@
       width: 100%;
       height: 60rem;
       background-color: #6F2282;
-  }
-
-  .headerContent {
+    }
+  
+    .headerContent {
       grid-column: 4 / 10;
       grid-row: 2;
       display: flex;
       justify-content: space-between;
       align-content: stretch;
-      margin: 3.1rem 0;
-  }
-
-  .headerTitle {
+      margin: 2rem 0;
+    }
+  
+    .headerTitle {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: end;
-      padding-top: 30px;
+      padding-top: 20px;
       border-top: .25rem solid #eee;
-  }
-
-  .title {
-      font-size: 2rem;
+    }
+  
+    .title {
+      font-size: 1.8rem;
       text-transform: uppercase;
       color: #eee;
-  }
-
-  .subtitle {
-      font-size: 1.2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.1rem;
       text-transform: uppercase;
       font-style: italic;
       font-weight: 300;
       color: #eee;
-  }
-
-  .flagBox {
-      width: 12.5rem;
+    }
+  
+    .flagBox {
+      width: 10rem;
       height: auto;
       display: flex;
       justify-content: end;
       align-content: center;
       border-top: .25rem solid #FCBA5A;
-  }
-
-  .flag {
+    }
+  
+    .flag {
       display: flex;
-      width: 6.25rem;
+      width: 5rem;
       justify-content: center;
       background-color: #FCBA5A;
-  }
-
-  .flagBox img {
+    }
+  
+    .flagBox img {
       background-color: #FCBA5A;
-      width: 3.12rem;
-  }
-
-  .questionario {
+      width: 2.5rem;
+    }
+  
+    .questionario {
       grid-column: 4 / 10;
       grid-row: 3;
       color: #eee;
-  }
-
-  .question {
-      background-color: aliceblue;
-  }
-
-  .question p {
-      font-family: 'Roboto Condensed', sans-serif;
+    }
+  
+    .question p {
       font-weight: 300;
-  }
-
-  .question span {
-      font-family: 'Roboto Condensed', sans-serif;
+    }
+  
+    .question span {
       font-weight: 300;
       color: #FCBA5A;
-  }
-
-  .questionario p > span {
-      color: #FCBA5A;
-  }
-
-  .boxImages {
+    }
+  
+    .boxImages {
       display: flex;
-      gap: 1.5rem;
-  }
-
-  .boxImages img {
+      gap: 1rem;
+    }
+  
+    .boxImages img {
       width: 100%;
       object-fit: contain;
       overflow: hidden;
-  }
-
-  .boxImages span {
+    }
+  
+    .boxImages span {
       display: block;
       text-align: center;
       margin-top: .2rem;
-  }
-
-  .quiz_container {
+    }
+  
+    .quiz_container {
       grid-column: 4 / 10;
       justify-content: start;
       align-content: start;
-  }
-
-  .question_section {
+    }
+  
+    .question_section {
       margin: 2rem 0;
-  }
-
-  .question_count {
-  }
-
-  .question_text {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-  }
-
-  .answer_section {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 300;
+    }
+  
+    .question_text {
+      font-size: 0.9rem;
+    }
+  
+    .answer_section {
       display: flex;
       align-items: start;
       flex-direction: column;
-      gap: 1.8rem;
+      gap: 1.5rem;
+    }
+  
+    .answer_section button {
+      width: 15rem;
+      height: 3rem;
+    }
   }
-
-  .answer_section button {
-      align-self: center;
-      width: 17.9rem;
-      height: 3.5rem;
-      font-style: italic;
-      color: #6F2282;
-      border: none;
-      text-transform: uppercase;
-      border-radius: 30px;
-      cursor: pointer;
-  }
-
-  .selected {
-      font-weight: bold;
-  }
-
-  .submit_button {
-      margin-top: 20px;
-      font-size: 16px;
-      padding: 10px 20px;
-      cursor: pointer;
-  }
-
-  .modal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-      text-align: center;
-      padding: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  input[type="radio"]:checked {
-      color: #6F2282;
-      background-color: #6F2282;
-  }
-
-  .radio_label.correct {
-      background-color: green;
-  }
-
-  .radio_label.wrong {
-      background-color: red;
-  }
-}
-
-/* Estilos para telas pequenas */
-@media (max-width: 992px) and (min-width: 768px) {
-  .questionarioContent {
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 992px) and (min-width: 768px) {
+    .questionarioContent {
       grid-column: 1 / 13;
       font-family: 'Roboto Condensed', sans-serif;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
+      grid-template-rows: auto;
       width: 100%;
-      height: 60rem;
+      height: auto;
       background-color: #6F2282;
-  }
-
-  .headerContent {
-      grid-column: 4 / 10;
-      grid-row: 2;
+      padding: 1rem;
+    }
+  
+    .headerContent {
+      grid-column: 2 / 12;
       display: flex;
       justify-content: space-between;
       align-content: stretch;
-      margin: 3.1rem 0;
-  }
-
-  .headerTitle {
+      margin: 2rem 0;
+    }
+  
+    .headerTitle {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: end;
-      padding-top: 30px;
+      padding-top: 20px;
       border-top: .25rem solid #eee;
-  }
-
-  .title {
-      font-size: 2rem;
+    }
+  
+    .title {
+      font-size: 1.6rem;
       text-transform: uppercase;
       color: #eee;
-  }
-
-  .subtitle {
-      font-size: 1.2rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
       text-transform: uppercase;
       font-style: italic;
       font-weight: 300;
       color: #eee;
-  }
-
-  .flagBox {
-      width: 12.5rem;
-      height: auto;
+    }
+  
+    .flagBox {
+      width: 8rem;
       display: flex;
       justify-content: end;
       align-content: center;
       border-top: .25rem solid #FCBA5A;
-  }
-
-  .flag {
+    }
+  
+    .flag {
       display: flex;
-      width: 6.25rem;
+      width: 4rem;
       justify-content: center;
       background-color: #FCBA5A;
-  }
-
-  .flagBox img {
-      background-color: #FCBA5A;
-      width: 3.12rem;
-  }
-
-  .questionario {
-      grid-column: 4 / 10;
-      grid-row: 3;
+    }
+  
+    .flagBox img {
+      width: 2rem;
+    }
+  
+    .questionario {
+      grid-column: 2 / 12;
       color: #eee;
-  }
-
-  .question {
-      background-color: aliceblue;
-  }
-
-  .question p {
-      font-family: 'Roboto Condensed', sans-serif;
+    }
+  
+    .question p {
       font-weight: 300;
-  }
-
-  .question span {
-      font-family: 'Roboto Condensed', sans-serif;
+    }
+  
+    .question span {
       font-weight: 300;
       color: #FCBA5A;
-  }
-
-  .questionario p > span {
-      color: #FCBA5A;
-  }
-
-  .boxImages {
+    }
+  
+    .boxImages {
       display: flex;
-      gap: 1.5rem;
-  }
-
-  .boxImages img {
+      gap: 1rem;
+    }
+  
+    .boxImages img {
       width: 100%;
       object-fit: contain;
       overflow: hidden;
-  }
-
-  .boxImages span {
+    }
+  
+    .boxImages span {
       display: block;
       text-align: center;
       margin-top: .2rem;
-  }
-
-  .quiz_container {
-      grid-column: 4 / 10;
+    }
+  
+    .quiz_container {
+      grid-column: 2 / 12;
       justify-content: start;
       align-content: start;
-  }
-
-  .question_section {
+    }
+  
+    .question_section {
       margin: 2rem 0;
-  }
-
-  .question_count {
-  }
-
-  .question_text {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-  }
-
-  .answer_section {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 300;
+    }
+  
+    .question_text {
+      font-size: 0.9rem;
+    }
+  
+    .answer_section {
       display: flex;
       align-items: start;
       flex-direction: column;
-      gap: 1.8rem;
+      gap: 1.5rem;
+    }
+  
+    .answer_section button {
+      width: 15rem;
+      height: 3rem;
+    }
   }
-
-  .answer_section button {
-      align-self: center;
-      width: 17.9rem;
-      height: 3.5rem;
-      font-style: italic;
-      color: #6F2282;
-      border: none;
-      text-transform: uppercase;
-      border-radius: 30px;
-      cursor: pointer;
-  }
-
-  .selected {
-      font-weight: bold;
-  }
-
-  .submit_button {
-      margin-top: 20px;
-      font-size: 16px;
-      padding: 10px 20px;
-      cursor: pointer;
-  }
-
-  .modal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-      text-align: center;
-      padding: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  input[type="radio"]:checked {
-      color: #6F2282;
-      background-color: #6F2282;
-  }
-
-  .radio_label.correct {
-      background-color: green;
-  }
-
-  .radio_label.wrong {
-      background-color: red;
-  }
-}
-
-/* Estilos para telas menores */
-@media (max-width: 768px) and (min-width: 576px) {
-  .questionarioContent {
+  
+  
+  /* Estilos para tablets e smartphones grandes */
+  @media (max-width: 768px) and (min-width: 576px) {
+    .questionarioContent {
       grid-column: 1 / 13;
       font-family: 'Roboto Condensed', sans-serif;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
+      grid-template-rows: auto;
       width: 100%;
-      height: 60rem;
+      height: auto;
       background-color: #6F2282;
-  }
-
-  .headerContent {
-      grid-column: 4 / 10;
-      grid-row: 2;
+      padding: 1rem;
+    }
+  
+    .headerContent {
+      grid-column: 2 / 12;
       display: flex;
       justify-content: space-between;
       align-content: stretch;
-      margin: 3.1rem 0;
-  }
-
-  .headerTitle {
+      margin: 2rem 0;
+    }
+  
+    .headerTitle {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: end;
-      padding-top: 30px;
+      padding-top: 20px;
       border-top: .25rem solid #eee;
-  }
-
-  .title {
-      font-size: 2rem;
+    }
+  
+    .title {
+      font-size: 1.4rem;
       text-transform: uppercase;
       color: #eee;
-  }
-
-  .subtitle {
-      font-size: 1.2rem;
+    }
+  
+    .subtitle {
+      font-size: 0.9rem;
       text-transform: uppercase;
       font-style: italic;
       font-weight: 300;
       color: #eee;
-  }
-
-  .flagBox {
-      width: 12.5rem;
-      height: auto;
+    }
+  
+    .flagBox {
+      width: 7rem;
       display: flex;
       justify-content: end;
       align-content: center;
       border-top: .25rem solid #FCBA5A;
-  }
-
-  .flag {
+    }
+  
+    .flag {
       display: flex;
-      width: 6.25rem;
+      width: 3.5rem;
       justify-content: center;
       background-color: #FCBA5A;
-  }
-
-  .flagBox img {
-      background-color: #FCBA5A;
-      width: 3.12rem;
-  }
-
-  .questionario {
-      grid-column: 4 / 10;
-      grid-row: 3;
+    }
+  
+    .flagBox img {
+      width: 1.75rem;
+    }
+  
+    .questionario {
+      grid-column: 2 / 12;
       color: #eee;
-  }
-
-  .question {
-      background-color: aliceblue;
-  }
-
-  .question p {
-      font-family: 'Roboto Condensed', sans-serif;
+    }
+  
+    .question p {
       font-weight: 300;
-  }
-
-  .question span {
-      font-family: 'Roboto Condensed', sans-serif;
+    }
+  
+    .question span {
       font-weight: 300;
       color: #FCBA5A;
-  }
-
-  .questionario p > span {
-      color: #FCBA5A;
-  }
-
-  .boxImages {
+    }
+  
+    .boxImages {
       display: flex;
-      gap: 1.5rem;
-  }
-
-  .boxImages img {
+      gap: 0.8rem;
+    }
+  
+    .boxImages img {
       width: 100%;
       object-fit: contain;
       overflow: hidden;
-  }
-
-  .boxImages span {
+    }
+  
+    .boxImages span {
       display: block;
       text-align: center;
       margin-top: .2rem;
-  }
-
-  .quiz_container {
-      grid-column: 4 / 10;
+    }
+  
+    .quiz_container {
+      grid-column: 2 / 12;
       justify-content: start;
       align-content: start;
-  }
-
-  .question_section {
-      margin: 2rem 0;
-  }
-
-  .question_count {
-  }
-
-  .question_text {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-  }
-
-  .answer_section {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 300;
+    }
+  
+    .question_section {
+      margin: 1.5rem 0;
+    }
+  
+    .question_text {
+      font-size: 0.8rem;
+    }
+  
+    .answer_section {
       display: flex;
       align-items: start;
       flex-direction: column;
-      gap: 1.8rem;
+      gap: 1.2rem;
+    }
+  
+    .answer_section button {
+      width: 12rem;
+      height: 2.5rem;
+    }
   }
-
-  .answer_section button {
-      align-self: center;
-      width: 17.9rem;
-      height: 3.5rem;
-      font-style: italic;
-      color: #6F2282;
-      border: none;
-      text-transform: uppercase;
-      border-radius: 30px;
-      cursor: pointer;
-  }
-
-  .selected {
-      font-weight: bold;
-  }
-
-  .submit_button {
-      margin-top: 20px;
-      font-size: 16px;
-      padding: 10px 20px;
-      cursor: pointer;
-  }
-
-  .modal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-      text-align: center;
-      padding: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  input[type="radio"]:checked {
-      color: #6F2282;
-      background-color: #6F2282;
-  }
-
-  .radio_label.correct {
-      background-color: green;
-  }
-
-  .radio_label.wrong {
-      background-color: red;
-  }
-}
-
-/* Estilos para telas extra pequenas */
-@media (max-width: 576px) and (min-width: 320px) {
-  .questionarioContent {
+  
+  
+  /* Estilos para smartphones pequenos */
+  @media (max-width: 576px) {
+    .questionarioContent {
       grid-column: 1 / 13;
       font-family: 'Roboto Condensed', sans-serif;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
+      grid-template-rows: auto;
       width: 100%;
-      height: 60rem;
+      height: auto;
       background-color: #6F2282;
-  }
-
-  .headerContent {
-      grid-column: 4 / 10;
-      grid-row: 2;
+      padding: 1rem;
+    }
+  
+    .headerContent {
+      grid-column: 1 / 13;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: space-between;
-      align-content: stretch;
-      margin: 3.1rem 0;
-  }
-
-  .headerTitle {
+      margin: 2rem 0;
+    }
+  
+    .headerTitle {
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: end;
-      padding-top: 30px;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
       border-top: .25rem solid #eee;
-  }
-
-  .title {
-      font-size: 2rem;
-      text-transform: uppercase;
-      color: #eee;
-  }
-
-  .subtitle {
+      text-align: center;
+    }
+  
+    .title {
       font-size: 1.2rem;
       text-transform: uppercase;
-      font-style: italic;
-      font-weight: 300;
       color: #eee;
-  }
-
-  .flagBox {
-      width: 12.5rem;
-      height: auto;
-      display: flex;
-      justify-content: end;
-      align-content: center;
-      border-top: .25rem solid #FCBA5A;
-  }
-
-  .flag {
-      display: flex;
-      width: 6.25rem;
-      justify-content: center;
-      background-color: #FCBA5A;
-  }
-
-  .flagBox img {
-      background-color: #FCBA5A;
-      width: 3.12rem;
-  }
-
-  .questionario {
-      grid-column: 4 / 10;
-      grid-row: 3;
-      color: #eee;
-  }
-
-  .question {
-      background-color: aliceblue;
-  }
-
-  .question p {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 300;
-  }
-
-  .question span {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 300;
-      color: #FCBA5A;
-  }
-
-  .questionario p > span {
-      color: #FCBA5A;
-  }
-
-  .boxImages {
-      display: flex;
-      gap: 1.5rem;
-  }
-
-  .boxImages img {
-      width: 100%;
-      object-fit: contain;
-      overflow: hidden;
-  }
-
-  .boxImages span {
-      display: block;
-      text-align: center;
-      margin-top: .2rem;
-  }
-
-  .quiz_container {
-      grid-column: 4 / 10;
-      justify-content: start;
-      align-content: start;
-  }
-
-  .question_section {
-      margin: 2rem 0;
-  }
-
-  .question_count {
-  }
-
-  .question_text {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-  }
-
-  .answer_section {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 300;
-      display: flex;
-      align-items: start;
-      flex-direction: column;
-      gap: 1.8rem;
-  }
-
-  .answer_section button {
-      align-self: center;
-      width: 17.9rem;
-      height: 3.5rem;
-      font-style: italic;
-      color: #6F2282;
-      border: none;
+    }
+  
+    .subtitle {
+      font-size: 0.8rem;
       text-transform: uppercase;
-      border-radius: 30px;
-      cursor: pointer;
-  }
-
-  .selected {
-      font-weight: bold;
-  }
-
-  .submit_button {
-      margin-top: 20px;
-      font-size: 16px;
-      padding: 10px 20px;
-      cursor: pointer;
-  }
-
-  .modal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-      text-align: center;
-      padding: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      font-style: italic;
+      font-weight: 300;
+      color: #eee;
+    }
+  
+    .flagBox {
+      width: 6rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      border-top: .25rem solid #FCBA5A;
+    }
+  
+    .flag {
+      display: flex;
+      width: 3rem;
+      justify-content: center;
+      background-color: #FCBA5A;
+    }
+  
+    .flagBox img {
+      width: 1.5rem;
+    }
+  
+    .questionario {
+      grid-column: 1 / 13;
+      color: #eee;
+    }
+  
+    .question p {
+      font-weight: 300;
+    }
+  
+    .question span {
+      font-weight: 300;
+      color: #FCBA5A;
+    }
+  
+    .boxImages {
+      display: flex;
+      gap: 0.5rem;
+    }
+  
+    .boxImages img {
+      width: 100%;
+      object-fit: contain;
+      overflow: hidden;
+    }
+  
+    .boxImages span {
+      display: block;
+      text-align: center;
+      margin-top: .2rem;
+    }
+  
+    .quiz_container {
+      grid-column: 1 / 13;
+      justify-content: start;
+      align-content: start;
+    }
+  
+    .question_section {
+      margin: 1rem 0;
+    }
+  
+    .question_text {
+      font-size: 0.75rem;
+    }
+  
+    .answer_section {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .answer_section button {
+      width: 10rem;
+      height: 2.5rem;
+    }
   }
-
-  input[type="radio"]:checked {
-      color: #6F2282;
-      background-color: #6F2282;
-  }
-
-  .radio_label.correct {
-      background-color: green;
-  }
-
-  .radio_label.wrong {
-      background-color: red;
-  }
-}
+  
+  
