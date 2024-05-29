@@ -4,11 +4,20 @@
         grid-column: 4 / 10;
         height: auto;
         display: grid;
+        justify-items:end;
     }
 
     .ImagemArtigo img {    
         width: 100%;
         overflow: hidden;
+    }
+    .ImagemArtigo a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .titleImageBox p{
+        
     }
 }
 
@@ -18,11 +27,16 @@
         grid-column: 3 / 11;
         height: auto;
         display: grid;
+        justify-items:end;
     }
 
     .ImagemArtigo img {    
         width: 100%;
         overflow: hidden;
+    }
+    .ImagemArtigo a{
+        text-decoration: none;
+        color: #000;
     }
 }
 
@@ -32,11 +46,16 @@
         grid-column: 2 / 12;
         height: auto;
         display: grid;
+        justify-items:end;
     }
 
     .ImagemArtigo img {    
         width: 100%;
         overflow: hidden;
+    }
+    .ImagemArtigo a{
+        text-decoration: none;
+        color: #000;
     }
 }
 
@@ -46,11 +65,16 @@
         grid-column: 1 / 13;
         height: auto;
         display: grid;
+        justify-items:end;
     }
 
     .ImagemArtigo img {    
         width: 100%;
         overflow: hidden;
+    }
+    .ImagemArtigo a{
+        text-decoration: none;
+        color: #000;
     }
 }
 
@@ -60,10 +84,15 @@
         grid-column: 1 / 13;
         height: auto;
         display: grid;
+        justify-items:end;
     }
 
     .ImagemArtigo img {    
         width: 100%;
         overflow: hidden;
+    }
+    .ImagemArtigo a{
+        text-decoration: none;
+        color: #000;
     }
 }

@@ -584,7 +584,7 @@ const data = {
     {
       id: 0,
       title: 'Apresentação da unidade curricular',
-      link:'https://www.youtube.com/watch?v=9JnJn7ULaGQ'
+      url: "/assets/videos/video001.mp4"
     },
     {
       id: 1,

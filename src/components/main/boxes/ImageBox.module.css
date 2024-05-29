@@ -79,8 +79,8 @@
     .footer {
         display: flex;
         justify-content: end;
-        position: absolute;
-        z-index: 5;      
+        /* position: absolute;
+        z-index: 5;       */
     }
 
     .fonte a{
@@ -152,6 +152,7 @@
     .fonte a{
         color: #000;
         text-decoration: none;
+        font-size: .5rem;
 
     }
     .fonte a:visited{

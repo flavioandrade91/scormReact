@@ -60,6 +60,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        
     }
 
     .titleImageBox {
@@ -211,7 +212,7 @@
 
     .titleImageBox h1 {
         color: #eee;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 300;
     }
 

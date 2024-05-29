@@ -6,6 +6,7 @@ import { Autores } from "./Autores";
 import { Referencias } from "./Referencias";
 import { Creditos } from "./Creditos";
 import { Rodape } from "./Rodape";
+// import fsf from '../../../assets/videos/video01.mp4'
 
 export function Encerramento({ id, sessoes}) {
     const sessao = sessoes.find(sessao => sessao.id === id);

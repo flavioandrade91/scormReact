@@ -3,7 +3,6 @@ import './App.css'; // Supondo que você tenha um arquivo App.css
 import Learner from './components/Learner';
 import Scorm from './scorm/Scorm';
 import { Header } from './components/header/Header';
-import { Podcast } from './components/podcast/Podcast';
 import { Main } from './components/main/Main';
 import { GrayBox, texto } from './components/main/boxes/GrayBox';
 import { SectionBox } from './components/main/boxes/SectionBox';
@@ -21,7 +20,7 @@ import { CardsBox } from './components/main/boxes/CardsBox';
 import { Artigo } from './components/main/boxes/Artigo';
 import Briefing from './components/main/boxes/Briefing';
 import { Encerramento } from './components/main/boxes/Encerramento';
-import { VideoPlayerPodcast } from './components/multimidia/VideoPlayerPodcast';
+import {VideoPlayerPod} from './components/podcast/VideoPlayerPod'
 
 class App extends Component {
     constructor(props) {
@@ -45,6 +44,11 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+             
+            <VideoPlayerPod
+                border={images.border}
+            />
+
                 <Header
                     title={data.title}
                 />
@@ -166,7 +170,10 @@ class App extends Component {
                 />
 
                 <ImagemArtigo
+                    id={4}
                     imagem={images.manequeins}
+                    fontes={data.fontes}
+                    link={data.fontes.link}
                 />
 
                 <WhiteBox
@@ -233,10 +240,10 @@ class App extends Component {
                     start={21}
                     end={25}
                 />
-                <Podcast
+                {/* <Podcast
                     podcasts={data.podcast}
                     id={1}
-                />
+                /> */}
                 <Questionario
                     questions={questionarios.questionario2}
                 />
@@ -302,10 +309,10 @@ class App extends Component {
                     texts={data.sessoes}
                     images={images.briefing}
                 />
-                <Podcast
+                {/* <Podcast
                     podcasts={data.podcast}
                     id={1}
-                />
+                /> */}
                 <SectionBox
                     id={9}
                     sessoes={data.sessoes}

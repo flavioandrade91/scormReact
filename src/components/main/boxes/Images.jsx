@@ -48,7 +48,7 @@ import iconPerfil from '../../../assets/iconPerfil.svg'
 import fotoPerfil from '../../../assets/FotoPerfil.svg'
 import cetiqt from '../../../assets/logoCetiqt.svg'
 import senai from '../../../assets/logoSenai.svg'
-
+import video from '../../../assets/videos/video001.mp4'
 
 const images = {
     bordabrancaesq,
@@ -99,7 +99,8 @@ const images = {
     iconPerfil,
     fotoPerfil,
     cetiqt,
-    senai
+    senai,
+    video
 
 }
 

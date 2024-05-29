@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Questinario.module.css';
+import styles from './Questionario.module.css';
 import images from '../main/boxes/Images'; // Importar as imagens centralizadas
 
 export function Questionario({ questions }) {

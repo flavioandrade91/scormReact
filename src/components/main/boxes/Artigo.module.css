@@ -1,6 +1,6 @@
 /* src/components/Artigo.module.css */
 .grid_container {
-    grid-column: 3 /11;
+    grid-column: 2 / 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px; /* Espaço entre as colunas */
@@ -26,18 +26,25 @@
     max-width: 100%;
     height: auto;
   }
-
+  
   .grid_item a{
     text-decoration: none;
     color: #000;
   }
-
+  
   .grid_item a:visited{
     text-decoration: none;
     color: #000;
   }
-
+  
   @media (max-width: 768px) {
+    .grid_container {
+      grid-column: 2 / 11;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px; /* Espaço entre as colunas */
+    }
+
     .grid_item {
       grid-column: span 12; /* 100% da largura em dispositivos móveis */
     }
@@ -51,4 +58,28 @@
         color: #000;
       }
   }
+
+  @media (max-width: 576px) and (min-width: 320px) {
+    .grid_container {
+      grid-column: 1 / 13;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      margin: 0 1rem;
+       /* Espaço entre as colunas */
+    }
+
+    .grid_item {
+      grid-column: span 12; /* 100% da largura em dispositivos móveis */
+    }
+    .grid_item a{
+        text-decoration: none;
+        color: #000;
+      }
+      
+      .grid_item a:visited{
+        text-decoration: none;
+        color: #000;
+      }
+  }
+
   
