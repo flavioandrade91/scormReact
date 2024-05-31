@@ -82,8 +82,9 @@
 @media (max-width: 992px) and (min-width: 768px) {
     .autorContainer {
         grid-column: 1 / 13;
-        margin-top: 100px;
+        display: grid;
         grid-template-columns: repeat(12, 1fr);
+        margin-top: 100px;
     }
 
     .headerAutor {
@@ -94,11 +95,14 @@
         grid-column: 1 / 13;
         flex-direction: column;
         align-items: center;
+        justify-self: center;
     }
 
     .autorContent img {
-        width: 100%;
+        width: 30%;
         height: auto;
+        justify-self: center;
+        align-self: center;
     }
 
     .biografia {
@@ -142,8 +146,10 @@
     }
 
     .autorContent img {
-        width: 100%;
+        width: 30%;
         height: auto;
+        justify-self: center;
+        align-self: center;
     }
 
     .biografia {

@@ -20,7 +20,8 @@ import { CardsBox } from './components/main/boxes/CardsBox';
 import { Artigo } from './components/main/boxes/Artigo';
 import Briefing from './components/main/boxes/Briefing';
 import { Encerramento } from './components/main/boxes/Encerramento';
-import {VideoPlayerPod} from './components/podcast/VideoPlayerPod'
+import { VideoPlayerPod } from './components/podcast/VideoPlayerPod'
+
 
 class App extends Component {
     constructor(props) {
@@ -44,10 +45,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-             
-            <VideoPlayerPod
-                border={images.border}
-            />
 
                 <Header
                     title={data.title}
@@ -55,6 +52,10 @@ class App extends Component {
 
                 <Main />
 
+                <VideoPlayerPod
+                    id={0}
+                    videos={data.podcast}
+                />
 
                 {/* Exemplo de uso dos componentes comentados */}
 
@@ -240,10 +241,11 @@ class App extends Component {
                     start={21}
                     end={25}
                 />
-                {/* <Podcast
-                    podcasts={data.podcast}
-                    id={1}
-                /> */}
+              
+                <VideoPlayerPod
+                     id={1}
+                     videos={data.podcast}
+                />
                 <Questionario
                     questions={questionarios.questionario2}
                 />
@@ -258,6 +260,7 @@ class App extends Component {
                     start={25}
                     end={28}
                 />
+
                 <Sanfona
                     sanfonas={data.sanfonas}
                     iconImage={images.seta}
@@ -309,10 +312,10 @@ class App extends Component {
                     texts={data.sessoes}
                     images={images.briefing}
                 />
-                {/* <Podcast
-                    podcasts={data.podcast}
-                    id={1}
-                /> */}
+                <VideoPlayerPod
+                    id={2}
+                    videos={data.podcast}
+                />
                 <SectionBox
                     id={9}
                     sessoes={data.sessoes}
@@ -344,9 +347,9 @@ class App extends Component {
                     FotoPerfil={images.fotoPerfil}
                     autores={data.autor}
                 />
-               
+
             </div>
-            
+
         );
     }
 }

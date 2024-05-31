@@ -1,50 +1,84 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import ReactPlayer from 'react-player';
 import styles from './VideoPlayerPod.module.css';
 import images from '../main/boxes/Images';
-import { Video } from './Video';
-import data from '../main/boxes/Dados'
 
-export function VideoPlayerPod({ border }) {
+export function VideoPlayerPod({ id, videos }) {
+    const video = videos && videos.find(video => video.id === id);
+    const playerRef = useRef(null);
+    const [playing, setPlaying] = useState(false);
+    const [volume, setVolume] = useState(0.8);
+    const [played, setPlayed] = useState(0);
+    const [showControls, setShowControls] = useState(false);
+
+    const handlePlayPause = () => {
+        setPlaying(!playing);
+    };
+
+    const handleVolumeChange = (e) => {
+        setVolume(parseFloat(e.target.value));
+    };
+
+    const handleProgress = (state) => {
+        setPlayed(state.played);
+    };
+
+    const handleSeekChange = (e) => {
+        setPlayed(parseFloat(e.target.value));
+        playerRef.current.seekTo(parseFloat(e.target.value));
+    };
+
+    const handleMouseEnter = () => {
+        setShowControls(true);
+    };
+
+    const handleMouseLeave = () => {
+        setShowControls(false);
+    };
 
     return (
-        <header className={styles.videoComponent}>
-            
-                <>
-                    <div className={styles.videoContainer}>
-                     
-                        <Video id={0} podcast={data.podcast}/>
-                        
-                    </div>
-                    <img className={styles.formaLinha} src={images.formaLinha} alt="" />
-                    <img className={styles.borda} src={border} alt="" />
-                    {/* <div className={styles.playerHeader}>
-                        <img src={images.iconVideo} alt="" />
-                        <div className={styles.playerTitle}>
-                            <span>VÍDEO / {video.title}</span>
+        <>
+            {video ? (
+                <section className={styles.videoContainer}>
+                    <div className={styles.playerHeader}>
+                        {/* <img src={images.iconVideo} alt="" /> */}
+                        {/* <div className={styles.playerTitle}>
+                            <span>PODCAST / {video.title}</span>
                             <p>{video.descricao}</p>
-                        </div>
-                    </div> */}
-                    <div className={styles.playerContent}>
-                        <div className={styles.playerVideo}>
-                
-                            {/* <ReactPlayer
-                                url={video}       // URL do vídeo
-                                playing={false}        // Autoplay do vídeo
-                                controls={true}        // Mostra os controles do player
-                                volume={0.8}           // Define o volume inicial
-                                width='86.1%'           // Largura do player
-                                height='73.7%'          // Altura do player
-                            /> */}
-                        </div>
-                        {/* <div className={styles.videoFooter}>
-                            <p>{video.fonte}</p>
                         </div> */}
                     </div>
-                </>
-          
 
-        </header>
+                    <div
+                        className={styles.videoBox}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                        onClick={handlePlayPause}
+                    >
+                        <div className={styles.playerWrapper}>
+                            <ReactPlayer
+                                ref={playerRef}
+                                className={styles.video}
+                                url={video.url} // Certifique-se de usar `video.url`
+                                playing={playing}
+                                controls={true}
+                                volume={volume}
+                                onProgress={handleProgress}
+                                width="100%"
+                                height="100%"
+                                config={{
+                                    youtube: {
+                                        playerVars: { showinfo: 0, controls: 1 }
+                                    }
+                                }}
+                            />
+                        </div>
+                    </div>
+                    <img className={styles.formaLinha1} src={images.formaLinha} alt="Linha Esquerda"/>
+                    <img className={styles.formaLinha2} src={images.formaLinha} alt="Linha Direita"/>
+                </section>
+            ) : (
+                <p>Erro no player de vídeo</p>
+            )}
+        </>
     );
 }
-
