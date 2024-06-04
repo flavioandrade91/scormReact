@@ -12,20 +12,20 @@ export function Referencias({ referencias }) {
 
       <div className={styles.coluna}>
         {firstHalf.map((ref, index) => (
-          <div key={index} className={styles.reference_item} style={{ gridRow: `span 2` }}>
-            <p>{ref.nome}</p>
-            <p><strong>{ref.texto}</strong></p>
-            <a href={ref.link} target="_blank" rel="noopener noreferrer">{ref.link}</a>
+          <div key={index} className={styles.reference_item}>
+            <p className={styles.reference_name}>{ref.nome}</p>
+            <p className={styles.reference_text}><strong>{ref.texto}</strong></p>
+            <a href={ref.link} target="_blank" rel="noopener noreferrer" className={styles.reference_link}>{ref.link}</a>
           </div>
         ))}
       </div>
 
       <div className={styles.coluna}>
         {secondHalf.map((ref, index) => (
-          <div key={index} className={styles.reference_item} style={{ gridRow: `span 2` }}>
-            <p>{ref.nome}</p>
-            <p><strong>{ref.texto}</strong></p>
-            <a href={ref.link} target="_blank" rel="noopener noreferrer">{ref.link}</a>
+          <div key={index} className={styles.reference_item}>
+            <p className={styles.reference_name}>{ref.nome}</p>
+            <p className={styles.reference_text}><strong>{ref.texto}</strong></p>
+            <a href={ref.link} target="_blank" rel="noopener noreferrer" className={styles.reference_link}>{ref.link}</a>
           </div>
         ))}
       </div>

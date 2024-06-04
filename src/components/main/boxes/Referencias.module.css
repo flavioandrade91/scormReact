@@ -1,37 +1,45 @@
 .ReferenciaContainer {
     grid-column: 3 / 11;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* Espaço entre as colunas */
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 4rem;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
 .coluna {
-    grid-column: span 6;
-    display: flex;
-    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    max-width: 50%; /* Limita a largura máxima das colunas a 50% */
 }
 
 .reference_item {
-    display: flex;
-    flex-direction: column;
-    padding: .5rem;
-    border-radius: 5px;
-    box-sizing: border-box;
+    margin-bottom: 2rem;
 }
 
-.reference_item p,
-.reference_item a {
-    margin: 0;
+.reference_name {
     color: #eee;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.reference_text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.reference_link {
+    color: #B0B0B0;
     text-decoration: none;
     word-wrap: break-word; /* Quebra de linha para links longos */
 }
 
 .titulo {
-    grid-column: 1 / 13;
+    width: 100%;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 1rem;
@@ -41,12 +49,7 @@
 /* Estilos para telas médias */
 @media (max-width: 1200px) and (min-width: 992px) {
     .ReferenciaContainer {
-        grid-column: 2 / 12;
         margin-top: 3rem;
-    }
-    
-    .coluna {
-        grid-column: span 6;
     }
     
     .titulo {
@@ -57,12 +60,11 @@
 /* Estilos para telas pequenas */
 @media (max-width: 992px) and (min-width: 768px) {
     .ReferenciaContainer {
-        grid-column: 1 / 13;
         margin-top: 2rem;
     }
     
     .coluna {
-        grid-column: span 12;
+        max-width: 100%; /* As colunas ocupam 100% da largura em telas pequenas */
     }
     
     .titulo {
@@ -73,12 +75,11 @@
 /* Estilos para tablets em modo retrato e smartphones grandes */
 @media (max-width: 768px) and (min-width: 576px) {
     .ReferenciaContainer {
-        grid-column: 1 / 13;
         margin-top: 2rem;
     }
     
     .coluna {
-        grid-column: span 12;
+        max-width: 100%; /* As colunas ocupam 100% da largura em telas pequenas */
     }
     
     .titulo {
@@ -94,13 +95,12 @@
 /* Estilos para smartphones pequenos */
 @media (max-width: 576px) {
     .ReferenciaContainer {
-        grid-column: 1 / 13;
         margin-top: 2rem;
         padding: 0 1rem;
     }
     
     .coluna {
-        grid-column: span 12;
+        max-width: 100%; /* As colunas ocupam 100% da largura em telas pequenas */
     }
     
     .titulo {
@@ -112,8 +112,9 @@
         padding: .5rem;
     }
     
-    .reference_item p,
-    .reference_item a {
+    .reference_name,
+    .reference_text,
+    .reference_link {
         font-size: 1rem;
     }
 }

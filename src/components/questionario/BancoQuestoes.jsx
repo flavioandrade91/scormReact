@@ -8,10 +8,10 @@ export const questionarios = {
                       De acordo com o conteúdo estudado, associe cada uma das imagens com o tipo de projeto de produção de moda correto: `,
             questionText: 'Escolha a alternativa que representa a correlação correta:',
             answerOptions: [
-                { answerText: ' - 1: Projeto de Imagem; 2: Evento de Moda; 3: Projeto de Exposição de Produto.', isCorrect: false },
-                { answerText: ' - 1: Evento de Moda; 2: Projeto de Imagem; 3: Projeto de Exposição de Produto.', isCorrect: false },
-                { answerText: ' - 1: Evento de Moda; 2: Projeto de Exposição de Produto; 3: Projeto de Imagem.', isCorrect: true },
-                { answerText: ' - 1: Projeto de Imagem; 2: Projeto de Exposição de Produto; 3: Evento de Moda.', isCorrect: false },
+                { answerText: 'A ) - 1: Projeto de Imagem; 2: Evento de Moda; 3: Projeto de Exposição de Produto.', isCorrect: false },
+                { answerText: 'B ) - 1: Evento de Moda; 2: Projeto de Imagem; 3: Projeto de Exposição de Produto.', isCorrect: true },
+                { answerText: 'C ) - 1: Evento de Moda; 2: Projeto de Exposição de Produto; 3: Projeto de Imagem.', isCorrect: false },
+                { answerText: 'D ) - 1: Projeto de Imagem; 2: Projeto de Exposição de Produto; 3: Evento de Moda.', isCorrect: false },
             ],
             imageKeys: ['ImgO1Quest', 'ImgO2Quest', 'ImgO3Quest']
         },
@@ -36,10 +36,10 @@ export const questionarios = {
 
             questionText: 'Escolha a alternativa que melhor representa a correlação correta:',
             answerOptions: [
-                { answerText: ' I, II e III.', isCorrect: true },
-                { answerText: ' II e V.', isCorrect: false },
-                { answerText: ' II e IV', isCorrect: false },
-                { answerText: ' V e III', isCorrect: false },
+                { answerText: 'A ) I, II e III.', isCorrect: false },
+                { answerText: 'B ) II e V.', isCorrect: true },
+                { answerText: 'C ) II e IV', isCorrect: false },
+                { answerText: 'D ) V e III', isCorrect: false },
             ],
            
         },
@@ -75,10 +75,10 @@ export const questionarios = {
             
             questionText: 'Selecione a opção correta:',
             answerOptions: [
-                { answerText: ' A) Registro de informações durante a pesquisa aplicada.', isCorrect: true },
+                { answerText: ' A) Registro de informações durante a pesquisa aplicada.', isCorrect: false },
                 { answerText: ' B) Orientar o desenvolvimento de conceitos, estilos e narrativas visuais.', isCorrect: false },
                 { answerText: ' C) Definir métodos e técnicas para a realização da pesquisa.', isCorrect: false },
-                { answerText: ' D) Elaborar um caderno de tendências para inspiração.', isCorrect: false },
+                { answerText: ' D) Elaborar um caderno de tendências para inspiração.', isCorrect: true },
                 { answerText: ' D) Monitorar os prazos e orçamento do projeto.', isCorrect: false },
             ],
            

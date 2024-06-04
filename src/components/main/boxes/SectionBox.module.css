@@ -3,7 +3,7 @@
     .SectionBox {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
-        height: auto;
+        height: 30rem;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 3rem auto 3rem;

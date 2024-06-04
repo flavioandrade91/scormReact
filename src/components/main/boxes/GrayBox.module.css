@@ -8,6 +8,7 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto 5rem;
         height: auto;
+        padding: 5rem 0;
     }
 
     .containerflag {

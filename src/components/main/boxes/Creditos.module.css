@@ -1,33 +1,42 @@
 .CreditoContainer {
     grid-column: 3 / 11;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 4rem;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
 .coluna {
-    grid-column: span 6;
-    display: flex;
-    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
 }
 
 .credit_item {
-    display: flex;
-    flex-direction: column;
-    padding: .5rem;
-    border-radius: 5px;
-    box-sizing: border-box;
+    margin-bottom: 2rem;
 }
 
-.credit_item p {
-    margin: 0;
+.section_title {
     color: #eee;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.person_detail {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.person_cargo {
+    color: #B0B0B0;
 }
 
 .titulo {
-    grid-column: 1 / 13;
+    width: 100%;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 1rem;
@@ -37,12 +46,7 @@
 /* Estilos para telas médias */
 @media (max-width: 1200px) and (min-width: 992px) {
     .CreditoContainer {
-        grid-column: 2 / 12;
         margin-top: 3rem;
-    }
-    
-    .coluna {
-        grid-column: span 6;
     }
     
     .titulo {
@@ -53,12 +57,7 @@
 /* Estilos para telas pequenas */
 @media (max-width: 992px) and (min-width: 768px) {
     .CreditoContainer {
-        grid-column: 1 / 13;
         margin-top: 2rem;
-    }
-    
-    .coluna {
-        grid-column: span 12;
     }
     
     .titulo {
@@ -69,12 +68,7 @@
 /* Estilos para tablets em modo retrato e smartphones grandes */
 @media (max-width: 768px) and (min-width: 576px) {
     .CreditoContainer {
-        grid-column: 1 / 13;
         margin-top: 2rem;
-    }
-    
-    .coluna {
-        grid-column: span 12;
     }
     
     .titulo {
@@ -90,13 +84,8 @@
 /* Estilos para smartphones pequenos */
 @media (max-width: 576px) {
     .CreditoContainer {
-        grid-column: 1 / 13;
         margin-top: 2rem;
         padding: 0 1rem;
-    }
-    
-    .coluna {
-        grid-column: span 12;
     }
     
     .titulo {
@@ -108,7 +97,7 @@
         padding: .5rem;
     }
     
-    .credit_item p {
+    .person_detail {
         font-size: 1rem;
     }
 }

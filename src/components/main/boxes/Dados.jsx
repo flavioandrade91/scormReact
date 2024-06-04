@@ -65,7 +65,7 @@ const data = {
   sessoes: [
     {
       id: 0,
-      sessao: 'História',
+      sessao: 'HISTÓRIA',
       texto: `Antes de iniciarmos o estudo sobre os fundamentos da produção
       de moda, vamos compreender um pouco sobre seu contexto histórico
       e como essa evolução contribuiu para que ela alcançasse cada
@@ -73,48 +73,48 @@ const data = {
     },
     {
       id: 1,
-      sessao: 'Projetos de Imagens',
+      sessao: 'PROJETOS DE IMAGENS',
       texto: `Visam promover marcas, destacar tendências e capturar a atenção do público,
       podendo ser desenvolvidos em ambientes físicos ou digitais.`
     },
     {
       id: 2,
-      sessao: 'Projetos de Exposição de Produtos',
+      sessao: 'PROJETOS DE EXPOSIÇÃO DE PRODUTOS',
       texto: `Os participantes podem não apenas visualizar as coleções, mas também experimentar
       a estética e a identidade da marca de maneira mais sensorial.`
     },
     {
       id: 3,
-      sessao: 'Eventos de Moda',
+      sessao: 'EVENTOS DE MODA',
       texto: `Os participantes podem não apenas visualizar as coleções, mas também experimentar a estética e a identidade da marca de maneira mais sensorial.`
     },
     {
       id: 4,
-      sessao: 'Infraestrutura da Produção de Moda',
+      sessao: 'INFRAESTRUTURA DA PRODUÇÃO DE MODA',
       texto: `É possível a criação de experiências envolventes e possibilidades de 
       destacar os produtos de maneira impactante.`
     },
     {
       id: 5,
-      sessao: 'Novas Tecnologias Aplicadas a Produção de Moda',
+      sessao: 'NOVAS TECNOLOGIAS APLICADAS A PRODUÇÃO DE MODA',
       texto: `São importantes para inovação e criatividade, melhoram a experiência dos consumidores,
       trazem eficiência operacional e possibilitam um maior alcance.`
     },
     {
       id: 6,
-      sessao: 'Representações Gráficas dos Projetos',
+      sessao: 'REPRESENTAÇÕES GRÁFICAS DOS PROJETOS',
       texto: `Dentro da produção de moda essas representações são importantes para uma comunicação
       efetiva, visualização de conceitos, planejamento, execução e promoção de projetos.`
     },
     {
       id: 7,
-      sessao: 'Elementos da Linguagem Visual',
+      sessao: 'ELEMENTOS DA LINGUAGEM VISUAL',
       texto: `Um meio de comunicação que utiliza elementos visuais para transmitir uma mensagem,
       através de imagens e símbolos.`
     },
     {
       id: 8,
-      sessao: 'Briefing',
+      sessao: 'BRIEFING',
       texto: `Documento que contém informações essenciais para execução de um projeto, 
       deve ser redigido de maneira sucinta e objetiva. Deve conter objetivo, características
       do cliente, público-alvo, prazos, orçamento, canais de comunicação, referências e inspirações.`,
@@ -123,7 +123,7 @@ const data = {
     },
     {
       id: 9,
-      sessao: 'Pesquisa Aplicada à Produção de Moda',
+      sessao: 'PESQUISA APLICADA À PRODUÇÃO DE MODA',
       texto: {
         parag1: `A pesquisa pode ser relacionada a uma jornada exploratória, envolvendo leitura, visitação 
         ou observação, e sempre obtida através do registro de tais informações. Proporciona insights
@@ -135,9 +135,9 @@ const data = {
     },
     {
       id: 10,
-      sessao: 'Fechamento do módulo',
+      sessao: 'FECHAMENTO DO MÓDULO',
       texto: {
-        prag1: `Chegamos ao fim desta jornada de aprendizado em Fundamentos da Produção 
+        parag1: `Chegamos ao fim desta jornada de aprendizado em Fundamentos da Produção 
                de Moda. Durante este curso, exploramos as bases essenciais que sustentam
                a indústria da moda, desde a concepção inicial de uma coleção até sua
                apresentação ao público. Ao longo dos estudos, mergulhamos nas 
@@ -145,20 +145,21 @@ const data = {
                mais, tudo com o objetivo de equipá-los com as ferramentas necessárias
                para enfrentar os desafios e aproveitar as oportunidades neste setor 
                dinâmico.`,
-        prag2: `É crucial reconhecer que, enquanto nos despedimos dos materiais 
+        parag2: `É crucial reconhecer que, enquanto nos despedimos dos materiais 
                didáticos, nossa jornada no mundo da moda está apenas começando. 
                Vocês agora possuem um conhecimento valioso que pode moldar o futuro
                desta indústria. É importante lembrar que a moda não é apenas sobre vestir
                roupas, mas sim sobre contar histórias, expressar identidades e influenciar
                culturas. Vocês têm o poder de criar impacto através da sua visão única 
                e da aplicação dos conceitos aprendidos neste curso.`,
-        prag3: `Ao saírem daqui, lembrem-se sempre de permanecerem curiosos, criativos e conscientes
+        parag3: `Ao saírem daqui, lembrem-se sempre de permanecerem curiosos, criativos e conscientes
                das tendências em constante evolução. Continuem explorando, experimentando e
                colaborando com outros profissionais do setor. Sejam resilientes diante dos 
                desafios e estejam abertos a aprender e crescer constantemente.`
       }
     }
   ],
+  
   whiteBox: [
     {
       id: 0,
@@ -919,7 +920,7 @@ const data = {
         cargo: "Fotografias, Ilustrações e Tratamento de Imagens"
       },
       {
-        nome: "XXX",
+        nome: "Marina Azevedo, Tatiana Bastos, Lorena Santos",
         cargo: "Diagramação"
       },
       {

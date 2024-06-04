@@ -77,13 +77,17 @@
 /* Estilos para tablets em modo retrato e smartphones grandes */
 @media (max-width: 768px) {
   .briefing_container {
-    grid-column: 1 / -1; /* Ocupa toda a largura disponível */
-    grid-template-columns: 1fr; /* Uma coluna em dispositivos móveis */
-    position: relative; /* Necessário para posicionamento da imagem */
+    grid-column: 1 / 13; /* Ocupa toda a largura disponível */
+    display: flex;/* Uma coluna em dispositivos móveis */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    
   }
 
   .text_container {
-    grid-column: span 12; /* Ocupa toda a largura disponível */
+    grid-column: 3 /10; /* Ocupa toda a largura disponível */
+    grid-row: 2;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7); /* Fundo suave */
     padding: 20px;
@@ -97,18 +101,18 @@
   }
 
   .image_container {
-    grid-column: span 12;
-    position: absolute; /* Posiciona a imagem atrás do texto */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3; /* Torna a imagem opaca */
-    z-index: 1; /* Para garantir que a imagem esteja atrás do texto */
+    /* grid-column: 4 / 7; */
+    /* position: absolute; Posiciona a imagem atrás do texto */
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* opacity: 0.3; Torna a imagem opaca */
+    /* z-index: 1; Para garantir que a imagem esteja atrás do texto */
   }
 
   .image_container img {
-    width: 100%;
+    width: 50%;
     height: 100%;
     object-fit: cover; /* Garante que a imagem cubra toda a área */
   }

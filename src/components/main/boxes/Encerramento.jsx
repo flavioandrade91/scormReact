@@ -35,9 +35,9 @@ export function Encerramento({ id, sessoes}) {
                 </header>
                 {sessao ? (
                     <div className={styles.recapitulando}>
-                        <p>{sessao.texto.prag1}</p>
-                        <p>{sessao.texto.prag2}</p>
-                        <p>{sessao.texto.prag3}</p>
+                        <p>{sessao.texto.parag1}</p>
+                        <p>{sessao.texto.parag2}</p>
+                        <p>{sessao.texto.parag3}</p>
                     </div>
                 ) : (
                     <p>Erro ao carregar</p>
