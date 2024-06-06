@@ -13,7 +13,11 @@ export const questionarios = {
                 { answerText: 'C ) - 1: Evento de Moda; 2: Projeto de Exposição de Produto; 3: Projeto de Imagem.', isCorrect: false },
                 { answerText: 'D ) - 1: Projeto de Imagem; 2: Projeto de Exposição de Produto; 3: Evento de Moda.', isCorrect: false },
             ],
-            imageKeys: ['ImgO1Quest', 'ImgO2Quest', 'ImgO3Quest']
+            imageKeys: [
+                {imagem:'ImgO1Quest', descricao:'A mostra uma passarela que está repleta de modelos exibindo uma coleção de roupas. O público está sentado em ambos os lados da passarela, observando as modelos enquanto caminham.Fonte: Metrópoles. '},
+                {imagem:'ImgO2Quest', descricao:'A mostra uma passarela que está repleta de modelos exibindo uma coleção de roupas. O público está sentado em ambos os lados da passarela, observando as modelos enquanto caminham.Fonte: Metrópoles. '},
+                {imagem:'ImgO3Quest', descricao:'A mostra uma passarela que está repleta de modelos exibindo uma coleção de roupas. O público está sentado em ambos os lados da passarela, observando as modelos enquanto caminham.Fonte: Metrópoles. '},
+                ]
         },
         // Mais questões podem ser adicionadas aqui
     ],

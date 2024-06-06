@@ -14,7 +14,7 @@ export function Briefing({ id, texts, images}){
        <p>error ao carregar</p> 
     )}  
       <div className={styles.image_container}>
-        <img src={images} alt="Briefing" />
+        <img src={images} alt="A imagem apresenta um círculo composto por peças de quebra-cabeças coloridas com explicações a respeito do briefing. " />
         <span>
           Figura 15 – Briefing. Fonte: <a href="https://www.dmxweb.com.br/importancia-do-briefing-case-criacao-de-uma-marca/">DMX Web</a>.
         </span>

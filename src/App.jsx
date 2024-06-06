@@ -171,7 +171,7 @@ class App extends Component {
                 />
 
                 <ImagemArtigo
-                    id={4}
+                    id={6}
                     imagem={images.manequeins}
                     fontes={data.fontes}
                     link={data.fontes.link}

@@ -11,7 +11,7 @@ export function Artigo({ artigos }) {
           className={`${styles.grid_item} ${index === artigos.length - 1 ? styles.center_item : ''}`}
         >
           <p>{data.text}</p>
-          <img src={images[data.imageName]} alt={`Imagem ${data.id}`} />
+          <img src={images[data.imageName]} alt={data.descricao} />
           <a href={data.url}>{data.fonte}</a>
         </div>
       ))}

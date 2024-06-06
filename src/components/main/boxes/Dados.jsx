@@ -159,7 +159,6 @@ const data = {
       }
     }
   ],
-  
   whiteBox: [
     {
       id: 0,
@@ -515,32 +514,44 @@ const data = {
     {
       id: 0,
       fonte: 'Figura 1 – Revista de Moda da Década de 20. Fonte: da Mari Calegari.',
+      descricao:`A imagem mostra uma propaganda de chapéus femininos de uma revista antiga, nela há dezesseis mulheres usando chapéus de diferentes cores e modelos. `,
       link: 'https://blogdamaricalegari.com.br/2016/11/20/fatos-e-fotos-da-moda-de-1920-a-1930/'
     },
     {
       id: 1,
       fonte: 'Figura 2 – Editorial de Moda. Fonte: Yacamim.',
+      descricao:`A Imagem mostra duas mulheres vestindo roupas e elementos no estilo tribal.`,
       link: 'https://blog.modayacamim.com.br/2018/06/07/5-editoriais-de-moda-pra-voce-se-inspirar-no-inverno/'
     },
     {
       id: 2,
       fonte: 'Figura 3 – Campanha Publicitária de Moda. Fonte: Marcas pelo Mundo.',
+      descricao:`A Imagem apresenta como temática a brasilidade, nela aparecem três mulheres com roupas coloridas e brilhantes em clima carnavalesco.`,
       link: 'https://marcaspelomundo.com.br/anunciantes/brasilidade-e-tema-da-campanha-de-carnaval-2023-da-studio-z/'
     },
     {
       id: 3,
-      fonte: 'Figura 4 – Vitrine de Loja. Fonte: Fashion Bubbles.',
-      link: 'https://www.fashionbubbles.com/decoracao-2/vitrine-da-copa/'
+      fonte: 'Figura 6 – Desfile de Moda.',
+      descricao:`A mostra uma passarela que está repleta de modelos exibindo uma coleção de roupas. O público está sentado em ambos os lados da passarela, observando as modelos enquanto caminham.Fonte: Metrópoles. `,
+      link: ''
     },
     {
       id: 4,
-      fonte: 'Figura 14 – Luz, Sombra e Volume. Fonte: Pinterest.',
+      fonte: 'Figura 14 – Luz, Sombra e Volume.',
+      descricao:`A imagem mostra uma esfera branca sobre uma bancada de mesma cor com incidência de luz, gerando sombras próprias e projetadas, criando a ilusão de volume. Fonte: Garota Luxuosa.Fonte: Pinterest.`,
       link: 'https://br.pinterest.com/pin/798896421409186150/'
     },
     {
       id: 5,
-      fonte: 'Figura 16 – Painel de Inspirações. Fonte: Garota Luxuosa.',
+      fonte: 'Figura 16 – Painel de Inspirações.',
+      descricao:`A imagem apresenta vários elementos, como cores, formas e texturas que servem de inspiração para projetos. `,
       link: 'https://garotaluxuosa-com-br56.webnode.page/l/moodboard-como-criar-um-painel-de-inspiracao-de-moda-e-estilo-de-vida/'
+    },
+    {
+      id: 6,
+      fonte: 'Figura 4 – Vitrine de Loja.',
+      descricao:`A imagem mostra uma vitrine de loja com dois manequins femininos vestidos com roupas em tons de verde.`,
+      link: 'https://www.fashionbubbles.com/decoracao-2/vitrine-da-copa/)'
     },
   ],
   videos: [
@@ -632,6 +643,7 @@ const data = {
       id: 0,
       text: `O ponto de vista é identificado através de uma linha vertical que é perpendicular a linha do horizonte, e ele encontra-se exatamente na junção das duas linhas.`,
       fonte: `Figura 7 – Linha do Horizonte e Ponto de Vista. Fonte: Blog dos Arteiros.`,
+      descricao: `A imagem trata-se de um desenho de linha simples. Mostra uma pessoa parada no meio de uma estrada, com árvores dos dois lados e construções ao fundo. As árvores são representadas com formas simples e a estrada é marcada com linhas tracejadas.`,
       url: `https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
       imageName: 'LHPV' // Nome da chave correspondente no objeto images
     },
@@ -639,6 +651,7 @@ const data = {
       id: 1,
       text: `O ponto de fuga fica localizado na linha do horizonte, na direção onde todas as linhas paralelas convergem, quando analisadas em perspectiva.`,
       fonte: `Figura 8 – Ponto de Fuga. Fonte: Blog dos Arteiros.`,
+      descricao:`A imagem é um desenho de linha simples. Mostra uma pessoa parada no meio de uma estrada, com árvores dos dois lados e construções ao fundo. As árvores são representadas com formas simples e a estrada é marcada com linhas tracejadas.  `,
       url: `https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
       imageName: 'LHPF' // Nome da chave correspondente no objeto images
     },
@@ -646,6 +659,7 @@ const data = {
       id: 2,
       text: `As linhas de fuga são imaginárias e elas que descrevem o efeito da perspectiva e convergem para o ponto de fuga.`,
       fonte: `Figura 9 - Linhas de Fuga. Fonte: Blog dos Arteiros.`,
+      descricao:`A imagem trata-se de um desenho de linha simples, mostrando uma estrada, com árvores em um dos lados e construções no outro.`,
       url: `https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
       imageName: 'LHPFFUGA' // Nome da chave correspondente no objeto images
 
@@ -654,6 +668,7 @@ const data = {
       id: 3,
       text: `Na perspectiva paralela as linhas de fuga se deslocam apenas para um ponto.`,
       fonte: `Figura 10 - Perspectiva Paralela. Fonte: Blog dos Arteiros.`,
+      descricao:`A imagem trata-se de um desenho de linha simples, mostrando uma pessoa em frente a três cubos: A, B e C. `,
       url: `https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
       imageName: 'LHPFPVABC' // Nome da chave correspondente no objeto images
 
@@ -662,6 +677,7 @@ const data = {
       id: 4,
       text: `Na perspectiva oblíqua, o objeto fica com uma de suas arestas viradas para o observador, as linhas de fulga então se deslocam para dois pontos.`,
       fonte: `Figura 11 – Perspectiva Oblíqua. Fonte: Blog dos Arteiros.`,
+      descricao:`Imagem que retrata uma perspectiva oblíqua, trata-se de um desenho de linha simples, mostrando uma pessoa em frente a um cubo.`,
       url: `https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
       imageName: 'LHPVP1P2' // Nome da chave correspondente no objeto images
 
@@ -670,6 +686,7 @@ const data = {
       id: 5,
       text: `Na perspectiva aérea para representar um objeto analisado em posição oblíqua a partir de um ponto bem alto, é necessário que o mesmo possua três pontos de fuga, dois deles na linha do horizonte e um na vertical do ponto de vista.`,
       fonte: `Figura 12 – Perspectiva Aérea. Fonte: Blog dos Arteiros.`,
+      descricao:`A imagem trata-se de um desenho de linha simples, mostrando um cubo com linhas tracejadas.`,
       url: `https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
       imageName: 'LHPF1PVPF3' // Nome da chave correspondente no objeto images
 
@@ -678,6 +695,7 @@ const data = {
       id: 7,
       text: `Na perspectiva contra plano ou de esgoto o nível visual do observador é mais baixo, tornando-a oposta na maneira de visualização e assim alterando a localização do terceiro ponto de fuga.`,
       fonte: `Figura 13 – Perspectiva Contra Plano ou de Esgoto. Fonte: Blog dos Arteiros.`,
+      descricao:`A imagem trata-se de um desenho de linha simples, mostrando um cubo com linhas tracejadas.`,
       url: `https://blogdosarteiros.wordpress.com/2016/04/29/perspectiva-fundamentos-basicos/`,
       imageName: 'LHPF1PVPF3' // Nome da chave correspondente no objeto images
 
@@ -703,7 +721,6 @@ const data = {
       fotoPerfil: "fotoPerfil"
     }
   ],
-
   referencias: [
     {
       nome: "ATMO DIGITAL.",
@@ -816,7 +833,6 @@ const data = {
       link: "https://ffw.uol.com.br/noticias/moda/alta-costura-o-que-e-quanto-custa-quem-faz-e-quem-compra-2/. Acesso em: 15 fev. 2024."
     }
   ],
-
   creditos: {
     "CONFEDERAÇÃO NACIONAL DA INDÚSTRIA – CNI": [
       {

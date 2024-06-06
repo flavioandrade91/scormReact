@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Questionario.module.css';
 import images from '../main/boxes/Images'; // Importar as imagens centralizadas
+import data from '../main/boxes/Dados';
+import questionarios from '../questionario/BancoQuestoes';
 
 export function Questionario({ questions }) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -42,12 +44,17 @@ export function Questionario({ questions }) {
         if (question.imageKeys && question.imageKeys.length > 0) {
             return (
                 <div className={styles.boxImages}>
-                    {question.imageKeys.map((key, index) => (
-                        <div key={index} className={styles.images}>
-                            <img src={images[key]} alt={`Imagem ${index + 1}`} />
-                            {/* <span>{index + 1}</span> */}
-                        </div>
-                    ))}
+                    {question.imageKeys.map((key, index) => {
+                        const imageKey = key.imagem;
+                        const descricao = key.descricao;
+
+                        return (
+                            <div key={index} className={styles.images}>
+                                <img src={images[imageKey]} alt={descricao} />
+                                <span>{index + 1}</span>
+                            </div>
+                        );
+                    })}
                 </div>
             );
         }

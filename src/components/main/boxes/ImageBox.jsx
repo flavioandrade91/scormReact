@@ -8,7 +8,7 @@ export function ImageBox({ id, fontes, imagem }) {
     <>
       {fontes ? (
         <div className={styles.containerBoxImage}>
-          <img src={imagem} alt="" />
+          <img src={imagem} alt={fonte.descricao} />
           <div className={styles.footer}>
             {fonte ? (
               <span className={styles.fonte}>
