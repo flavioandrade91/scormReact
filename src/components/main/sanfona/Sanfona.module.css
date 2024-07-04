@@ -23,18 +23,18 @@
     }
 
     .title {
-        margin-left: 10px;
+        margin-left: 0.5rem;
     }
 
     .colapse {
         background: none;
         border: none;
-        transform: rotate(0);
+        transform: rotate(180deg);
         transition: transform 0.3s ease;
     }
 
     .colapse.expanded {
-        transform: rotate(180deg);
+        transform: rotate(0);
     }
 
     .headerSanfona {
@@ -45,9 +45,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 3rem;
+        /* padding: .2rem; */
         background-color: #6F2282;
         cursor: pointer;
+        line-height: 1.5;
     }
 
     .bodySanfona {
@@ -91,7 +92,7 @@
     }
 
     .title {
-        margin-left: 10px;
+        margin-left: 0.5rem;
     }
 
     .colapse {
@@ -113,9 +114,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 3rem;
+        padding: 1rem;
         background-color: #6F2282;
         cursor: pointer;
+        line-height: 1.5;
     }
 
     .bodySanfona {
@@ -159,7 +161,7 @@
     }
 
     .title {
-        margin-left: 10px;
+        margin-left: 0.5rem;
     }
 
     .colapse {
@@ -181,9 +183,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 3rem;
+        padding: 1rem;
         background-color: #6F2282;
         cursor: pointer;
+        line-height: 1.5;
     }
 
     .bodySanfona {
@@ -213,21 +216,21 @@
     }
 
     .sanfonaContent {
-        grid-column: 4 / 10;
+        grid-column: 2 / 12;
         background-color: #6F2282;
         margin-bottom: 1rem;
         transition: all 0.3s ease;
     }
 
     .boxSanfona {
-        grid-column: 4 / 10;
+        grid-column: 2 / 12;
         background-color: #eee;
         overflow: hidden;
         transition: height 0.3s ease;
     }
 
     .title {
-        margin-left: 10px;
+        margin-left: 0.5rem;
     }
 
     .colapse {
@@ -242,16 +245,17 @@
     }
 
     .headerSanfona {
-        grid-column: 4 / 10;
+        grid-column: 2 / 12;
         font-family: 'Roboto', sans-serif;
         font-weight: 600;
         color: #eee;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 3rem;
+        padding: 1rem;
         background-color: #6F2282;
         cursor: pointer;
+        line-height: 1.5;
     }
 
     .bodySanfona {
@@ -271,7 +275,7 @@
 }
 
 /* Estilos para telas extra pequenas */
-@media (max-width: 576px) and (min-width: 320px) {
+@media (max-width: 576px) {
     .sanfonaContainer {
         grid-column: 1 / 13;
         display: grid;
@@ -295,7 +299,7 @@
     }
 
     .title {
-        margin-left: 10px;
+        margin-left: 0.5rem;
     }
 
     .colapse {
@@ -317,9 +321,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 3rem;
+        padding: 1rem;
         background-color: #6F2282;
         cursor: pointer;
+        line-height: 1.5;
     }
 
     .bodySanfona {

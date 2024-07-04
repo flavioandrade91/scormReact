@@ -4,7 +4,7 @@ import styles from './SectionBox.module.css'
 export function SectionBox({id, sessoes, imgTop, imgBottom}) {
     const sessao = sessoes.find(sessao => sessao.id === id);
     return (
-        <>
+        <div className={styles.SectionContainer}>
             <section className={styles.SectionBox}>
                 <div className={styles.baloonGray}>
                     <img src={imgTop} alt="" srcset="" />
@@ -21,6 +21,6 @@ export function SectionBox({id, sessoes, imgTop, imgBottom}) {
             </section>
 
             
-        </>
+        </div>
     );
 }

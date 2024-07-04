@@ -1,0 +1,153 @@
+.control-panel {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.control-panel .main-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fefefe75;
+}
+
+.control-panel .main-button img {
+  width: 3rem;
+  height: 3rem;
+  filter: invert(0%);
+  transition: filter 0.3s ease;
+}
+
+.control-panel .panel-options {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe75;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  max-width: 200px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.control-panel .panel-options button,
+.control-panel .panel-options a {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  background: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.control-panel .panel-options .summary-overlay {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 2000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease, color 0.3s ease;
+}
+
+.control-panel .panel-options .summary-overlay.visible {
+  transform: translateX(0);
+}
+
+.control-panel .panel-options .summary-overlay.hidden {
+  display: none;
+}
+
+.control-panel .panel-options .summary-content a {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.control-panel .panel-options .summary-content a.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.control-panel .panel-options .summary-content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* High Contrast Mode */
+body.high-contrast .control-panel .panel-options {
+  background-color: black;
+  color: white;
+}
+
+body.high-contrast .control-panel .main-button img,
+body.high-contrast .control-panel .panel-options button img,
+body.high-contrast .control-panel .panel-options a img {
+  filter: invert(100%);
+}
+
+body.high-contrast .control-panel .panel-options button,
+body.high-contrast .control-panel .panel-options a {
+  background-color: black;
+  color: white;
+}
+
+body.high-contrast .control-panel .panel-options .summary-content a.active {
+  background-color: white;
+  color: black;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .control-panel {
+    top: 5px;
+    right: 5px;
+  }
+
+  .control-panel .main-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .control-panel .panel-options {
+    max-width: 150px;
+    padding: 5px;
+  }
+
+  .control-panel .panel-options button,
+  .control-panel .panel-options a {
+    padding: 5px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .control-panel {
+    top: 2px;
+    right: 2px;
+  }
+
+  .control-panel .main-button img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .control-panel .panel-options {
+    max-width: 120px;
+    padding: 3px;
+  }
+
+  .control-panel .panel-options button,
+  .control-panel .panel-options a {
+    padding: 3px;
+    margin-bottom: 2px;
+  }
+}

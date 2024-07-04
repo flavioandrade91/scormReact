@@ -952,7 +952,7 @@ const data = {
         cargo: "Normalização"
       }
     ],
-  }
+  },
 };
 
 export default data;

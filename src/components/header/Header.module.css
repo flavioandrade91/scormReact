@@ -62,7 +62,6 @@
         text-transform: uppercase;
     }
 }
-
 /* CSS para laptops */
 @media (max-width: 1200px) and (min-width: 992px) {
     .header {
@@ -107,7 +106,6 @@
             text-transform: uppercase;
         }
 }
-
 /* CSS para tablets em modo paisagem */
 @media (max-width: 992px) and (min-width: 768px) {
     .header {
@@ -169,7 +167,6 @@
         text-transform: uppercase;
     }
 }
-
 /* CSS para tablets em modo retrato e smartphones grandes */
 @media (max-width: 768px) and (min-width: 576px) {
     .header {
@@ -232,7 +229,6 @@
         text-transform: uppercase;
     }
 }
-
 /* CSS para smartphones pequenos */
 @media (max-width: 576px) {
     .header {

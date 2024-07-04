@@ -1,4 +1,8 @@
 /* src/components/Artigo.module.css */
+.artigoBody{
+  grid-column: 3 / 11;
+  
+}
 .grid_container {
     grid-column: 2 / 12;
     display: grid;
@@ -38,6 +42,10 @@
   }
   
   @media (max-width: 768px) {
+    .artigoBody{
+      grid-column: 3 / 11;
+      
+    }
     .grid_container {
       grid-column: 2 / 11;
       display: grid;
@@ -60,6 +68,10 @@
   }
 
   @media (max-width: 576px) and (min-width: 320px) {
+    .artigoBody{
+      grid-column: 3 / 11;
+      
+    }
     .grid_container {
       grid-column: 1 / 13;
       display: grid;

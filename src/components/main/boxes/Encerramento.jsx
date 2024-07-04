@@ -6,7 +6,8 @@ import { Autores } from "./Autores";
 import { Referencias } from "./Referencias";
 import { Creditos } from "./Creditos";
 import { Rodape } from "./Rodape";
-// import fsf from '../../../assets/videos/video01.mp4'
+import summary from  '../../acessibilidade/Dados'
+
 
 export function Encerramento({ id, sessoes}) {
     const sessao = sessoes.find(sessao => sessao.id === id);
@@ -50,9 +51,10 @@ export function Encerramento({ id, sessoes}) {
                     autores={data.autor}
                     FotoPerfil={images.fotoPerfil}
                 />
-
-            <Referencias referencias={data.referencias}/> 
+            <Referencias referencias={data.referencias}/>
+            <div id="referencias"></div>
             <Creditos creditos={data.creditos}  />    
+            <div id="creditos"></div> 
             <Rodape />
             <img className={styles.imagesLinhas1} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />
             <img className={styles.imagesLinhas2} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />

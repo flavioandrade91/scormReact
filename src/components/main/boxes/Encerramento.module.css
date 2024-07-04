@@ -197,6 +197,7 @@
     }
 
     .flagBox {
+        display:none;
         width: 8rem;
     }
 

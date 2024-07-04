@@ -81,7 +81,8 @@
     display: flex;/* Uma coluna em dispositivos móveis */
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2.5rem;
+    margin: 4rem;
+    gap: 1rem;
     
   }
 

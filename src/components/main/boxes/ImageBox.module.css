@@ -135,18 +135,17 @@
         flex-direction: column;
     }
     .containerBoxImage img {
-        width: 100%;
-        overflow: hidden;
+        width:36rem;
+        
     }
     .footer {
         display: flex;
         justify-content: end;
+        margin-bottom: 3rem;
     }
     .fonte {
         height: 30px;
         margin-right: 10%;
-        position: absolute;
-        z-index: 5;      
     }
 
     .fonte a{

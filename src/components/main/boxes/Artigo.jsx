@@ -4,6 +4,7 @@ import images from './Images';
 
 export function Artigo({ artigos }) {
   return (
+  <div className={styles.artigoBody}>  
     <section className={styles.grid_container}>
          {artigos.map((data, index) => (
         <div
@@ -16,6 +17,7 @@ export function Artigo({ artigos }) {
         </div>
       ))}
     </section>
+    </div>
   );
 };
 

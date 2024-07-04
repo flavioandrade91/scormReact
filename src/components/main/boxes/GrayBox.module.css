@@ -280,6 +280,7 @@
     }
 
     .boxflag {
+        display: none;
         grid-column: 4 / 5;
         grid-row: 2;
         background-color: #FCBA5A;
@@ -294,6 +295,7 @@
     }
 
     .boxflag img {
+        /* display: none; */
         width: 50%;
         height: auto;   
     }

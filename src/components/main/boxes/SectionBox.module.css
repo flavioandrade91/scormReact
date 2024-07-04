@@ -1,5 +1,8 @@
 /* Estilos para telas grandes */
 @media (min-width: 1200px) {
+    .SectionContainer{
+        grid-column: 1 / 13;
+    }
     .SectionBox {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
@@ -14,6 +17,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        /* border:1px solid black; */
+        text-align: center;
     }
 
     .titleImageBox {
@@ -46,6 +51,9 @@
 
 /* Estilos para telas médias */
 @media (max-width: 1200px) and (min-width: 992px) {
+    .SectionContainer{
+        grid-column: 1 / 13;
+    }
     .SectionBox {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
@@ -93,6 +101,9 @@
 
 /* Estilos para telas pequenas */
 @media (max-width: 992px) and (min-width: 768px) {
+    .SectionContainer{
+        grid-column: 1 / 13;
+    }
     .SectionBox {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
@@ -139,6 +150,9 @@
 
 /* Estilos para tablets em modo retrato e smartphones grandes */
 @media (max-width: 768px) and (min-width: 576px) {
+    .SectionContainer{
+        grid-column: 1 / 13;
+    }
     .SectionBox {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
@@ -171,12 +185,14 @@
     }
 
     .baloonGray {
+        /* display: none; */
         grid-column: 1 / 13;
         grid-row: 1;
         justify-self: center;
     }
 
     .baloonPurple {
+        /* display: none; */
         grid-column: 1 / 13;
         grid-row: 3;
         justify-self: center;
@@ -185,6 +201,9 @@
 
 /* Estilos para smartphones pequenos */
 @media (max-width: 576px) {
+    .SectionContainer{
+        grid-column: 1 / 13;
+    }
     .SectionBox {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;
@@ -217,20 +236,25 @@
     }
 
     .baloonGray {
-        grid-column: 1 / 13;
+        display: none;
+        /* grid-column: 1 / 13;
         grid-row: 1;
-        justify-self: center;
+        justify-self: center; */
     }
 
     .baloonPurple {
-        grid-column: 1 / 13;
+        display: none;
+        /* grid-column: 1 / 13;
         grid-row: 3;
-        justify-self: center;
+        justify-self: center; */
     }
 }
 
 /* Estilos para telas extra pequenas */
 @media (max-width: 320px) {
+    .SectionContainer{
+        grid-column: 1 / 13;
+    }
     .SectionBox {
         grid-column: 1 / 13;
         font-family: 'Roboto Condensed', sans-serif;

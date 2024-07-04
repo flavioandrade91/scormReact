@@ -14,7 +14,7 @@ export function GrayBox({ textos, id }) {
                 <div className={styles.boxflag}>
                     <img src={images.flag} alt="Flag" />
                 </div>
-                <h1>INTRODUÇÃO</h1>
+                <h1 id="introducao">INTRODUÇÃO</h1>
                 <div className={styles.introTxt}>
                 {textos ? (
                     <p>{texto.texto}</p>
