@@ -135,7 +135,7 @@
         flex-direction: column;
     }
     .containerBoxImage img {
-        width:36rem;
+        width:auto;
         
     }
     .footer {

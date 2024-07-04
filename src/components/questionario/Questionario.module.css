@@ -189,6 +189,15 @@
 }
 /* Estilos para telas médias */
 @media (max-width: 1200px) and (min-width: 992px) {
+  .questionarioContainer{
+    grid-column: 1 / 13;
+    display: grid;    
+    height: auto;    
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #6F2282;
+    /* border: 2px solid rgb(249, 0, 0); */
+  }
+
   .questionarioContent {
     grid-column: 1 / 13;
     font-family: 'Roboto Condensed', sans-serif;
@@ -361,6 +370,15 @@
 }
 /* Estilos para telas pequenas */
 @media (max-width: 992px) and (min-width: 768px) {
+  .questionarioContainer{
+    grid-column: 1 / 13;
+    display: grid;    
+    height: auto;    
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #6F2282;
+    /* border: 2px solid rgb(249, 0, 0); */
+  }
+
   .questionarioContent {
     grid-column: 1 / 13;
     font-family: 'Roboto Condensed', sans-serif;
