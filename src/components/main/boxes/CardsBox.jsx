@@ -12,17 +12,16 @@ export function CardsBox({ id, textId, cards }) {
                     <div className={styles.cards}>
                         {card.box.map((boxItem) => (
                             <div key={boxItem.id} className={styles.cardItem}>
-                                <span>{boxItem.content}</span>
+                                <span className="accessible-text">{boxItem.content}</span>
                             </div>
                         ))}
                     </div>
                 ) : (
                     <p>Erro ao carregar</p>
                 )}
-
                 {textItem ? (
                     <div className={styles.cardContent}>
-                        <p>{textItem.content}</p>
+                        <p className="accessible-text">{textItem.content}</p>
                     </div>
                 ) : (
                     <p>Erro ao carregar</p>

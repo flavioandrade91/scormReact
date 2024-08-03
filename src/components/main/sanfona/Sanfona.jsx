@@ -18,7 +18,7 @@ export function Sanfona({ sanfonas, iconImage, start, end }) {
             {itemsToRender.map((sanfona, index) => (
                 <div key={sanfona.id} className={styles.sanfonaContent}>
                     <div className={styles.headerSanfona} onClick={() => toggleModal(index)}>
-                        <span className={styles.title}>{sanfona.title}</span>
+                        <span className={`${styles.title} accessible-text`}>{sanfona.title}</span>
                         <button className={`${styles.colapse} ${expandedItems[index] ? styles.expanded : ''}`}>
                             <img src={iconImage} alt="Expandir ou colapsar" />
                         </button>
@@ -26,7 +26,7 @@ export function Sanfona({ sanfonas, iconImage, start, end }) {
                     <div className={`${styles.boxSanfona} ${expandedItems[index] ? styles.expanded : ''}`}>
                         <div className={`${styles.bodySanfona} ${expandedItems[index] ? styles.expanded : ''}`}>
                             <div className={styles.sanfonaItem}>
-                                <p>{sanfona.text}</p>
+                                <p className="accessible-text">{sanfona.text}</p>
                             </div>
                         </div>
                     </div>

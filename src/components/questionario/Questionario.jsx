@@ -71,61 +71,61 @@ export function Questionario({ questions }) {
     };
 
     return (
-            <div className={styles.questionarioContainer}>
-                <section className={styles.questionarioContent}>
-                    <section className={styles.headerContent}>
-                        <div className={styles.headerTitle}>
-                            <div className={styles.title}>
-                                <span>exercício de fixação</span>
-                            </div>
-                            <div className={styles.subtitle}>
-                                <span>alternativa correta</span>
-                            </div>
+        <div className={styles.questionarioContainer}>
+            <section className={styles.questionarioContent}>
+                <section className={styles.headerContent}>
+                    <div className={styles.headerTitle}>
+                        <div className={`${styles.title} accessible-text`}>
+                            <span>exercício de fixação</span>
                         </div>
-                        <div className={styles.flagBox}>
-                            <div className={styles.flag}>
-                                <img src={images.flag} alt="Bandeira" />
-                            </div>
+                        <div className={`${styles.subtitle} accessible-text`}>
+                            <span>alternativa correta</span>
                         </div>
-                    </section>
-                    <div className={styles.questionario}>
-                        <span className={styles.question}>
-                            <p>{replaceMarkersWithJSX(`${questions[currentQuestion].questao}`)}</p>
-                        </span>
-                        {renderImages()}
-                        <div className={styles.quiz_container}>
-                            <div className={styles.question_section}>
-                                <div className={styles.question_text}>{questions[currentQuestion].questionText}</div>
-                            </div>
-                            <form className={styles.answer_section} onSubmit={(e) => e.preventDefault()}>
-                                {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                                    <label
-                                        key={index}
-                                        className={`${styles.radio_label} ${showFeedback ? (answerOption.isCorrect ? styles.correct : (selectedAnswer === index ? styles.wrong : '')) : ''}`}
-                                    >
-                                        <input
-                                            type="radio"
-                                            name="answer"
-                                            value={index}
-                                            checked={selectedAnswer === index}
-                                            onChange={() => handleRadioChange(index)}
-                                            disabled={showFeedback}
-                                        />
-                                        <span>{replaceMarkersWithJSX(answerOption.answerText)}</span>
-                                    </label>
-                                ))}
-                                <button onClick={handleSubmit} className={styles.submit_button} disabled={selectedAnswer === null}>
-                                    VERIFICAR RESPOSTA
-                                </button>
-                            </form>
-                            {showModal && (
-                                <div className={styles.modal}>
-                                    <img src={isCorrectAnswer ? images.OK : images.NO} alt={isCorrectAnswer ? "Correto" : "Errado"} />
-                                </div>
-                            )}
+                    </div>
+                    <div className={styles.flagBox}>
+                        <div className={styles.flag}>
+                            <img src={images.flag} alt="Bandeira" />
                         </div>
                     </div>
                 </section>
-            </div>
+                <div className={styles.questionario}>
+                    <span className={`${styles.question} accessible-text`}>
+                        <p>{replaceMarkersWithJSX(`${questions[currentQuestion].questao}`)}</p>
+                    </span>
+                    {renderImages()}
+                    <div className={styles.quiz_container}>
+                        <div className={`${styles.question_section} accessible-text`}>
+                            <div className={`${styles.text} accessible-text`}>{questions[currentQuestion].questionText}</div>
+                        </div>
+                        <form className={`${styles.answer_section} accessible-text`} onSubmit={(e) => e.preventDefault()}>
+                            {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                                <label
+                                    key={index}
+                                    className={`${styles.radio_label} ${showFeedback ? (answerOption.isCorrect ? styles.correct : (selectedAnswer === index ? styles.wrong : '')) : ''}`}
+                                >
+                                    <input
+                                        type="radio"
+                                        name="answer"
+                                        value={index}
+                                        checked={selectedAnswer === index}
+                                        onChange={() => handleRadioChange(index)}
+                                        disabled={showFeedback}
+                                    />
+                                    <span>{replaceMarkersWithJSX(answerOption.answerText)}</span>
+                                </label>
+                            ))}
+                            <button onClick={handleSubmit} className={`${styles.submit_button} accessible-text`} disabled={selectedAnswer === null}>
+                                VERIFICAR RESPOSTA
+                            </button>
+                        </form>
+                        {showModal && (
+                            <div className={`${styles.modal} accessible-text`}>
+                                <img src={isCorrectAnswer ? images.OK : images.NO} alt={isCorrectAnswer ? "Correto" : "Errado"} />
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }

@@ -151,3 +151,8 @@ body.high-contrast .control-panel .panel-options .summary-content a.active {
     margin-bottom: 2px;
   }
 }
+
+/* Styles for accessible text */
+.accessible-text {
+  transition: font-size 0.3s ease;
+}

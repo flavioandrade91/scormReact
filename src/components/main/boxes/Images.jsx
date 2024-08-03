@@ -34,6 +34,7 @@ import baloonPurpleTop from '../../../assets/baloonPurpleTop.svg';
 import baloonWhiteTop from '../../../assets/baloonWhiteTop.svg';
 import desfile from '../../../assets/desfile.svg';
 import BorderTopPurpleLeft from '../../../assets/BorderTopPurpleLeft.svg';
+import BorderLeftOrange from '../../../assets/BorderLeftOrange.svg';
 import LHPV from '../../../assets/LH-PV.png';
 import LHPF from '../../../assets/LH-PF.svg';
 import LHPFFUGA from '../../../assets/LH-PF-LinhaFuga.svg';
@@ -88,6 +89,7 @@ const images = {
     NO,
     manequeins,
     baloonPurpleBottom,
+    BorderLeftOrange,
     baloonWhiteTop,
     desfile,
     baloonPurpleTop,

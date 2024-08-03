@@ -10,9 +10,9 @@ export function Creditos({ creditos }) {
   const renderCreditItems = (items) => {
     return items.map(([key, value], index) => (
       <div key={index} className={styles.credit_item}>
-        <p className={styles.section_title}><strong>{key}</strong></p>
+        <p className={`${styles.section_title} accessible-text`}><strong>{key}</strong></p>
         {value.map((person, personIndex) => (
-          <p key={personIndex} className={styles.person_detail}>
+          <p key={personIndex} className={`${styles.person_detail} accessible-text`}>
             {person.nome} - <span className={styles.person_cargo}>{person.cargo}</span>
           </p>
         ))}
@@ -22,7 +22,7 @@ export function Creditos({ creditos }) {
 
   return (
     <div className={styles.CreditoContainer}>
-      <div className={styles.titulo}>Créditos</div>
+      <div className={`${styles.titulo} accessible-text`}>Créditos</div>
       <div className={styles.coluna}>
         {renderCreditItems(firstHalf)}
       </div>

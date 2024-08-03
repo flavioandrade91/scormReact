@@ -1,25 +1,23 @@
 import React from "react";
-import styles from './Encerramento.module.css'
-import images from './Images'
-import data from './Dados'
+import styles from './Encerramento.module.css';
+import images from './Images';
+import data from './Dados';
 import { Autores } from "./Autores";
 import { Referencias } from "./Referencias";
 import { Creditos } from "./Creditos";
 import { Rodape } from "./Rodape";
-import summary from  '../../acessibilidade/Dados'
 
-
-export function Encerramento({ id, sessoes}) {
+export function Encerramento({ id, sessoes }) {
     const sessao = sessoes.find(sessao => sessao.id === id);
     return (
         <main className={styles.enceramentoContainer}>
             <section className={styles.headerContent}>
                 <div className={styles.headerTitle}>
                     <div className={styles.title}>
-                        <span>ENCERRAMENTO</span>
+                        <span className="accessible-text">ENCERRAMENTO</span>
                     </div>
                     <div className={styles.subtitle}>
-                        <span>Tópico Final</span>
+                        <span className="accessible-text">Tópico Final</span>
                     </div>
                 </div>
                 <div className={styles.flagBox}>
@@ -31,30 +29,27 @@ export function Encerramento({ id, sessoes}) {
             <section className={styles.recapitulandoContent}>
                 <header className={styles.header}>
                     <img src={images.livro} alt="Livro" />
-                    <p>RECAPITULANDO</p>
-
+                    <p className="accessible-text">RECAPITULANDO</p>
                 </header>
                 {sessao ? (
                     <div className={styles.recapitulando}>
-                        <p>{sessao.texto.parag1}</p>
-                        <p>{sessao.texto.parag2}</p>
-                        <p>{sessao.texto.parag3}</p>
+                        <p className="accessible-text">{sessao.texto.parag1}</p>
+                        <p className="accessible-text">{sessao.texto.parag2}</p>
+                        <p className="accessible-text">{sessao.texto.parag3}</p>
                     </div>
                 ) : (
                     <p>Erro ao carregar</p>
                 )}
-              
             </section>
-
             <Autores
-                    id={0}
-                    autores={data.autor}
-                    FotoPerfil={images.fotoPerfil}
-                />
-            <Referencias referencias={data.referencias}/>
+                id={0}
+                autores={data.autor}
+                FotoPerfil={images.fotoPerfil}
+            />
+            <Referencias referencias={data.referencias} />
             <div id="referencias"></div>
-            <Creditos creditos={data.creditos}  />    
-            <div id="creditos"></div> 
+            <Creditos creditos={data.creditos} />
+            <div id="creditos"></div>
             <Rodape />
             <img className={styles.imagesLinhas1} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />
             <img className={styles.imagesLinhas2} src={images.FormaLinhasPurpleBlack} alt="Linhas Decorativas" />

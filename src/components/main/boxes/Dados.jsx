@@ -531,7 +531,7 @@ const data = {
     },
     {
       id: 3,
-      fonte: 'Figura 6 – Desfile de Moda.',
+      fonte: 'Figura 6 – Desfile de Moda. Fonte: Metrópoles.',
       descricao:`A mostra uma passarela que está repleta de modelos exibindo uma coleção de roupas. O público está sentado em ambos os lados da passarela, observando as modelos enquanto caminham.Fonte: Metrópoles. `,
       link: ''
     },

@@ -73,7 +73,7 @@ class App extends Component {
         <div id="projeto-expo-prod"></div>
         <SectionBox id={2} sessoes={data.sessoes} imgTop={images.baloonOrangeTop} imgBottom={images.baloonPurple} />
         <PurpleBox textos={data.sessoes} id={1} />
-        <VideoPlayer id={3} videos={data.videos} border={images.BorderTopPurpleLeft} />
+        <VideoPlayer id={3} videos={data.videos}  />
         <WhiteBox data={data.whiteBox} start={13} end={15} />
         <ImagemArtigo id={6} imagem={images.manequeins} fontes={data.fontes} link={data.fontes.link} />
         <WhiteBox data={data.whiteBox} start={15} end={17} />

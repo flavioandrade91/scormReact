@@ -1,17 +1,14 @@
 /* Estilos para telas grandes */
 @media (min-width: 1200px) {
-  .questionarioContainer{
+  .questionarioContainer {
     grid-column: 1 / 13;
     display: grid;    
-    height: auto;    
     grid-template-columns: repeat(12, 1fr);
     background-color: #6F2282;
-    /* border: 2px solid rgb(249, 0, 0); */
   }
 
   .questionarioContent {
     grid-column: 4 / 10;
-    /* border:1px solid black; */
     padding: 2rem;
     font-family: 'Roboto Condensed', sans-serif;
   }
@@ -48,7 +45,6 @@
 
   .flagBox {
     width: 12.5rem;
-    height: auto;
     display: flex;
     justify-content: end;
     align-content: center;
@@ -69,7 +65,6 @@
 
   .questionario {
     grid-column: 4 / 10;
-    grid-row: 3;
     color: #eee;
   }
 
@@ -94,7 +89,6 @@
 
   .boxImages {
     display: flex;
-    background-color: #eee;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
@@ -187,15 +181,14 @@
     background-color: red;
   }
 }
+
 /* Estilos para telas médias */
 @media (max-width: 1200px) and (min-width: 992px) {
-  .questionarioContainer{
+  .questionarioContainer {
     grid-column: 1 / 13;
     display: grid;    
-    height: auto;    
     grid-template-columns: repeat(12, 1fr);
     background-color: #6F2282;
-    /* border: 2px solid rgb(249, 0, 0); */
   }
 
   .questionarioContent {
@@ -203,16 +196,14 @@
     font-family: 'Roboto Condensed', sans-serif;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: auto;
     width: 100%;
-    height: 62rem;
     background-color: #6F2282;
-    padding-bottom: 30rem;
+    padding-bottom: 3rem;
   }
 
   .headerContent {
     grid-column: 4 / 10;
-    grid-row: 2;
     display: flex;
     justify-content: space-between;
     align-content: stretch;
@@ -244,7 +235,6 @@
 
   .flagBox {
     width: 10rem;
-    height: auto;
     display: flex;
     justify-content: end;
     align-content: center;
@@ -265,7 +255,6 @@
 
   .questionario {
     grid-column: 4 / 10;
-    grid-row: 3;
     color: #eee;
   }
 
@@ -308,6 +297,7 @@
   .question_text {
     font-size: 0.9rem;
   }
+
   .answer_section {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
@@ -335,8 +325,7 @@
 
   .submit_button {
     margin-top: 20px;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
     align-self: center;
   }
@@ -368,15 +357,14 @@
     background-color: red;
   }
 }
+
 /* Estilos para telas pequenas */
 @media (max-width: 992px) and (min-width: 768px) {
-  .questionarioContainer{
+  .questionarioContainer {
     grid-column: 1 / 13;
     display: grid;    
-    height: auto;    
     grid-template-columns: repeat(12, 1fr);
     background-color: #6F2282;
-    /* border: 2px solid rgb(249, 0, 0); */
   }
 
   .questionarioContent {
@@ -386,7 +374,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     width: 100%;
-    height: auto;
     background-color: #6F2282;
     padding: 1rem;
   }
@@ -513,8 +500,7 @@
 
   .submit_button {
     margin-top: 20px;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
     align-self: center;
   }
@@ -534,6 +520,7 @@
     justify-content: center;
     align-items: center;
   }
+  
   .modal img {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do modal */
     height: auto; /* Mantém a proporção da imagem */
@@ -552,23 +539,14 @@
     background-color: red;
   }
 }
+
 /* Estilos para tablets e smartphones grandes */
 @media (max-width: 768px) and (min-width: 576px) {
-  .questionarioContainer{
+  .questionarioContainer {
     grid-column: 1 / 13;
     display: grid;    
-    height: auto;    
     grid-template-columns: repeat(12, 1fr);
     background-color: #6F2282;
-    /* border: 2px solid rgb(249, 0, 0); */
-  }
-  .questionarioContainer{
-    grid-column: 1 / 13;
-    display: grid;    
-    height: auto;    
-    grid-template-columns: repeat(12, 1fr);
-    background-color: #6F2282;
-    /* border: 2px solid rgb(249, 0, 0); */
   }
 
   .questionarioContent {
@@ -578,7 +556,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     width: 100%;
-    height: auto;
     background-color: #6F2282;
     padding: 1rem;
   }
@@ -728,7 +705,7 @@
   }
 
   .modal img {
-    max-width:90%; /* Garante que a imagem não ultrapasse a largura do modal */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do modal */
     height: auto; /* Mantém a proporção da imagem */
   }
 
@@ -745,15 +722,14 @@
     background-color: red;
   }
 }
+
 /* Estilos para smartphones pequenos */
 @media (max-width: 576px) {
-  .questionarioContainer{
+  .questionarioContainer {
     grid-column: 1 / 13;
     display: grid;    
-    height: auto;    
     grid-template-columns: repeat(12, 1fr);
     background-color: #6F2282;
-    /* border: 2px solid rgb(249, 0, 0); */
   }
 
   .questionarioContent {
@@ -763,7 +739,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     width: 100%;
-    height: auto;
     background-color: #6F2282;
     padding: 1rem;
   }
@@ -804,18 +779,10 @@
 
   .flagBox {
     display: none;
-    /* width: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: .25rem solid #FCBA5A; */
   }
 
   .flag {
     display: none;
-    width: 3rem;
-    justify-content: center;
-    background-color: #FCBA5A;
   }
 
   .flagBox img {
@@ -915,10 +882,12 @@
     justify-content: center;
     align-items: center;
   }
+
   .modal img {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do modal */
     height: auto; /* Mantém a proporção da imagem */
   }
+
   input[type="radio"]:checked {
     color: #6F2282;
     background-color: #6F2282;

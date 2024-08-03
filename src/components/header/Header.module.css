@@ -290,3 +290,8 @@
         text-transform: uppercase;
     }
 }
+
+/* Styles for accessible text */
+.accessible-text {
+  transition: font-size 0.3s ease;
+}

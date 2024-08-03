@@ -6,9 +6,9 @@ export function ImagemArtigo({ id, imagem, fontes, link }) {
 
   return (
     <div className={styles.ImagemArtigo}>
-      <img src={imagem}  alt={fonte.descricao}/>
+      <img src={imagem} alt={fonte.descricao} />
       {fonte ? (
-        <a href={link}>{fonte.fonte}</a>
+        <a href={link} className="accessible-text">{fonte.fonte}</a>
       ) : (
         <p>Erro ao carregar</p>
       )}

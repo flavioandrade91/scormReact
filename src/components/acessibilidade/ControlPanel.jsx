@@ -13,7 +13,7 @@ const ControlPanel = () => {
   useEffect(() => {
     console.log('Summary:', summary); // Adicione este log para verificar o conteúdo de summary
 
-    const elements = document.querySelectorAll('body, body *');
+    const elements = document.querySelectorAll('.accessible-text');
     elements.forEach((el) => {
       if (isHighContrast) {
         document.body.classList.add('high-contrast');
@@ -28,6 +28,22 @@ const ControlPanel = () => {
       }
     });
   }, [isHighContrast]);
+
+  useEffect(() => {
+    const elements = document.querySelectorAll('.accessible-text');
+    elements.forEach((el) => {
+      if (el.textContent.trim() !== "") {
+        if (fontSize) {
+          const currentFontSize = window.getComputedStyle(el).fontSize;
+          const currentFontSizeValue = parseFloat(currentFontSize);
+          const newFontSizeValue = currentFontSizeValue + parseFloat(fontSize);
+          el.style.fontSize = `${newFontSizeValue}px`;
+        } else {
+          el.style.fontSize = ''; // Reseta para o tamanho original
+        }
+      }
+    });
+  }, [fontSize]);
 
   const togglePanel = () => {
     setIsPanelOpen(!isPanelOpen);
@@ -44,12 +60,6 @@ const ControlPanel = () => {
   const changeFontSize = (size) => {
     const newSize = fontSize === size ? '' : size;
     setFontSize(newSize);
-    document.querySelectorAll('body, body *').forEach((el) => {
-      const currentSize = window.getComputedStyle(el).fontSize;
-      if (el.textContent.trim() !== "" && (parseFloat(currentSize) <= 20 || newSize === '')) {
-        el.style.fontSize = newSize;
-      }
-    });
   };
 
   const handleLinkClick = (e, id) => {
@@ -64,16 +74,15 @@ const ControlPanel = () => {
   return (
     <div className={`control-panel ${isPanelOpen ? 'open' : ''}`}>
       <button className="main-button" onClick={togglePanel}>
-        {/* <span>{images.iconAccess}</span> */}
         <img className="icons" src={images.iconAccess} alt="Acessar painel" />
       </button>
       {isPanelOpen && (
         <div className="panel-options">
-          <button onClick={() => changeFontSize('1.3em')}>
-            <img className="icons" src={images.textoGrande} alt="Mudar contraste" />
+          <button onClick={() => changeFontSize('10rem')}>
+            <img className="icons" src={images.textoGrande} alt="Mudar tamanho do texto" />
           </button>
           <button onClick={toggleHighContrast}>
-            <img className="icons" src={images.contrast} alt="Texto grande" />
+            <img className="icons" src={images.contrast} alt="Mudar contraste" />
           </button>
           <button onClick={toggleSummary}>
             <img className="icons" src={images.sumario} alt="Sumário" />

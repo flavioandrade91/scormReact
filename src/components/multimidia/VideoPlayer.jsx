@@ -11,13 +11,13 @@ function VideoPlayer({ id, videos, border }) {
             <section className={styles.videoComponent}>
                 {video ? (
                     <>
-                        <img className={styles.formaLinha} src={images.formaLinha} alt="" />
-                        <img className={styles.borda} src={border} alt="" />
+                        <img className={styles.formaLinha} src={images.formaLinha} alt="Linha" />
+                        {/* <img className={styles.borda} src={border} alt="Borda" /> */}
                         <div className={styles.playerHeader}>
-                            <img src={images.iconVideo} alt="" />
+                            <img src={images.iconVideo} alt="Ícone de Vídeo" />
                             <div className={styles.playerTitle}>
-                                <span>VÍDEO / {video.title}</span>
-                                <p>{video.descricao}</p>
+                                <span className="accessible-text">VÍDEO / {video.title}</span>
+                                <p className="accessible-text">{video.descricao}</p>
                             </div>
                         </div>
                         <div className={styles.playerContent}>
@@ -31,7 +31,7 @@ function VideoPlayer({ id, videos, border }) {
                                     height='100%'          // Altura do player
                                 />
                             </div>
-                            <div className={styles.videoFooter}>
+                            <div className={`${styles.videoFooter} accessible-text`}>
                                 <p>{video.fonte}</p>
                             </div>
                         </div>

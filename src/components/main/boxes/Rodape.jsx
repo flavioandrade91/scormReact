@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Rodape.module.css';
 import images from './Images'; // Substitua pelo caminho correto da sua logo
 
-
 export function Rodape() {
   return (
     <div className={styles.rodapeContainer}>

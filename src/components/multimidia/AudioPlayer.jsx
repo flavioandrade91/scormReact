@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import music from '../../assets/audio/vozes.mp3'
-import styles from '../multimidia/AudioPlayer.module.css'
-import iconplay from '../../assets/iconPlay.svg'
-import iconpause from '../../assets/buttonPause.png'
-import iconVol from '../../assets/iconVolS.svg'
-
+import music from '../../assets/audio/vozes.mp3';
+import styles from '../multimidia/AudioPlayer.module.css';
+import iconplay from '../../assets/iconPlay.svg';
+import iconpause from '../../assets/buttonPause.png';
+import iconVol from '../../assets/iconVolS.svg';
 
 export function AudioPlayer() {
     const [isPlaying, setIsPlaying] = useState(iconplay);
@@ -63,15 +62,11 @@ export function AudioPlayer() {
 
     return (
         <div className={styles.audioplayer}>
-
             <audio ref={audioRef} src={music} preload="auto" />
-
             <button className={styles.playbutton} onClick={togglePlayPause}>
-                <img src={isPlaying ? iconpause : iconplay} />
+                <img src={isPlaying ? iconpause : iconplay} alt="Play/Pause Button" />
             </button>
-
-            <img src={iconVol} className={styles.iconVol} alt="" srcset="" />
-
+            <img src={iconVol} className={styles.iconVol} alt="Volume Icon" />
             <div className={styles.progressAudio}>
                 <input
                     type="range"
@@ -82,11 +77,8 @@ export function AudioPlayer() {
                     onChange={handleVolumeChange}
                 />
             </div>
-
-            {/* <div> {(volume * 100).toFixed(0)}%</div> */}
             <div className={styles.Boxtimebar}>
-                <span className={styles.textFormat}>{Number(currentTime).toFixed(2)}</span>
-
+                <span className={`${styles.textFormat} accessible-text`}>{Number(currentTime).toFixed(2)}</span>
                 <div className={styles.timebar}>
                     <input
                         type="range"
@@ -97,10 +89,8 @@ export function AudioPlayer() {
                         step="1"
                     />
                 </div>
-
-                <span className={styles.textFormat}>{Number(duration).toFixed(2)}</span>
+                <span className={`${styles.textFormat} accessible-text`}>{Number(duration).toFixed(2)}</span>
             </div>
         </div>
     );
 }
-

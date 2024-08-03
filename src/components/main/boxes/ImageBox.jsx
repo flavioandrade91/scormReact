@@ -11,11 +11,11 @@ export function ImageBox({ id, fontes, imagem }) {
           <img src={imagem} alt={fonte.descricao} />
           <div className={styles.footer}>
             {fonte ? (
-              <span className={styles.fonte}>
-                <a href={fonte.link}>{fonte.fonte}</a>
+              <span className={`${styles.fonte} accessible-text`}>
+                <a href={fonte.link} className="accessible-text" target='_blank'>{fonte.fonte}</a>
               </span>
             ) : (
-              <span className={styles.fonte}>Fonte não encontrada</span>
+              <span className={`${styles.fonte} accessible-text`}>Fonte não encontrada</span>
             )}
           </div>
         </div>

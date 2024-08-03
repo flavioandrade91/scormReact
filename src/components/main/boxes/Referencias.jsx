@@ -8,24 +8,22 @@ export function Referencias({ referencias }) {
 
   return (
     <div className={styles.ReferenciaContainer}>
-      <div className={styles.titulo}>Referências</div>
-
+      <div className={`${styles.titulo} accessible-text`}>Referências</div>
       <div className={styles.coluna}>
         {firstHalf.map((ref, index) => (
           <div key={index} className={styles.reference_item}>
-            <p className={styles.reference_name}>{ref.nome}</p>
-            <p className={styles.reference_text}><strong>{ref.texto}</strong></p>
-            <a href={ref.link} target="_blank" rel="noopener noreferrer" className={styles.reference_link}>{ref.link}</a>
+            <p className={`${styles.reference_name} accessible-text`}>{ref.nome}</p>
+            <p className={`${styles.reference_text} accessible-text`}><strong>{ref.texto}</strong></p>
+            <a href={ref.link} target="_blank" rel="noopener noreferrer" className={`${styles.reference_link} accessible-text`}>{ref.link}</a>
           </div>
         ))}
       </div>
-
       <div className={styles.coluna}>
         {secondHalf.map((ref, index) => (
           <div key={index} className={styles.reference_item}>
-            <p className={styles.reference_name}>{ref.nome}</p>
-            <p className={styles.reference_text}><strong>{ref.texto}</strong></p>
-            <a href={ref.link} target="_blank" rel="noopener noreferrer" className={styles.reference_link}>{ref.link}</a>
+            <p className={`${styles.reference_name} accessible-text`}>{ref.nome}</p>
+            <p className={`${styles.reference_text} accessible-text`}><strong>{ref.texto}</strong></p>
+            <a href={ref.link} target="_blank" rel="noopener noreferrer" className={`${styles.reference_link} accessible-text`}>{ref.link}</a>
           </div>
         ))}
       </div>

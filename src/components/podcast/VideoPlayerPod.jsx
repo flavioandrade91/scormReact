@@ -41,13 +41,7 @@ export function VideoPlayerPod({ id, videos }) {
             {video ? (
                 <section className={styles.videoContainer}>
                     <div className={styles.playerHeader}>
-                        {/* <img src={images.iconVideo} alt="" /> */}
-                        {/* <div className={styles.playerTitle}>
-                            <span>PODCAST / {video.title}</span>
-                            <p>{video.descricao}</p>
-                        </div> */}
                     </div>
-
                     <div
                         className={styles.videoBox}
                         onMouseEnter={handleMouseEnter}
@@ -58,7 +52,7 @@ export function VideoPlayerPod({ id, videos }) {
                             <ReactPlayer
                                 ref={playerRef}
                                 className={styles.video}
-                                url={video.url} // Certifique-se de usar `video.url`
+                                url={video.url}
                                 playing={playing}
                                 controls={true}
                                 volume={volume}
